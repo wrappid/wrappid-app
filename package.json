@@ -1,0 +1,56 @@
+{
+  "name": "wrappid-app",
+  "version": "0.0.1",
+  "description": "This is a boilerplate application using wrappid for both web and mobile application.",
+  "main": "index.js",
+  "scripts": {
+    "web:start": "react-scripts start",
+    "web:build": "react-scripts build",
+    "web:test": "react-scripts test",
+    "web:eject": "react-scripts eject",
+    "mobile:android": "react-native run-android",
+    "mobile:ios": "react-native run-ios",
+    "mobile:lint": "eslint .",
+    "mobile:start": "react-native start",
+    "mobile:test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wrappid/wrappid-app.git"
+  },
+  "keywords": [
+    "wrappid",
+    "react",
+    "react-native",
+    "hybrid",
+    "javascript"
+  ],
+  "author": "wrappid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wrappid/wrappid-app/issues"
+  },
+  "homepage": "https://github.com/wrappid/wrappid-app#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-native": "^0.71.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@babel/preset-env": "^7.20.0",
+    "@babel/runtime": "^7.20.0",
+    "@react-native-community/eslint-config": "^3.2.0",
+    "@tsconfig/react-native": "^2.0.2",
+    "@types/jest": "^29.2.1",
+    "@types/react": "^18.0.24",
+    "@types/react-test-renderer": "^18.0.0",
+    "babel-jest": "^29.2.1",
+    "eslint": "^8.19.0",
+    "jest": "^29.2.1",
+    "metro-react-native-babel-preset": "0.73.9",
+    "prettier": "^2.4.1",
+    "react-scripts": "5.0.1",
+    "react-test-renderer": "18.2.0"
+  }
+}
