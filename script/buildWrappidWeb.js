@@ -47,7 +47,7 @@ exec('xcopy /e /v .\\template\\web\\ .\\temp\\web\\ /exclude:.wrappidignore', (e
     console.log(stdout);
 });
 
-exec('cd .\\temp\\mobile\\', (error, stdout, stderr) => {
+exec('cd .\\temp\\web\\', (error, stdout, stderr) => {
     if (error) {
         console.log(`error: ${error.message}`);
         return;
