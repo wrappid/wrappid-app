@@ -1,4 +1,5 @@
 # wrappid-app
+
 This is a boilerplate application using wrappid for both web and mobile application.
 
 ## Introduuction
@@ -6,27 +7,39 @@ This is a boilerplate application using wrappid for both web and mobile applicat
 ## Getting Started
 
 1. Install all the npm module(s)
+
 ```
 npm i
 ```
-2. Create wrappid web package 
+
+2. Setup wrappid web package
+
 ```
-npm run web:create
+npm run wrappid:web:setup
 ```
-3. Create wrappid mobile package 
+
+3. Setup wrappid mobile package
+
 ```
-npm run mobile:create
+npm run wrappid:mobile:setup
 ```
+
 4. Change to Application Build Directory
-  - Web
+
+- Web
+
     ```
     cd .\temp\web
     ```
-  - Mobile
+
+- Mobile
+
     ```
     cd .\temp\web
     ```
+
 5. Run Application
+
 ```
 npm start
 ```

@@ -1,8 +1,11 @@
+import React from 'react';
+import {CoreH1} from '@wrappid/core';
+
 function App() {
   return (
-    <div>
-          Hello World
-    </div>
+    <CoreH1>
+          Hello Web World
+    </CoreH1>
   );
 }
 

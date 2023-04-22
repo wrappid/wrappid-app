@@ -4,8 +4,8 @@
   "description": "This is a boilerplate application using wrappid for both web and mobile application.",
   "main": "index.js",
   "scripts": {
-    "web:create": "node .\\script\\buildWrappidWeb.js",
-    "mobile:create": "node .\\script\\buildWrappidMobile.js",
+    "wrappid:web:setup": "script\\windows\\wrappid_setup_mobile.bat",
+    "wrappid:mobile:setup": "script\\windows\\wrappid_setup_mobile.bat",
     "web:start": "react-scripts start",
     "web:build": "react-scripts build",
     "web:test": "react-scripts test",
@@ -34,18 +34,8 @@
   },
   "homepage": "https://github.com/wrappid/wrappid-app#readme",
   "dependencies": {
-    "react": "^18.2.0",
-    "react-native": "^0.71.7"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0",
-    "@babel/preset-env": "^7.20.0",
-    "@babel/runtime": "^7.20.0",
-    "@react-native-community/eslint-config": "^3.2.0",
-    "@tsconfig/react-native": "^2.0.2",
-    "@types/jest": "^29.2.1",
-    "@types/react": "^18.0.24",
-    "@types/react-test-renderer": "^18.0.0",
     "babel-jest": "^29.2.1",
     "eslint": "^8.19.0",
     "jest": "^29.2.1",
