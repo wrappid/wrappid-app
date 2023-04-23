@@ -8,38 +8,38 @@ This is a boilerplate application using wrappid for both web and mobile applicat
 
 1. Install all the npm module(s)
 
-```
-npm i
-```
+    ```javascript
+    npm i
+    ```
 
 2. Setup wrappid web package
 
-```
-npm run wrappid:web:setup
-```
+    ```javascript
+    npm run wrappid:web:setup
+    ```
 
 3. Setup wrappid mobile package
 
-```
-npm run wrappid:mobile:setup
-```
+    ```javascript
+    npm run wrappid:mobile:setup
+    ```
 
 4. Change to Application Build Directory
 
-- Web
+    - Web
 
-    ```
-    cd .\temp\web
-    ```
+        ```javascript
+        cd .\temp\web
+        ```
 
-- Mobile
+    - Mobile
 
-    ```
-    cd .\temp\web
-    ```
+        ```javascript
+        cd .\temp\web
+        ```
 
 5. Run Application
 
-```
-npm start
-```
+    ```javascript
+    npm start
+    ```
