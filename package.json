@@ -11,7 +11,7 @@
     "release:minor": "standard-version --release-as minor",
     "release:patch": "standard-version --release-as patch",
     "setup:mobile": "script\\windows\\setup_mobile.bat",
-    "setup:web": "script\\windows\\setup_mobile.bat"
+    "setup:web": "script\\windows\\setup_web.bat"
   },
   "repository": {
     "type": "git",
