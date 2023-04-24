@@ -13,7 +13,6 @@ CD .\temp\web
 echo "Current working directory"
 CD
 echo "Installing npm packages..."
-@REM npm i
 echo "Installing @wrappid/styles..."
 echo "Installing @wrappid/sc-web with alias styled-components..."
 echo "Installing @wrappid/core..."
