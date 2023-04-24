@@ -35,7 +35,7 @@ This is a boilerplate application using wrappid for both web and mobile applicat
     - Mobile
 
         ```javascript
-        cd .\temp\web
+        cd .\temp\mobile
         ```
 
 5. Run Application
