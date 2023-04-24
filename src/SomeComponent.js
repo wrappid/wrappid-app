@@ -1,7 +1,7 @@
-import React from 'react'
+import { CoreH1 } from "@wrappid/core";
 
 export default function SomeComponent() {
-  return (
-    <></>
-  )
+    return (
+        <CoreH1>Core H1</CoreH1>
+    );
 }

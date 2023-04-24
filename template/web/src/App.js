@@ -1,11 +1,12 @@
 import React from 'react';
-import {CoreH1} from '@wrappid/core';
+import {ComponentRegistryContext, CoreApp} from '@wrappid/core';
+import {ComponentRegistry} from './ComponetRegistry';
 
 function App() {
   return (
-    <CoreH1>
-          Hello Web World
-    </CoreH1>
+    <ComponentRegistryContext.Provider value={ComponentRegistry}>
+      <CoreApp/>
+    </ComponentRegistryContext.Provider>
   );
 }
 
