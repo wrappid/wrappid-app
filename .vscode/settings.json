@@ -1,0 +1,16 @@
+{
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.guides.indentation": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": [
+    "javascript"
+  ],
+  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+}

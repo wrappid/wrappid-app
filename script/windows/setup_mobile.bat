@@ -14,4 +14,10 @@ echo "Current working directory"
 CD
 echo "Installing npm packages..."
 npm i
+echo "Installing @wrappid/styles..."
+npm i @wrappid/styles
+echo "Installing @wrappid/sc-mobile with alias styled-components..."
+npm i @wrappid/styled-components@npm:@wrappid/sc-mobile
+echo "Installing @wrappid/core..."
+npm i @wrappid/core
 echo "Wrappid mobile app setup successful."

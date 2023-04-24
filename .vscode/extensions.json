@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "vivaxy.vscode-conventional-commits",
+        "dbaeumer.vscode-eslint",
+        "dsznajder.es7-react-js-snippets"
+    ]
+}

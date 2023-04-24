@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../../../Rxefy/repos/prescription-frontend"
 		}
 	],
 	"settings": {}

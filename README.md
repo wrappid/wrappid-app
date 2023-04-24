@@ -15,13 +15,13 @@ This is a boilerplate application using wrappid for both web and mobile applicat
 2. Setup wrappid web package
 
     ```javascript
-    npm run wrappid:web:setup
+    npm run setup:web
     ```
 
 3. Setup wrappid mobile package
 
     ```javascript
-    npm run wrappid:mobile:setup
+    npm run setup:mobile
     ```
 
 4. Change to Application Build Directory
