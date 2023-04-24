@@ -1,12 +1,13 @@
 import React from 'react';
-import {ComponentRegistryContext, CoreApp} from '@wrappid/core';
+import {CoreApp} from '@wrappid/core';
 import {ComponentRegistry} from './ComponetRegistry';
+import rootReducer from '../../../src/store/reducer';
 
 function App() {
   return (
-    <ComponentRegistryContext.Provider value={ComponentRegistry}>
-      <CoreApp/>
-    </ComponentRegistryContext.Provider>
+    <CoreApp
+      reducers={rootReducer}
+      componentRegistry={ComponentRegistry} />
   );
 }
 

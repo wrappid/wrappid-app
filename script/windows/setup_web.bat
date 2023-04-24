@@ -13,11 +13,9 @@ CD .\temp\web
 echo "Current working directory"
 CD
 echo "Installing npm packages..."
-npm i
+@REM npm i
 echo "Installing @wrappid/styles..."
-npm i @wrappid/styles
 echo "Installing @wrappid/sc-web with alias styled-components..."
-npm i @wrappid/styled-components@npm:@wrappid/sc-web
 echo "Installing @wrappid/core..."
-npm i @wrappid/core
+npm i @wrappid/styles @wrappid/styled-components@npm:@wrappid/sc-web @wrappid/core
 echo "Wrappid web app setup successful."
