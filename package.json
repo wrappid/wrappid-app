@@ -12,6 +12,8 @@
     "release:patch": "standard-version --release-as patch",
     "setup:mobile": ".wrappid\\script\\windows\\setup_mobile.bat",
     "setup:web": ".wrappid\\script\\windows\\setup_web.bat",
+    "setup:mobile:babel": ".wrappid\\script\\windows\\setup_mobile_babel.bat",
+    "setup:web:babel": ".wrappid\\script\\windows\\setup_web_babel.bat",
     "start:mobile": "npm start --prefix .wrappid\\temp\\mobile",
     "start:web": "npm start --prefix .wrappid\\temp\\web"
   },
