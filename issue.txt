@@ -1,0 +1,35 @@
+.\wrappid-app\.wrappid\temp\mobile\
+node_modules\react-native\Libraries\Core\ExceptionsManager.js:158 
+
+Invariant Violation: 
+Failed to call into JavaScript module method RCTDeviceEventEmitter.emit(). 
+Module has not been registered as callable. Bridgeless Mode: false. 
+Registered callable JavaScript modules (n = 0): .
+        A frequent cause of the error is that the application entry file 
+        path is incorrect. This can also happen 
+        when the JS bundle is corrupt 
+        or there is an early initialization error when loading React Native.
+
+reactConsoleErrorHandler	@	C:\Users\nilot\Docum…tionsManager.js:158
+registerError	@	C:\Users\nilot\Docum…ogBox\LogBox.js:187
+console.error	@	C:\Users\nilot\Docum…LogBox\LogBox.js:67
+overrideMethod	@	C:\Users\nilot\Docum…ist\backend.js:2045
+reportException	@	C:\Users\nilot\Docum…tionsManager.js:102
+handleException	@	C:\Users\nilot\Docum…tionsManager.js:148
+handleError	@	C:\Users\nilot\Docum…ErrorHandling.js:24
+reportFatalError	@	C:\Users\nilot\Docum…s\error-guard.js:49
+__guard	@	C:\Users\nilot\Docum…MessageQueue.js:370
+callFunctionReturnFlushedQueue	@	C:\Users\nilot\Docum…MessageQueue.js:112
+(anonymous)	@	debuggerWorker.js:69	reactConsoleErrorHandler	@	C:\Users\nilot\Docum…tionsManager.js:158
+registerError	@	C:\Users\nilot\Docum…ogBox\LogBox.js:187
+console.error	@	C:\Users\nilot\Docum…LogBox\LogBox.js:67
+overrideMethod	@	C:\Users\nilot\Docum…ist\backend.js:2045
+reportException	@	C:\Users\nilot\Docum…tionsManager.js:102
+handleException	@	C:\Users\nilot\Docum…tionsManager.js:148
+handleError	@	C:\Users\nilot\Docum…ErrorHandling.js:24
+reportFatalError	@	C:\Users\nilot\Docum…s\error-guard.js:49
+__guard	@	C:\Users\nilot\Docum…MessageQueue.js:370
+callFunctionReturnFlushedQueue	@	C:\Users\nilot\Docum…MessageQueue.js:112
+(anonymous)	@	debuggerWorker.js:69
+
+---------------------------------------------------------

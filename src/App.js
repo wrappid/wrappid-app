@@ -1,3 +1,4 @@
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import { CoreApp } from "@wrappid/core";
 
 import { ComponentRegistry } from "./ComponetRegistry";
@@ -7,6 +8,7 @@ function App() {
     return (
         <CoreApp
             reducers={rootReducer}
+            storage={AsyncStorage}
             componentRegistry={ComponentRegistry} />
     );
 }
