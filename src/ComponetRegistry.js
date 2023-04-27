@@ -1,3 +1,5 @@
-import { AuthContainer } from "./module/auth/AuthContainer";
+import {AuthContainer} from './module/auth/AuthContainer';
 
-export const ComponentRegistry = { checkUserExist: { comp: <AuthContainer page="checkUserExist" /> } };
+export const ComponentRegistry = {
+  checkUserExist: {comp: <AuthContainer page="checkUserExist" />},
+};
