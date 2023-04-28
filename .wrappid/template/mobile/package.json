@@ -11,9 +11,6 @@
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.18.1",
-    "@wrappid/core": "^0.0.14",
-    "@wrappid/styled-components": "npm:@wrappid/sc-mobile@^0.0.5",
-    "@wrappid/styles": "^0.0.5-alpha.0",
     "react": "18.2.0",
     "react-native": "0.71.6"
   },
