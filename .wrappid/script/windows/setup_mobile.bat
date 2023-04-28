@@ -4,7 +4,7 @@
 cls
 
 @REM printing the wrappid logo
-@REM type .\.wrappid\wrappid_logo.txt
+type .\.wrappid\wrappid_logo.txt
 @REM pause
 echo Starting Wrappid Application setup for web
 @REM timeout 3

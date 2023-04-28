@@ -1,45 +1,82 @@
-# wrappid-app
+```
+                                    _     _
+    __      ___ __ __ _ _ __  _ __ (_) __| |
+    \ \ /\ / / '__/ _` | '_ \| '_ \| |/ _` |
+     \ V  V /| | | (_| | |_) | |_) | | (_| |
+      \_/\_/ |_|  \__,_| .__/| .__/|_|\__,_|
+                       |_|   |_|
 
-This is a boilerplate application using wrappid for both web and mobile application.
+```
 
-## Introduuction
+# `Wrappid`
+
+## Wrapper Framework for Rapid development
+
+`Wrappid` Framework is a wrapper framework built to enable rapid development of applications based on `React` and `React Native`. Here, you **write code once** and use `Wrappid Toolkit` to build your web and mobile applications simultaneously.
+
+#
+
+## Introduction
+
+This guide will help us setup and run application using `Wrappid` framework. This is a boilerplate application using `Wrappid` framework to be used for both web and mobile application.
 
 ## Getting Started
 
-1. Install all the npm module(s)
+This getting started section will help you setup a basic application built using the `Wrappid` framework. Follow the below steps to get going.
 
-    ```javascript
-    npm i
-    ```
+1. Verify Pre-requisites
+2. Setup `Wrappid` Project
+3. Run `Wrappid` Project
 
-2. Setup wrappid web package
+### Verify Pre-requisites
 
-    ```javascript
-    npm run setup:web
-    ```
+First you need to verify that your system fulfills the pre-requisites. Listed below are the things required to be available in your system.
 
-3. Setup wrappid mobile package
+- Node.js - version 16
+- npm - version 8
 
-    ```javascript
-    npm run setup:mobile
-    ```
+#### For Mobile development
+- JDK 11 or more
+- Android Studio
+  - Android Device Manager
+  - At least one device on the emulator
 
-4. Change to Application Build Directory
+### Setup `Wrappid` Project
 
-    - Web
+#### Setup development environment
 
-        ```javascript
-        cd .\temp\web
-        ```
+Run the below command to install all the npm module(s). This will install the dev dependencies.
 
-    - Mobile
+```javascript
+npm i
+```
 
-        ```javascript
-        cd .\temp\mobile
-        ```
+#### Setup `Wrappid` Application
 
-5. Run Application
+- Web
 
-    ```javascript
-    npm start
-    ```
+```javascript
+npm run setup:web
+```
+
+- Mobile
+
+```javascript
+npm run setup:mobile
+```
+
+### Run `Wrappid` Application
+
+- Web
+
+```javascript
+npm run start:web
+```
+This should launch your default browser with a URL `http://localhost:3000`
+
+- Mobile
+
+```javascript
+npm run start:mobile
+```
+This should launch your emulated device (provided a proper setup is done on the Android Device Manager)
