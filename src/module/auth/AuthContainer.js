@@ -1,8 +1,6 @@
-import {CoreBox, CoreGrid, CoreSection, CoreImage} from '@wrappid/core';
+import { CoreBox, CoreGrid, CoreSection, CoreImage } from "@wrappid/core";
 
-import CheckUserExist from './CheckUserExist';
-
-export const AuthContainer = props => {
+export const AuthContainer = (props) => {
   return (
     <CoreGrid
     //   spacing={0}
@@ -10,22 +8,23 @@ export const AuthContainer = props => {
     //   justifyContent="center"
     // style={{ minHeight: "100vh" }}
     >
-      <CoreBox gridProps={{gridSize: {md: 3, sm: 6}}}>
+      <CoreBox gridProps={{ gridSize: { md: 3, sm: 6 } }}>
         <CoreSection>
           <CoreBox
-          // styleClasses={[CoreClasses.LAYOUT.FULL_WIDTH, CoreClasses.LAYOUT.HORIZONTAL_CENTER, CoreClasses.MARGIN.MB5]}
+            styleClasses={[
+              CoreClasses.LAYOUT.FULL_WIDTH,
+              CoreClasses.LAYOUT.HORIZONTAL_CENTER,
+              CoreClasses.MARGIN.MB5,
+            ]}
           >
             <CoreImage
-              src={require('../../images/logo.png')}
+              src={require("../../images/logo.png")}
               alt=""
               height={40}
               width={120}
             />
           </CoreBox>
-
-          {props.page === 'checkUserExist' ? (
-            <CheckUserExist curPage={props.page} />
-          ) : null}
+          {props.children}
         </CoreSection>
       </CoreBox>
     </CoreGrid>
