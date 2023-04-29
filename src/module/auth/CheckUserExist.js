@@ -1,9 +1,10 @@
-import React, { Component } from "react";
+import React, {Component} from 'react';
 
-import { connect } from "react-redux";
-import { CoreForm } from "@wrappid/core";
-import { NativeDomNavigate } from "@wrappid/styled-components";
-import { AuthContainer } from "./AuthContainer";
+import {connect} from 'react-redux';
+import {CoreForm} from '@wrappid/core';
+import {NativeDomNavigate} from '@wrappid/styled-components';
+import {AuthContainer} from './AuthContainer';
+import {CoreClasses} from '@wrappid/styles';
 
 class CheckUserExist extends Component {
   state = {};
@@ -11,13 +12,13 @@ class CheckUserExist extends Component {
   componentDidMount = () => {};
   componentDidUpdate = () => {};
   render() {
-    const { checkLoginOrRegisterSuccess, authNextPage } = this.props;
+    const {checkLoginOrRegisterSuccess, authNextPage} = this.props;
 
     // const queryParams = new URLSearchParams(window.location.search);
     // const email = queryParams.get("email");
 
-    if (checkLoginOrRegisterSuccess && authNextPage !== "checkUserExist") {
-      return <NativeDomNavigate to={"/" + authNextPage} />;
+    if (checkLoginOrRegisterSuccess && authNextPage !== 'checkUserExist') {
+      return <NativeDomNavigate to={'/' + authNextPage} />;
     }
 
     return (
@@ -34,7 +35,7 @@ class CheckUserExist extends Component {
   }
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
   return {
     auth: state.auth,
     authNextPage: state.auth.authNextPage,
@@ -43,7 +44,7 @@ const mapStateToProps = (state) => {
     requestUrl: state?.manageAssistant?.requestUrl,
   };
 };
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = dispatch => {
   return {};
 };
 
