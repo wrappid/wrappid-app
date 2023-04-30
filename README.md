@@ -8,13 +8,9 @@
 
 ```
 
-# `Wrappid`
+# `Wrappid` App Boilerplate
 
-## Wrapper Framework for Rapid development
-
-`Wrappid` Framework is a wrapper framework built to enable rapid development of applications based on `React` and `React Native`. Here, you **write code once** and use `Wrappid Toolkit` to build your web and mobile applications simultaneously.
-
-#
+This is a **frontend boilerplate application** built using the `Wrappid` framework, which enables simultaneous development of web and mobile application.
 
 ## Introduction
 
