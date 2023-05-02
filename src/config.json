@@ -1,5 +1,5 @@
 {
-  "backendUrl": "http://192.168.0.105:8080",
+  "backendUrl": "https://stageapi.rxefy.com",
   "color": {
     "secondaryTextColor": "#FB607F",
     "primaryTextColor": "#6D6C6C",
