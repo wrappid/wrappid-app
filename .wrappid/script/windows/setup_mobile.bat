@@ -24,8 +24,14 @@ echo Copying files from (.\.wrappid\template\mobile) directory to (.\.wrappid\te
 XCOPY /e /v .\.wrappid\template\mobile\ .\.wrappid\temp\mobile\ /exclude:.\.wrappid\.wrappidignore
 
 echo.
+echo Copying resources files from (.\resources\android\res) directory to (.\.wrappid\temp\mobile\android\app\src\main\res)...
+XCOPY /e /v .\resources\android\res\ .\.wrappid\temp\mobile\android\app\src\main\res\
+
+echo.
 echo Copying files from (.\src) directory to (.\.wrappid\temp\mobile\src)...
 XCOPY /e /v .\src\ .\.wrappid\temp\mobile\src\
+
+@REM IOS RESOURCES COPY MISSING
 
 echo.
 echo Changing directory (.\.wrappid\temp\mobile)...

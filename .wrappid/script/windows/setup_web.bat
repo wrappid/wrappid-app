@@ -25,6 +25,10 @@ echo Copying files from (.\.wrappid\template\web) directory to (.\.wrappid\temp\
 XCOPY /e /v .\.wrappid\template\web\ .\.wrappid\temp\web\ /exclude:.\.wrappid\.wrappidignore
 
 echo.
+echo Copying resources files from (.\resources\web\public) directory to (.\.wrappid\temp\web\public)...
+XCOPY /e /v .\resources\web\public\ .\.wrappid\temp\web\public\
+
+echo.
 echo Copying files from (.\src) directory to (.\.wrappid\temp\web\src)...
 XCOPY /e /v .\src\ .\.wrappid\temp\web\src\
 

@@ -18,8 +18,8 @@
     "src:copy:web": ".wrappid\\script\\windows\\copy_app_src_web.bat",
     "reload:styles:mobile": ".wrappid\\script\\windows\\copy_styles_dist_mobile.bat",
     "reload:styles:web": ".wrappid\\script\\windows\\copy_styles_dist_mobile.bat",
-    "reload:sc:mobile": ".wrappid\\script\\windows\\copy_styled_comp_dist_mobile.bat",
-    "reload:sc:web": ".wrappid\\script\\windows\\copy_styled_comp_dist_web.bat",
+    "reload:native:mobile": ".wrappid\\script\\windows\\copy_styled_comp_dist_mobile.bat",
+    "reload:native:web": ".wrappid\\script\\windows\\copy_styled_comp_dist_web.bat",
     "reload:core:mobile": ".wrappid\\script\\windows\\copy_core_dist_mobile.bat",
     "reload:core:web": ".wrappid\\script\\windows\\copy_core_dist_mobile.bat"
   },

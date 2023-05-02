@@ -1,14 +1,13 @@
-```
+# *Wrappid* `App Boilerplate`
+
+```text
                                     _     _
     __      ___ __ __ _ _ __  _ __ (_) __| |
     \ \ /\ / / '__/ _` | '_ \| '_ \| |/ _` |
      \ V  V /| | | (_| | |_) | |_) | | (_| |
       \_/\_/ |_|  \__,_| .__/| .__/|_|\__,_|
                        |_|   |_|
-
 ```
-
-# `Wrappid` App Boilerplate
 
 This is a **frontend boilerplate application** built using the `Wrappid` framework, which enables simultaneous development of web and mobile application.
 
@@ -32,6 +31,7 @@ First you need to verify that your system fulfills the pre-requisites. Listed be
 - npm - version 8
 
 #### For Mobile development
+
 - JDK 11 or more
 - Android Studio
   - Android Device Manager
@@ -68,6 +68,7 @@ npm run setup:mobile
 ```javascript
 npm run start:web
 ```
+
 This should launch your default browser with a URL `http://localhost:3000`
 
 - Mobile
@@ -75,4 +76,5 @@ This should launch your default browser with a URL `http://localhost:3000`
 ```javascript
 npm run start:mobile
 ```
+
 This should launch your emulated device (provided a proper setup is done on the Android Device Manager)
