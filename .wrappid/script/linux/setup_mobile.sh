@@ -13,7 +13,7 @@ echo Current working directory is $PWD
 
 echo
 echo "Deleting (./.wrappid/temp/mobile) directory..."
-rm -r /Q /S ./.wrappid/temp/mobile
+rm -rf ./.wrappid/temp/mobile
 echo Creating "(./.wrappid/temp/mobile) directory..."
 mkdir -p ./.wrappid/temp/mobile
 
@@ -24,20 +24,19 @@ rsync -av --exclude-from='.wrappid/.wrappidignore' .wrappid/template/mobile/ .wr
 
 echo
 echo "Copying resources files from (./resources/android/res) directory to (./.wrappid/temp/mobile/android/app/src/main/res)..."
-cp -rR /e /v ./resources/android/res ./.wrappid/temp/mobile/android/app/src/main/
+cp -rR ./resources/android/res ./.wrappid/temp/mobile/android/app/src/main/
 
 echo
 echo $PWD
-echo Copying files from "(./src) directory to (./.wrappid/temp/mobile/src)..."
-cp -r /e /v ./src ./.wrappid/temp/mobile/
+echo "Copying files from (./src) directory to (./.wrappid/temp/mobile/src)..."
+cp -r ./src ./.wrappid/temp/mobile/
 
 # IOS RESOURCES COPY MISSING
 
 echo
 echo "Changing directory (./.wrappid/temp/mobile)..."
 cd ./.wrappid/temp/mobile
-echo Current working directory is
-cd
+echo Current working directory is $PWD
 
 echo
 echo Installing npm packages...

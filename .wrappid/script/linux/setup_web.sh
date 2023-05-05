@@ -9,28 +9,22 @@ cat ./.wrappid/wrappid_logo.txt
 echo "Starting Wrappid Application setup for web"
 # timeout 3
 
-
 echo "Current working directory is"
 pwd
-
 
 echo "Deleting (./.wrappid/temp/web) directory..."
 rm -r ./.wrappid/temp/web
 echo "Creating (./.wrappid/temp/web) directory..."
 mkdir -p ./.wrappid/temp/web
 
-
-echo  "Copying files from (./.wrappid/template/web/) directory to (./.wrappid/temp/web/)..."
-rsync -av --progress --exclude=./.wrappid/.wrappidignore ./.wrappid/template/web/  ./.wrappid/temp/web/
-
-
+echo "Copying files from (./.wrappid/template/web/) directory to (./.wrappid/temp/web/)..."
+rsync -av --progress --exclude=./.wrappid/.wrappidignore ./.wrappid/template/web/ ./.wrappid/temp/web/
 
 echo "Copying resources files from (./resources/web/public/) directory to (./.wrappid/temp/web/public/)..."
-cp -r  ./resources/web/public/ ./.wrappid/temp/web/public/
-
+cp -r ./resources/web/public/ ./.wrappid/temp/web/public/
 
 echo "Copying files from (./src/ ) directory to (./.wrappid/temp/web/src/)..."
-cp -r  ./src/ ./.wrappid/temp/web/src/
+cp -r ./src/ ./.wrappid/temp/web/src/
 
 echo "Changing directory to (./.wrappid/temp/web)..."
 cd ./.wrappid/temp/web
