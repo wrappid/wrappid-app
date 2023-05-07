@@ -46,6 +46,7 @@
     "@commitlint/prompt-cli": "^17.5.0",
     "@react-native-async-storage/async-storage": "^1.18.1",
     "@wrappid/core": "^0.0.22",
+    "@wrappid/styles": "^0.0.12",
     "eslint": "^8.37.0",
     "eslint-plugin-etc": "^2.0.2",
     "eslint-plugin-import": "^2.27.5",
