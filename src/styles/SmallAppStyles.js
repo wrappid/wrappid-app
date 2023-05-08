@@ -1,8 +1,8 @@
-import { smallUtilityStyles } from "../core/styles/utility/SmallUtilityStyles";
+import { smallUtilityStyles } from "@wrappid/styles";
 
 export const smallAppStyles = {
-    /**************************************************
+  /**************************************************
    * Using smallUtilityStyles example
    *************************************************/
-    usingSmallUtilityStyles: { ...smallUtilityStyles.anyUtilityStyle },
+  usingSmallUtilityStyles: { ...smallUtilityStyles.anyUtilityStyle },
 };

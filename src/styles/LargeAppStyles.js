@@ -1,8 +1,8 @@
-import { largeUtilityStyles } from "../core/styles/utility/LargeUtilityStyles";
+import { largeUtilityStyles } from "@wrappid/styles";
 
 export const largeAppStyles = {
-    /**************************************************
+  /**************************************************
    * Using largeUtilityStyles example
    *************************************************/
-    usingLargeUtilityStyles: { ...largeUtilityStyles.anyUtilityStyle },
+  usingLargeUtilityStyles: { ...largeUtilityStyles.anyUtilityStyle },
 };

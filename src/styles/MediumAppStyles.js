@@ -1,22 +1,21 @@
-import { mediumUtilityStyles } from "../core/styles/utility/MediumUtilityStyles";
+import { mediumUtilityStyles } from "@wrappid/styles";
 
 export const mediumAppStyles = {
-    
-    prescriptionContainer: {},
-    
-    prescriptionContent: {},
-    
-    /* -------------------Prescription related------------------- */
-    prescriptionContentContainer: {},
-    
-    prescriptionPageContainer: {},
-    
-    prescriptionTopBar: {},
-    
-    prescriptionTopBarContainer: {},
-    /**************************************************
+  prescriptionContainer: {},
+
+  prescriptionContent: {},
+
+  /* -------------------Prescription related------------------- */
+  prescriptionContentContainer: {},
+
+  prescriptionPageContainer: {},
+
+  prescriptionTopBar: {},
+
+  prescriptionTopBarContainer: {},
+  /**************************************************
    * Using mediumUtilityStyles example
    *************************************************/
-    usingMediumUtilityStyles   : { ...mediumUtilityStyles.anyUtilityStyle },
-    /* -------------------Prescription related------------------- */
+  usingMediumUtilityStyles: { ...mediumUtilityStyles.anyUtilityStyle },
+  /* -------------------Prescription related------------------- */
 };
