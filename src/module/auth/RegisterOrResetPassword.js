@@ -15,9 +15,9 @@ import {
   apiRequestAction,
   saveAuthData,
   maskEmailOrPhone,
+  CoreClasses,
 } from '@wrappid/core';
 
-import {CoreClasses} from '@wrappid/styles';
 import {HTTP_POST} from '../../constants/constants';
 import {NAVIGATE_TO_RESET_PASSWORD_API} from '../../constants/api';
 import {

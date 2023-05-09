@@ -1,13 +1,14 @@
-import { CoreApp } from "@wrappid/core";
+import {CoreApp} from '@wrappid/core';
 
-import { ComponentRegistry } from "./ComponetRegistry";
-import rootReducer from "./store/reducer";
-import AppClasses from "./styles/AppClasses";
-import { defaultAppStyles } from "./styles/DefaultAppStyles";
-import { smallAppStyles } from "./styles/SmallAppStyles";
-import { mediumAppStyles } from "./styles/MediumAppStyles";
-import { largeAppStyles } from "./styles/LargeAppStyles";
-import { xXLargeAppStyles } from "./styles/XXLargeAppStyles";
+import {ComponentRegistry} from './ComponetRegistry';
+import rootReducer from './store/reducer';
+import AppClasses from './styles/AppClasses';
+import {defaultAppStyles} from './styles/DefaultAppStyles';
+import {smallAppStyles} from './styles/SmallAppStyles';
+import {mediumAppStyles} from './styles/MediumAppStyles';
+import {largeAppStyles} from './styles/LargeAppStyles';
+import {xLargeAppStyles} from './styles/XLargeAppStyles';
+import {xXLargeAppStyles} from './styles/XXLargeAppStyles';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
           small: smallAppStyles,
           medium: mediumAppStyles,
           large: largeAppStyles,
-          xLarge: xXLargeAppStyles,
+          xLarge: xLargeAppStyles,
           xxLarge: xXLargeAppStyles,
         },
       }}

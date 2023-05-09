@@ -1,18 +1,13 @@
 {
-  "env": "development",
-  "platform": "mobile",
   "backendUrl": "https://stageapi.rxefy.com",
-  "webUrl": "https://stageapp.rxefy.com/",
-  "drawerWidth": 240,
-  "miniDrawerWidth": 56,
-  "snackMessage": false,
-  "otpLength": 6,
-  "theme": {
+  "environment":"development",
+  "platform": "mobile",
+  "theme":{
     "fontFamily": "'Rubik', sans-serif",
     "buttonTextTransform": "none",
     "paletteType": "light",
     "defaultBackgroundColor": "#FAFAFA",
-    "primaryMainColor": "#00FF00",
+    "primaryMainColor": "blue",
     "primaryLightColor": "#00FF00",
     "primaryDarkColor": "#00FF00",
     "primaryContrastTextColor": "#FFFFFF",

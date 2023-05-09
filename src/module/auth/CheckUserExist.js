@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 
 import {connect} from 'react-redux';
-import {CoreForm} from '@wrappid/core';
+import {CoreForm, CoreClasses} from '@wrappid/core';
 import {NativeDomNavigate} from '@wrappid/styled-components';
 import {AuthContainer} from './AuthContainer';
-import {CoreClasses} from '@wrappid/styles';
 
 class CheckUserExist extends Component {
   state = {};

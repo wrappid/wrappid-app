@@ -12,9 +12,9 @@ import {
   saveAuthData,
   maskEmailOrPhone,
   CoreTypographyBody1,
+  CoreClasses,
 } from '@wrappid/core';
 
-import {CoreClasses} from '@wrappid/styles';
 import {AuthContainer} from './AuthContainer';
 import {NAVIGATE_TO_OTP_LOGIN_API} from '../../constants/api';
 import {
