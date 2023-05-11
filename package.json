@@ -9,19 +9,7 @@
     "release": "standard-version",
     "release:major": "standard-version --release-as major",
     "release:minor": "standard-version --release-as minor",
-    "release:patch": "standard-version --release-as patch",
-    "setup:mobile": ".wrappid\\script\\windows\\setup_mobile.bat",
-    "setup:web": ".wrappid\\script\\windows\\setup_web.bat",
-    "start:mobile": "npm start --prefix .wrappid\\temp\\mobile",
-    "start:web": "npm start --prefix .wrappid\\temp\\web",
-    "src:copy:mobile": ".wrappid\\script\\windows\\copy_app_src_mobile.bat",
-    "src:copy:web": ".wrappid\\script\\windows\\copy_app_src_web.bat",
-    "reload:styles:mobile": ".wrappid\\script\\windows\\copy_styles_dist_mobile.bat",
-    "reload:styles:web": ".wrappid\\script\\windows\\copy_styles_dist_mobile.bat",
-    "reload:native:mobile": ".wrappid\\script\\windows\\copy_styled_comp_dist_mobile.bat",
-    "reload:native:web": ".wrappid\\script\\windows\\copy_styled_comp_dist_web.bat",
-    "reload:core:mobile": ".wrappid\\script\\windows\\copy_core_dist_mobile.bat",
-    "reload:core:web": ".wrappid\\script\\windows\\copy_core_dist_mobile.bat"
+    "release:patch": "standard-version --release-as patch"
   },
   "repository": {
     "type": "git",
@@ -44,7 +32,6 @@
     "@commitlint/cli": "^17.5.0",
     "@commitlint/config-conventional": "^17.4.4",
     "@commitlint/prompt-cli": "^17.5.0",
-    "@react-native-async-storage/async-storage": "^1.18.1",
     "@wrappid/core": "^0.0.22",
     "@wrappid/styles": "^0.0.12",
     "eslint": "^8.37.0",

@@ -1,0 +1,32 @@
+{
+    "dev": {
+        "env": "development",
+        "platform": "mobile",
+        "backendUrl": "https://stageapi.rxefy.com",
+        "webUrl": "https://stageapp.rxefy.com/",
+        "drawerWidth": 240,
+        "miniDrawerWidth": 56,
+        "snackMessage": false,
+        "otpLength": 6
+    },
+    "stage": {
+        "env": "stage",
+        "platform": "mobile",
+        "backendUrl": "https://stageapi.rxefy.com",
+        "webUrl": "https://stageapp.rxefy.com/",
+        "drawerWidth": 240,
+        "miniDrawerWidth": 56,
+        "snackMessage": false,
+        "otpLength": 6
+    },
+    "prod": {
+        "env": "production",
+        "platform": "mobile",
+        "backendUrl": "https://stageapi.rxefy.com",
+        "webUrl": "https://stageapp.rxefy.com/",
+        "drawerWidth": 240,
+        "miniDrawerWidth": 56,
+        "snackMessage": false,
+        "otpLength": 6
+    }
+}
