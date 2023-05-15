@@ -1,7 +1,7 @@
 {
     "dev": {
         "env": "development",
-        "platform": "mobile",
+        "platform": "web",
         "backendUrl": "https://stageapi.rxefy.com",
         "webUrl": "https://stageapp.rxefy.com/",
         "drawerWidth": 240,
@@ -11,7 +11,7 @@
     },
     "stage": {
         "env": "stage",
-        "platform": "mobile",
+        "platform": "web",
         "backendUrl": "https://stageapi.rxefy.com",
         "webUrl": "https://stageapp.rxefy.com/",
         "drawerWidth": 240,
@@ -21,7 +21,7 @@
     },
     "prod": {
         "env": "production",
-        "platform": "mobile",
+        "platform": "web",
         "backendUrl": "https://stageapi.rxefy.com",
         "webUrl": "https://stageapp.rxefy.com/",
         "drawerWidth": 240,
