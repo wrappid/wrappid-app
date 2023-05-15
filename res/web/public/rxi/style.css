@@ -1,0 +1,150 @@
+@font-face {
+  font-family: 'rxicon';
+  src:  url('fonts/rxicon.eot?41bl82');
+  src:  url('fonts/rxicon.eot?41bl82#iefix') format('embedded-opentype'),
+    url('fonts/rxicon.ttf?41bl82') format('truetype'),
+    url('fonts/rxicon.woff?41bl82') format('woff'),
+    url('fonts/rxicon.svg?41bl82#rxicon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="rxi-"], [class*=" rxi-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'rxicon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.rxi-alcohol:before {
+  content: "\e900";
+}
+.rxi-alcohol-consult-doctor:before {
+  content: "\e929";
+}
+.rxi-alcohol-not-relevant:before {
+  content: "\e928";
+}
+.rxi-alcohol-safe-if-prescribed:before {
+  content: "\e903";
+}
+.rxi-alcohol-safe:before {
+  content: "\e902";
+}
+.rxi-alcohol-unsafe:before {
+  content: "\e904";
+}
+.rxi-breastfeeding:before {
+  content: "\e905";
+}
+.rxi-breastfeeding-caution:before {
+  content: "\e906";
+}
+.rxi-breastfeeding-consult-doctor:before {
+  content: "\e907";
+}
+.rxi-breastfeeding-not-relevant:before {
+  content: "\e908";
+}
+.rxi-breastfeeding-safe-if-prescribed:before {
+  content: "\e90a";
+}
+.rxi-breastfeeding-safe:before {
+  content: "\e909";
+}
+.rxi-breastfeeding-unsafe:before {
+  content: "\e90b";
+}
+.rxi-driving:before {
+  content: "\e90c";
+}
+.rxi-driving-caution:before {
+  content: "\e90d";
+}
+.rxi-driving-consult-doctor:before {
+  content: "\e90e";
+}
+.rxi-driving-not-relevant:before {
+  content: "\e90f";
+}
+.rxi-driving-safe-if-prescribed:before {
+  content: "\e911";
+}
+.rxi-driving-safe:before {
+  content: "\e910";
+}
+.rxi-driving-unsafe:before {
+  content: "\e912";
+}
+.rxi-kidney:before {
+  content: "\e913";
+}
+.rxi-kidney-caution:before {
+  content: "\e914";
+}
+.rxi-kidney-consult-doctor:before {
+  content: "\e915";
+}
+.rxi-kidney-not-relevant:before {
+  content: "\e916";
+}
+.rxi-kidney-safe-if-prescribed:before {
+  content: "\e918";
+}
+.rxi-kidney-safe:before {
+  content: "\e917";
+}
+.rxi-kidney-unsafe:before {
+  content: "\e919";
+}
+.rxi-liver:before {
+  content: "\e91a";
+}
+.rxi-liver-caution:before {
+  content: "\e91b";
+}
+.rxi-liver-consult-doctor:before {
+  content: "\e91c";
+}
+.rxi-liver-not-relevant:before {
+  content: "\e91d";
+}
+.rxi-liver-safe-if-prescribed:before {
+  content: "\e91f";
+}
+.rxi-liver-safe:before {
+  content: "\e91e";
+}
+.rxi-liver-unsafe:before {
+  content: "\e920";
+}
+.rxi-pregnancy:before {
+  content: "\e921";
+}
+.rxi-pregnancy-caution:before {
+  content: "\e922";
+}
+.rxi-pregnancy-consult-doctor:before {
+  content: "\e923";
+}
+.rxi-pregnancy-not-relevant:before {
+  content: "\e924";
+}
+.rxi-pregnancy-safe-if-prescribed:before {
+  content: "\e926";
+}
+.rxi-pregnancy-safe:before {
+  content: "\e925";
+}
+.rxi-pregnancy-unsafe:before {
+  content: "\e927";
+}
