@@ -1,7 +1,7 @@
 import { CoreH6, CoreIcon } from "@wrappid/core";
 
-import Components from "./modules/dev/components/Components";
-import StyleUtilities from "./modules/dev/components/StyleUtilities";
+import Components from "./components/Components";
+import StyleUtilities from "./components/StyleUtilities";
 
 export const ComponentRegistry = {
     Components: { comp: <Components /> },
