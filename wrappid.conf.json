@@ -1,6 +1,6 @@
 {
     "dev": {
-        "env": "development",
+        "environment": "development",
         "platform": "web",
         "backendUrl": "https://stageapi.rxefy.com",
         "webUrl": "https://stageapp.rxefy.com/",
@@ -10,7 +10,7 @@
         "otpLength": 6
     },
     "stage": {
-        "env": "stage",
+        "environment": "stage",
         "platform": "web",
         "backendUrl": "https://stageapi.rxefy.com",
         "webUrl": "https://stageapp.rxefy.com/",
@@ -20,7 +20,7 @@
         "otpLength": 6
     },
     "prod": {
-        "env": "production",
+        "environment": "production",
         "platform": "web",
         "backendUrl": "https://stageapi.rxefy.com",
         "webUrl": "https://stageapp.rxefy.com/",
