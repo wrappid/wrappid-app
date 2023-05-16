@@ -1,4 +1,4 @@
-# *Wrappid* `App Boilerplate`
+# `Wrappid` App Boilerplate
 
 ```text
                                     _     _
