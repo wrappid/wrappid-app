@@ -1,4 +1,4 @@
-import { CoreApp } from "@wrappid/core";
+import { CoreApp,CoreForm } from "@wrappid/core";
 
 import { ComponentRegistry } from "./ComponetRegistry";
 import rxIconJson from "./customFonts/rxicon-config.json";

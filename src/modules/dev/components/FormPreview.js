@@ -1,13 +1,12 @@
 import React from "react";
 
-import { CoreInput, CoreTypographyBody1, CoreForm, CoreJSONInput, CoreBox, CoreGrid, CoreTab, CoreTabPanel, CoreTabs, CorePaper
+import {
+    FORM_EDIT_MODE, FORM_VIEW_MODE, CoreInput, CoreTypographyBody1, CoreForm, CoreJSONInput, CoreBox, CoreGrid, CoreTab, CoreTabPanel, CoreTabs, CorePaper
 } from "@wrappid/core";
 
 import AppClasses from "../../../styles/AppClasses";
 
 export default function FormPreview(props) {
-    const FORM_EDIT_MODE = "edit"
-    const FORM_VIEW_MODE = "view"
     const { initData } = props;
     const {
         name, formID, authRequired, _status, schema, extraInfo 
