@@ -7,7 +7,7 @@ import PagesManager from "./components/PagesManager";
 import RoutesManager from "./components/RoutesManager";
 import StyleUtilities from "./components/StyleUtilities";
 
-export const ComponentRegistry = {
+export const AppBuilderComponentRegistry = {
     Components  : { comp: Components },
     FormsManager: { comp: FormsManager },
     
