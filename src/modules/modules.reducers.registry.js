@@ -1,5 +1,6 @@
-import { ReducerRegistry } from "./profile/reducer.registry";
+import { AppBuilderReducerRegistry } from "./app-builder/reducer.registry";
+import { ProfileReducerRegistry } from "./profile/reducer.registry";
 
-const allReducers =  { ...ReducerRegistry };
+const allReducers =  { ...AppBuilderReducerRegistry, ...ProfileReducerRegistry };
 
-export default allReducers
+export default allReducers;
