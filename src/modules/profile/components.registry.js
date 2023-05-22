@@ -1,4 +1,3 @@
-import UserProfile from "./components/UserProfile";
 import BasicInfoCard from "./components/basicInfo/BasicInfoCard";
 import ProfileBasicSkeleton from "./components/basicInfo/ProfileBasicSkeleton";
 import ClinicCard from "./components/clinic/ClinicCard";
@@ -11,26 +10,26 @@ import ExperienceCard from "./components/experience/ExperienceCard";
 import ProfileExperienceSkeleton from "./components/experience/ProfileExperienceSkeleton";
 import ProfileRegistrationSkeleton from "./components/registration/ProfileRegistrationSkeleton";
 import RegistrationCard from "./components/registration/RegistrationCard";
+import UserProfile from "./components/UserProfile";
 
-
-export const ProfileComponentRegistry = {
-    UserProfile: {comp: UserProfile},
+export const ComponentRegistry = {
+    UserProfile: { comp: UserProfile },
     
-    basicInfoCard: {comp: BasicInfoCard},
+    basicInfoCard: { comp: BasicInfoCard },
+    clinicCard   : { comp: ClinicCard },
+    
+    contactInfoCard: { comp: ContactInfoCard },
+    educationCard  : { comp: EducationCard },
+    
+    experienceCard      : { comp: ExperienceCard },
     profileBasicSkeleton: { comp: ProfileBasicSkeleton },
     
-    contactInfoCard: {comp: ContactInfoCard},
+    profileClinicSkeleton : { comp: ProfileClinicSkeleton },
     profileContactSkeleton: { comp: ProfileContactSkeleton },
-    
-    registrationCard: { comp: RegistrationCard },
-    profileRegistrationSkeleton: { comp: ProfileRegistrationSkeleton },
-    
-    educationCard: { comp: EducationCard },
-    profileEducationSkeleton: { comp: ProfileEducationSkeleton },
 
-    experienceCard: { comp: ExperienceCard },
+    profileEducationSkeleton : { comp: ProfileEducationSkeleton },
     profileExperienceSkeleton: { comp: ProfileExperienceSkeleton },
 
-    clinicCard: { comp: ClinicCard },
-    profileClinicSkeleton: { comp: ProfileClinicSkeleton },
+    profileRegistrationSkeleton: { comp: ProfileRegistrationSkeleton },
+    registrationCard           : { comp: RegistrationCard },
 };

@@ -7,14 +7,13 @@ import PagesManager from "./components/PagesManager";
 import RoutesManager from "./components/RoutesManager";
 import StyleUtilities from "./components/StyleUtilities";
 
-export const AppBuilderComponentRegistry = {
+export const ComponentRegistry = {
     Components  : { comp: Components },
     FormsManager: { comp: FormsManager },
-    
+
     Pages: { comp: PagesManager },
-    
+
     RoutesManager : { comp: RoutesManager },
-    // FormPreview  : { comp: FormPreview },
     StyleUtilities: { comp: StyleUtilities },
-    formBuilder   : { comp: CoreJSONInput }, 
+    formBuilder   : { comp: CoreJSONInput },
 };
