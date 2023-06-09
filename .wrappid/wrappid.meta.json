@@ -1,4 +1,7 @@
 {
-    "projectType": "app",
-    "projectID": ""
+  "projectType": "app",
+  "projectID": "",
+  "modules": {
+    "app-builder": "https://github.com/wrappid/app-builder-module.git"
+  }
 }
