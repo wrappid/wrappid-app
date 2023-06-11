@@ -1,3 +1,4 @@
+import {useContext, useEffect} from "react";
 import { CoreApp } from "@wrappid/core";
 
 import { ComponentRegistry } from "./ComponetRegistry";
@@ -10,12 +11,14 @@ import { mediumAppStyles } from "./styles/MediumAppStyles";
 import { smallAppStyles } from "./styles/SmallAppStyles";
 import { xLargeAppStyles } from "./styles/XLargeAppStyles";
 import { xXLargeAppStyles } from "./styles/XXLargeAppStyles";
+import { MenuRegistry } from "./MenuRegistry";
 
 function App() {
     return (
         <CoreApp
             reducers={ReducerRegistry}
             componentRegistry={ComponentRegistry}
+            menuRegistry={MenuRegistry}
             customIcons={{ rxi: rxIconJson }}
             appStyles={{
                 classes: AppClasses,
