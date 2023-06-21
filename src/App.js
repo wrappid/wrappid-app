@@ -12,6 +12,7 @@ import { smallAppStyles } from "./styles/SmallAppStyles";
 import { xLargeAppStyles } from "./styles/XLargeAppStyles";
 import { xXLargeAppStyles } from "./styles/XXLargeAppStyles";
 import { MenuRegistry } from "./MenuRegistry";
+import { ResourceRegistry } from "./ResourceRegistry";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
             reducers={ReducerRegistry}
             componentRegistry={ComponentRegistry}
             menuRegistry={MenuRegistry}
+            resourceRegistry={ResourceRegistry}
             customIcons={{ rxi: rxIconJson }}
             appStyles={{
                 classes: AppClasses,
