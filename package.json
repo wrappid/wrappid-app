@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "This is a boilerplate application using wrappid for both web and mobile application.",
   "scripts": {
-    "code:lint": "eslint --ignore-path .gitignore",
-    "code:format": "npm run code:lint -- --fix",
+    "code:lint": "eslint --ignore-path .gitignore .",
+    "code:format": "npm run code:lint -- --fix .",
     "prepare": "husky install",
     "release": "standard-version",
     "release:major": "standard-version --release-as major",
