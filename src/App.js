@@ -1,6 +1,7 @@
 import {useContext, useEffect} from "react";
 import { CoreApp } from "@wrappid/core";
 
+import { ApplicationRegistry } from "./ApplicationRegistry";
 import { ComponentRegistry } from "./ComponetRegistry";
 import rxIconJson from "./customFonts/rxicon-config.json";
 import { ReducerRegistry } from "./ReducerRegistry";
@@ -21,6 +22,7 @@ function App() {
             componentRegistry={ComponentRegistry}
             menuRegistry={MenuRegistry}
             resourceRegistry={ResourceRegistry}
+            applicationRegistry={ApplicationRegistry}
             customIcons={{ rxi: rxIconJson }}
             appStyles={{
                 classes: AppClasses,
