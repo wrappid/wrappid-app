@@ -2,8 +2,8 @@
     "dev": {
         "environment": "development",
         "platform": "web",
-        "backendUrl": "localhost:8080",
-        "webUrl": "localhost:3000",
+        "backendUrl": "http://localhost:8080",
+        "webUrl": "http://localhost:3000",
         "drawerWidth": 240,
         "miniDrawerWidth": 56,
         "snackMessage": false,
@@ -12,8 +12,8 @@
     "stage": {
         "environment": "stage",
         "platform": "web",
-        "backendUrl": "localhost:8080",
-        "webUrl": "localhost:3000",
+        "backendUrl": "http://localhost:8080",
+        "webUrl": "http://localhost:3000",
         "drawerWidth": 240,
         "miniDrawerWidth": 56,
         "snackMessage": false,
@@ -22,8 +22,8 @@
     "prod": {
         "environment": "production",
         "platform": "web",
-        "backendUrl": "localhost:8080",
-        "webUrl": "localhost:3000",
+        "backendUrl": "http://localhost:8080",
+        "webUrl": "http://localhost:3000",
         "drawerWidth": 240,
         "miniDrawerWidth": 56,
         "snackMessage": false,
