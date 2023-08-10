@@ -1,7 +1,61 @@
 {
   "projectType": "app",
   "projectID": "",
+  "projectName": "wrappid",
+  "remote": true,
+  "repoProvider": "github.com",
+  "repoOwner": "wrappid",
+  "repoURL": "https://github.com/wrappid/wrappid-app.git",
   "modules": {
-    "app-builder": "https://github.com/wrappid/app-builder-module.git"
+    "auth": {
+      "projectID": "",
+      "projectName": "auth",
+      "remote": true,
+      "repoProvider": "github.com",
+      "repoOwner": "wrappid",
+      "repoURL": "https://github.com/wrappid/auth-module.git",
+      "modules": {},
+      "app": {
+        "renderType": []
+      }
+    },
+    "app-builder": {
+      "projectID": "",
+      "projectName": "app-builder",
+      "remote": true,
+      "repoProvider": "github.com",
+      "repoOwner": "wrappid",
+      "repoURL": "https://github.com/wrappid/app-builder-module.git",
+      "modules": {},
+      "app": {
+        "renderType": []
+      }
+    },
+    "user-management": {
+      "projectType": "module",
+      "projectID": "",
+      "projectName": "user-management",
+      "remote": true,
+      "repoProvider": "github.com",
+      "repoOwner": "wrappid",
+      "repoURL": "https://github.com/wrappid/user-management-module.git",
+      "modules": {},
+      "app": {
+        "renderType": []
+      }
+    },
+    "communication": {
+      "projectID": "",
+      "projectName": "communication",
+      "remote": true,
+      "repoProvider": "github.com",
+      "repoOwner": "wrappid",
+      "repoURL": "https://github.com/wrappid/communication-module.git",
+      "modules": {},
+      "app": {
+        "renderType": []
+      },
+      "service": {}
+    }
   }
 }
