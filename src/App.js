@@ -5,7 +5,7 @@ import { ApplicationRegistry } from "./registry/ApplicationRegistry";
 import { ComponentsRegistry } from "./registry/ComponentsRegistry";
 import { FunctionsRegistry } from "./registry/FunctionsRegistry";
 import { MenusRegistry } from "./registry/MenusRegistry";
-import { ReducerRegistry } from "./registry/ReducersRegistry";
+import { ReducersRegistry } from "./registry/ReducersRegistry";
 import { ResourcesRegistry } from "./registry/ResourcesRegistry";
 import { ValidationsRegistry } from "./registry/ValidationsRegistry";
 import AppClasses from "./styles/AppClasses";
@@ -23,7 +23,7 @@ function App() {
             componentRegistry={ComponentsRegistry}
             functionsRegistry={FunctionsRegistry}
             menuRegistry={MenusRegistry}
-            reducers={ReducerRegistry}
+            reducers={ReducersRegistry}
             resourceRegistry={ResourcesRegistry}
             validationsRegistry={ValidationsRegistry}
             customIcons={{ rxi: rxIconJson }}
