@@ -20,6 +20,7 @@
       }
     },
     "app-builder": {
+      "projectType": "module",
       "projectID": "",
       "projectName": "app-builder",
       "remote": true,
@@ -28,7 +29,9 @@
       "repoURL": "https://github.com/wrappid/app-builder-module.git",
       "modules": {},
       "app": {
-        "renderType": []
+        "renderType": [
+          "web"
+        ]
       }
     },
     "user-management": {
