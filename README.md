@@ -29,6 +29,15 @@ First you need to verify that your system fulfills the pre-requisites. Listed be
 
 - Node.js - version 16
 - npm - version 8
+- @wrappid/toolkit installed globally
+
+#### STEPS TO FOLLOW
+
+- Step 1: wrappid init app test-project
+- Step 2: cd test-project-app
+- Step 3: wrappid setup
+- Step 4: wrappid start web
+- Step 5: wrappid start mobile
 
 #### For Mobile development
 
