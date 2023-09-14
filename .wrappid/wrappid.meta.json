@@ -20,18 +20,14 @@
       }
     },
     "app-builder": {
-      "projectType": "module",
       "projectID": "",
       "projectName": "app-builder",
       "remote": true,
       "repoProvider": "github.com",
       "repoOwner": "wrappid",
       "repoURL": "https://github.com/wrappid/app-builder-module.git",
-      "modules": {},
       "app": {
-        "renderType": [
-          "web"
-        ]
+        "renderType": []
       }
     },
     "user-management": {
@@ -59,6 +55,17 @@
         "renderType": []
       },
       "service": {}
+    },
+    "guide": {
+      "projectID": "",
+      "projectName": "guide",
+      "remote": true,
+      "repoProvider": "github.com",
+      "repoOwner": "wrappid",
+      "repoURL": "https://github.com/wrappid/guide-module.git",
+      "app": {
+        "renderType": []
+      }
     }
   }
 }
