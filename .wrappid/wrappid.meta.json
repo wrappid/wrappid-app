@@ -19,43 +19,6 @@
         "renderType": []
       }
     },
-    "app-builder": {
-      "projectID": "",
-      "projectName": "app-builder",
-      "remote": true,
-      "repoProvider": "github.com",
-      "repoOwner": "wrappid",
-      "repoURL": "https://github.com/wrappid/app-builder-module.git",
-      "app": {
-        "renderType": []
-      }
-    },
-    "user-management": {
-      "projectType": "module",
-      "projectID": "",
-      "projectName": "user-management",
-      "remote": true,
-      "repoProvider": "github.com",
-      "repoOwner": "wrappid",
-      "repoURL": "https://github.com/wrappid/user-management-module.git",
-      "modules": {},
-      "app": {
-        "renderType": []
-      }
-    },
-    "communication": {
-      "projectID": "",
-      "projectName": "communication",
-      "remote": true,
-      "repoProvider": "github.com",
-      "repoOwner": "wrappid",
-      "repoURL": "https://github.com/wrappid/communication-module.git",
-      "modules": {},
-      "app": {
-        "renderType": []
-      },
-      "service": {}
-    },
     "guide": {
       "projectID": "",
       "projectName": "guide",
