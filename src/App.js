@@ -7,6 +7,7 @@ import { FunctionsRegistry } from "./registry/FunctionsRegistry";
 import { MenusRegistry } from "./registry/MenusRegistry";
 import { ReducersRegistry } from "./registry/ReducersRegistry";
 import { ResourcesRegistry } from "./registry/ResourcesRegistry";
+import { RoutesRegistry } from "./registry/RoutesRegistry";
 import { ValidationsRegistry } from "./registry/ValidationsRegistry";
 import AppClasses from "./styles/AppClasses";
 import { defaultAppStyles } from "./styles/DefaultAppStyles";
@@ -25,6 +26,7 @@ function App() {
             menuRegistry={MenusRegistry}
             reducers={ReducersRegistry}
             resourceRegistry={ResourcesRegistry}
+            routesRegistry={RoutesRegistry}
             validationsRegistry={ValidationsRegistry}
             customIcons={{ rxi: rxIconJson }}
             appStyles={{
