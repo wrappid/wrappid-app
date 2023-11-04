@@ -1,8 +1,10 @@
-import { CoreTypographyBody1 } from "@wrappid/core";
+import { CoreTypographyBody1, CoreClasses } from "@wrappid/core";
 
 function Header() {
     return (
-        <CoreTypographyBody1>Header</CoreTypographyBody1>
+        <CoreTypographyBody1
+            styleClasses={[CoreClasses.HEIGHT.VH_25, CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER]}
+        >Header</CoreTypographyBody1>
     );
 }
 
