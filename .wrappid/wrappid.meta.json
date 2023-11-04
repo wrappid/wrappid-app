@@ -7,18 +7,6 @@
   "repoOwner": "wrappid",
   "repoURL": "https://github.com/wrappid/wrappid-app.git",
   "modules": {
-    "auth": {
-      "projectID": "",
-      "projectName": "auth",
-      "remote": true,
-      "repoProvider": "github.com",
-      "repoOwner": "wrappid",
-      "repoURL": "https://github.com/wrappid/auth-module.git",
-      "modules": {},
-      "app": {
-        "renderType": []
-      }
-    },
     "guide": {
       "projectID": "",
       "projectName": "guide",
