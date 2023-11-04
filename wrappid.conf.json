@@ -2,8 +2,8 @@
     "dev": {
         "environment": "development",
         "platform": "web",
-        "defaultRoute": "appDefaultRoute",
-        "backendUrl": "http://localhost:8080",
+        "defaultRoute": "defaultAppRoute",
+        "backendUrl": "",
         "webUrl": "http://localhost:3000",
         "drawerWidth": 240,
         "miniDrawerWidth": 56,
@@ -13,8 +13,8 @@
     "stage": {
         "environment": "stage",
         "platform": "web",
-        "defaultRoute": "appDefaultRoute",
-        "backendUrl": "http://localhost:8080",
+        "defaultRoute": "defaultAppRoute",
+        "backendUrl": "",
         "webUrl": "http://localhost:3000",
         "drawerWidth": 240,
         "miniDrawerWidth": 56,
@@ -24,8 +24,8 @@
     "prod": {
         "environment": "production",
         "platform": "web",
-        "defaultRoute": "appDefaultRoute",
-        "backendUrl": "http://localhost:8080",
+        "defaultRoute": "defaultAppRoute",
+        "backendUrl": "",
         "webUrl": "http://localhost:3000",
         "drawerWidth": 240,
         "miniDrawerWidth": 56,
