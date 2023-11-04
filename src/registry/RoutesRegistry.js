@@ -2,9 +2,9 @@ import modulesRoutesRegistry from "../modules/modules.routes.registry";
 
 export const RoutesRegistry = {
     defaultAppRoute: {
-        Page        : { appComponent: "AppComponent" }, //required in page container
+        Page        : { appComponent: "AppComponent" },
         authRequired: false,
-        entityRef   : "defaultAppRoute", //required for routeregistry
+        entityRef   : "defaultAppRoute",
         url         : "defaultAppRoute"
     }, 
     ...modulesRoutesRegistry
