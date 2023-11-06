@@ -9,21 +9,23 @@
                        |_|   |_|
 ```
 
-This is a **frontend boilerplate application** built using the `Wrappid` framework, which enables simultaneous development of web and mobile application.
+This is a **frontend boilerplate template application** built using the `Wrappid` framework, which enables simultaneous development of web and mobile application.
 
-## Introduction
 
-This guide will help us setup and run application using `Wrappid` framework. This is a boilerplate application using `Wrappid` framework to be used for both web and mobile application.
+## 1. Introduction
 
-## Getting Started
+This guide will help us setup and run application using `Wrappid` framework. This is a boilerplate application template using `Wrappid` framework to be used for both web and mobile development.
+
+## 2. Getting Started
 
 This getting started section will help you setup a basic application built using the `Wrappid` framework. Follow the below steps to get going.
 
-1. Verify Pre-requisites
-2. Setup `Wrappid` Project
-3. Run `Wrappid` Project
+2.1. [Verify Pre-requisites]()
+2.2. [Initialize a frontend `wrappid-app`]()
+2.3. [Setup `wrappid-app` application-development environment]()
+2.4. [Run `wrappid-app` Project]()
 
-### Verify Pre-requisites
+<!-- ### Verify Pre-requisites
 
 First you need to verify that your system fulfills the pre-requisites. Listed below are the things required to be available in your system.
 
@@ -44,46 +46,105 @@ First you need to verify that your system fulfills the pre-requisites. Listed be
 - JDK 11 or more
 - Android Studio
   - Android Device Manager
-  - At least one device on the emulator
+  - At least one device on the emulator -->
 
-### Setup `Wrappid` Project
+### 2.1. Verify Pre-requisites
 
-#### Setup development environment
+ - npm package @wrappid/toolkit
+[Click here for @wrappid/toolkit installation guide ]()
 
-Run the below command to install all the npm module(s). This will install the dev dependencies.
 
-```javascript
-npm i
+### 2.2. Initialize a frontend `wrappid-app` project
+
+It is expected that you have successfully installed @wrappid/toolkit(wrappid framework's CLI tool) and initialised it.
+Run the below command to create Frontend Wrappid Project
+
+```terminal
+wrappid init app <wrappid>
 ```
 
-#### Setup `Wrappid` Application
+**Output:**  
+![wrappid-app](https://github.com/wrappid/.github/assets/61864488/c7b6f0ae-bc7c-4008-87d0-96994839002a)
 
+
+### 2.3. Setup wrappid-app application development environment
+
+Frontend `Wrappid-App` has two runtime-environments:
 - Web
-
-```javascript
-npm run setup:web
-```
-
 - Mobile
 
-```javascript
-npm run setup:mobile
+We will talk about these environments in upcomming sections.
+
+Run the below command to setup a Frontend Wrappid Project in web and mobile runtime-environments.
+
+```bash
+cd <wrappid>-<app>
+wrappid setup
 ```
 
-### Run `Wrappid` Application
+Run the below command to setup a `wrappid-app` in web runtime-environment.
 
-- Web
+```bash
+cd <wrappid>-<app>
+wrappid setup web
+```
 
-```javascript
-npm run start:web
+Run the below command to setup a `wrappid-app` in mobile runtime-environment.
+
+```bash
+cd <wrappid>-<app>
+wrappid setup mobile
+```
+
+### 2.4. Start a Wrappid Frontend project
+You can start a frontend app in two modes:
+- [Static (Without Backend Service)]()
+- [Dynamic (With Backend Service)]()
+
+- **Static (Without Backend Service)**
+Run the below command to start the development frontend server for web:
+```bash
+cd wrappid-app
+wrappid start web
 ```
 
 This should launch your default browser with a URL `http://localhost:3000`
 
-- Mobile
+Run the below command to start the development server for mobile:
 
-```javascript
-npm run start:mobile
+```bash
+cd wrappid-app
+wrappid start mobile
 ```
 
 This should launch your emulated device (provided a proper setup is done on the Android Device Manager)
+
+
+- **Dynamic (With Backend Service)**
+
+To start Dynamic Fontend Wrappid project, you'll first need your Wrappid Backend up and running. [steps for backend]().   
+ - Enter you Backend URL in `wrappid.conf.json` file located at the root of `wrappid-app` project.
+ - Follow the same steps for starting a [static frontend wrappid-app]()
+
+
+## 3. Wrappid packages
+
+There are 4 wrappid packages that are used by `wrappid-app`.
+ 3.1. @wrappid/core
+ 3.2. @wrappid/styles
+ 3.3. @wrappid/native-web
+ 3.4. @wrappid/native-mobile
+
+### 3.1. Wrappid Core Package
+
+### 3.2. Wrappid Styles Package
+
+### 3.3. Wrappid Native-Web Package
+
+### 3.4. Wrappid Native-Mobile Package
+
+
+
+
+
+
