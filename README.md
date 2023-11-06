@@ -9,12 +9,11 @@
                        |_|   |_|
 ```
 
-This is a **frontend boilerplate template application** built using the `Wrappid` framework, which enables simultaneous development of web and mobile application.
+## 1. Introduction   
 
+This is a **frontend boilerplate template application** built using the `Wrappid` framework, which enables simultaneous development of web and mobile application.   
+This guide will help us setup and run application using `Wrappid` framework.
 
-## 1. Introduction
-
-This guide will help us setup and run application using `Wrappid` framework. This is a boilerplate application template using `Wrappid` framework to be used for both web and mobile development.
 
 ## 2. Getting Started
 
@@ -126,6 +125,20 @@ To start Dynamic Fontend Wrappid project, you'll first need your Wrappid Backend
  - Enter you Backend URL in `wrappid.conf.json` file located at the root of `wrappid-app` project.   
  - Follow the same steps for starting a [static frontend wrappid-app]()   
 
+## 3. Wrappid App Environments
+Wrappid App can be runned in 3 environments:
+- Dev: Suitable for Development
+- Stage: Suitable for Testing
+- Prod: Suitable for Production
+
+By default, Wrappid App project setups and starts in `dev` environment.
+These environments are to be configured in wrappid.conf.json located at the root of `wrappid-app` project
+
+To run a Wrappid App project in a different environment, run the below command:
+```terminal
+cd wrappid-app
+wrappid start [web|mobile] --env=[dev|stage|prod]
+```
 
 ## 3. Wrappid packages
 
