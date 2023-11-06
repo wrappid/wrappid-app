@@ -20,10 +20,10 @@ This guide will help us setup and run application using `Wrappid` framework. Thi
 
 This getting started section will help you setup a basic application built using the `Wrappid` framework. Follow the below steps to get going.
 
-2.1. [Verify Pre-requisites]()
-2.2. [Initialize a frontend `wrappid-app`]()
-2.3. [Setup `wrappid-app` application-development environment]()
-2.4. [Run `wrappid-app` Project]()
+2.1. [Verify Pre-requisites]()   
+2.2. [Initialize a frontend `wrappid-app`]()   
+2.3. [Setup `wrappid-app` application-development environment]()   
+2.4. [Run `wrappid-app` Project]()   
 
 <!-- ### Verify Pre-requisites
 
@@ -98,7 +98,7 @@ wrappid setup mobile
 
 ### 2.4. Start a Wrappid Frontend project
 You can start a frontend app in two modes:
-- [Static (Without Backend Service)]()
+- [Static (Without Backend Service)]()   
 - [Dynamic (With Backend Service)]()
 
 - **Static (Without Backend Service)**
@@ -123,17 +123,17 @@ This should launch your emulated device (provided a proper setup is done on the 
 - **Dynamic (With Backend Service)**
 
 To start Dynamic Fontend Wrappid project, you'll first need your Wrappid Backend up and running. [steps for backend]().   
- - Enter you Backend URL in `wrappid.conf.json` file located at the root of `wrappid-app` project.
- - Follow the same steps for starting a [static frontend wrappid-app]()
+ - Enter you Backend URL in `wrappid.conf.json` file located at the root of `wrappid-app` project.   
+ - Follow the same steps for starting a [static frontend wrappid-app]()   
 
 
 ## 3. Wrappid packages
 
 There are 4 wrappid packages that are used by `wrappid-app`.
- 3.1. @wrappid/core
- 3.2. @wrappid/styles
- 3.3. @wrappid/native-web
- 3.4. @wrappid/native-mobile
+ 3.1. @wrappid/core   
+ 3.2. @wrappid/styles   
+ 3.3. @wrappid/native-web   
+ 3.4. @wrappid/native-mobile   
 
 ### 3.1. Wrappid Core Package
 
