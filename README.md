@@ -8,6 +8,20 @@
       \_/\_/ |_|  \__,_| .__/| .__/|_|\__,_|
                        |_|   |_|
 ```
+**Table of Contents**
+- [`Wrappid` App Boilerplate](#wrappid-app-boilerplate)
+  - [1. Introduction](#1-introduction)
+  - [2. Getting Started](#2-getting-started)
+    - [2.1. Verify Pre-requisites](#21-verify-pre-requisites)
+    - [2.2. Initialize a frontend `wrappid-app` project](#22-initialize-a-frontend-wrappid-app-project)
+    - [2.3. Setup wrappid-app application development environment](#23-setup-wrappid-app-application-development-environment)
+    - [2.4. Start a Wrappid Frontend project](#24-start-a-wrappid-frontend-project)
+  - [3. Wrappid App Environments](#3-wrappid-app-environments)
+  - [3. Wrappid packages](#3-wrappid-packages)
+    - [3.1. Wrappid Core Package](#31-wrappid-core-package)
+    - [3.2. Wrappid Styles Package](#32-wrappid-styles-package)
+    - [3.3. Wrappid Native-Web Package](#33-wrappid-native-web-package)
+    - [3.4. Wrappid Native-Mobile Package](#34-wrappid-native-mobile-package)
 
 ## 1. Introduction   
 
