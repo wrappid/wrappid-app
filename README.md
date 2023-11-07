@@ -45,10 +45,10 @@ This guide will help us setup and run application using `Wrappid` framework.
 
 This getting started section will help you setup a basic application built using the `Wrappid` framework. Follow the below steps to get going.
 
-2.1. [Verify Pre-requisites]()   
-2.2. [Initialize a frontend `wrappid-app`]()   
-2.3. [Setup `wrappid-app` application-development environment]()   
-2.4. [Run `wrappid-app` Project]()   
+[2.1. What are my Pre-requisites?](#21-what-are-my-pre-requisites)
+[2.2. How to Create?](#22-how-to-create)
+[2.3. How to Setup?](#23-how-to-setup)
+[2.4. How to Start?](#24-how-to-start)
 
 <!-- ### Verify Pre-requisites
 
@@ -75,8 +75,8 @@ First you need to verify that your system fulfills the pre-requisites. Listed be
 
 ### 2.1. What are my Pre-requisites?
 
- - npm package @wrappid/toolkit
-[Click here for @wrappid/toolkit installation guide ]()
+- [Refer here](https://github.com/wrappid/#1-check-pre-requisites)
+- install [@wrappid/toolkit](https://github.com/wrappid/#2-install-wrappid-toolkit) globally
 
 
 ### 2.2. How to Create?
