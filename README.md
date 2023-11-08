@@ -8,6 +8,10 @@
       \_/\_/ |_|  \__,_| .__/| .__/|_|\__,_|
                        |_|   |_|
 ```
+
+**This is a template documentation, @wrappid/toolkit uses this template to create frontend boilerplate.**
+
+
 **Table of Contents**
 - [`Wrappid` App Boilerplate](#wrappid-app-boilerplate)
   - [1. Introduction](#1-introduction)
@@ -99,6 +103,8 @@ Frontend `Wrappid-App` has two runtime-environments:
 - Mobile
 
 We will talk about these environments in upcomming sections.
+
+> **_Note:_** _If you want to setup a wrappid-app project that is already in your github, you need to clone it. After clonning, run `npm i` at the root of the project_
 
 Run the below command to setup a Frontend Wrappid Project in web and mobile runtime-environments.
 
