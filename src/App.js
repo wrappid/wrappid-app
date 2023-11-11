@@ -9,13 +9,7 @@ import { ReducersRegistry } from "./registry/ReducersRegistry";
 import { ResourcesRegistry } from "./registry/ResourcesRegistry";
 import { RoutesRegistry } from "./registry/RoutesRegistry";
 import { ValidationsRegistry } from "./registry/ValidationsRegistry";
-import AppClasses from "./styles/AppClasses";
-import { defaultAppStyles } from "./styles/DefaultAppStyles";
-import { largeAppStyles } from "./styles/LargeAppStyles";
-import { mediumAppStyles } from "./styles/MediumAppStyles";
-import { smallAppStyles } from "./styles/SmallAppStyles";
-import { xLargeAppStyles } from "./styles/XLargeAppStyles";
-import { xXLargeAppStyles } from "./styles/XXLargeAppStyles";
+import appStyles from "./styles";
 
 function App() {
     return (
@@ -29,17 +23,7 @@ function App() {
             routesRegistry={RoutesRegistry}
             validationsRegistry={ValidationsRegistry}
             customIcons={{ rxi: rxIconJson }}
-            appStyles={{
-                classes: AppClasses,
-                styles : {
-                    default: defaultAppStyles,
-                    large  : largeAppStyles,
-                    medium : mediumAppStyles,
-                    small  : smallAppStyles,
-                    xLarge : xLargeAppStyles,
-                    xxLarge: xXLargeAppStyles,
-                },
-            }}
+            appStyles={appStyles}
         />
     );
 }

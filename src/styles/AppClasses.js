@@ -8,7 +8,6 @@ const AppClasses = {
    * Core Classes
    *************************************************/
     CORE: { ...CoreClasses },
-
    
     UC_IMG: "ucImg", // dataTable
 };
