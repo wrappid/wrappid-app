@@ -16,12 +16,12 @@ import { xXLargeAppStyles } from "./XXLargeAppStyles";
 const appStyles = {
     classes: { ...AppClasses, ...ModulesClasses },
     styles : {
-        default: [...defaultAppStyles, ...defaultModulesStyles],
-        large  : [...largeAppStyles, ...largeModulesStyles],
-        medium : [...mediumAppStyles, ...mediumModulesStyles],
-        small  : [...smallAppStyles, ...smallModulesStyles],
-        xLarge : [...xLargeAppStyles, ...xLargeModulesStyles],
-        xxLarge: [...xXLargeAppStyles, ...xXLargeModulesStyles],
+        default: {...defaultAppStyles, ...defaultModulesStyles},
+        large  : {...largeAppStyles, ...largeModulesStyles},
+        medium : {...mediumAppStyles, ...mediumModulesStyles},
+        small  : {...smallAppStyles, ...smallModulesStyles},
+        xLarge : {...xLargeAppStyles, ...xLargeModulesStyles},
+        xxLarge: {...xXLargeAppStyles, ...xXLargeModulesStyles},
     },
 };
 
