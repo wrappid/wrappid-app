@@ -1,5 +1,6 @@
 # Wrappid
-.wrappid
+.wrappid/runtime
+.wrappid/wrappid.env
 
 # Logs
 logs
@@ -121,6 +122,7 @@ dist
 
 # TernJS port file
 .tern-port
+example/*
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
@@ -132,3 +134,6 @@ dist
 .yarn/install-state.gz
 .pnp.*
 temp/*
+
+# mac
+.DS_Store
