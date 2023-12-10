@@ -1,8 +1,8 @@
-import { xXLargeUtilityStyles } from "@wrappid/styles";
+import { XXLargeUtilityStyles } from "@wrappid/styles";
 
 export const xXLargeAppStyles = {
   /**************************************************
    * Using xXLargeUtilityStyles example
    *************************************************/
-  usingXXLargeUtilityStyles: { ...xXLargeUtilityStyles.anyUtilityStyle },
+  usingXXLargeUtilityStyles: { ...new XXLargeUtilityStyles().style.anyUtilityStyle },
 };

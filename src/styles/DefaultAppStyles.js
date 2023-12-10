@@ -1,9 +1,14 @@
-import { defaultUtilityStyles } from "@wrappid/styles";
+import { DefaultCoreStyles } from "@wrappid/core";
 
-export const defaultAppStyles = {
+export class DefaultAppStyles extends DefaultCoreStyles {
+  constructor(){
+    super();
+    this.style = {
+      /**************************************************
+               * Using defaultUtilityStyles example
+               *************************************************/
+      usingDefaultUtilityStyles: { ...this.defaultUtilityStyles.anyUtlityStyles },
 
-    /**************************************************
-   * Using defaultUtilityStyles example
-   *************************************************/
-    usingDefaultUtilityStyles: { ...defaultUtilityStyles.anyUtilityStyle },
-};
+    };
+  }
+}

@@ -1,16 +1,32 @@
-import { CoreClasses, CoreH4, CoreStack, CoreTypographyBody1 } from "@wrappid/core";
-import Welcome from "./Welcome";
+import {
+  CoreClasses, CoreContainedButton, CoreH3, CoreH5, CoreImage, CoreStack 
+} from "@wrappid/core";
 
 function StaticWebPage() {
-    return (
-        <>
-        <CoreStack direction="column" styleClasses={[CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER]}>
-            <CoreH4>Wrappid Framework</CoreH4>
-            <CoreTypographyBody1>Wrappid Framework is a wrapper framework built to enable rapid development of applications based on React, React Native, Node, Express etc.</CoreTypographyBody1>
-        </CoreStack>
-        <Welcome />
-        </>
-    );
+  return (
+    <CoreStack styleClasses={[
+      CoreClasses.WIDTH.VW_100,
+      CoreClasses.HEIGHT.VH_100,
+      CoreClasses.COLOR.TEXT_WHITE,
+      CoreClasses.BG.BG_INFO_LIGHT,
+      CoreClasses.GAP.GAP_3,
+      CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER,
+      CoreClasses.ALIGNMENT.ALIGN_ITEMS_CENTER
+    ]}>
+
+      <CoreImage
+        src={"../resources/images/logo.png"}
+        alt="logo"
+        styleClasses={[CoreClasses.HEIGHT.H_25]}
+      />
+
+      <CoreH3>Wrappid Framework</CoreH3>
+
+      <CoreH5>Wrapper Framework Built to Enable Rapid Development of Applications</CoreH5>
+
+      <CoreContainedButton styleClasses={[CoreClasses.PADDING.PX4, CoreClasses.PADDING.PY2, CoreClasses.BG.BG_WARNING_LIGHT]} size="large" >Get started with Wrappid</CoreContainedButton>
+    </CoreStack>
+  );
 }
 
 export default StaticWebPage;

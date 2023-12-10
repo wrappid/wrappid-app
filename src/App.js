@@ -1,5 +1,6 @@
 import { CoreApp } from "@wrappid/core";
 
+import applicationConfig from "./config.json";
 import rxIconJson from "./customFonts/rxicon-config.json";
 import { ApplicationRegistry } from "./registry/ApplicationRegistry";
 import { ComponentsRegistry } from "./registry/ComponentsRegistry";
@@ -8,24 +9,27 @@ import { MenusRegistry } from "./registry/MenusRegistry";
 import { ReducersRegistry } from "./registry/ReducersRegistry";
 import { ResourcesRegistry } from "./registry/ResourcesRegistry";
 import { RoutesRegistry } from "./registry/RoutesRegistry";
+import { ThemesRegistry } from "./registry/ThemesRegistry";
 import { ValidationsRegistry } from "./registry/ValidationsRegistry";
 import appStyles from "./styles";
 
 function App() {
-    return (
-        <CoreApp
-            applicationRegistry={ApplicationRegistry}
-            componentRegistry={ComponentsRegistry}
-            functionsRegistry={FunctionsRegistry}
-            menuRegistry={MenusRegistry}
-            reducers={ReducersRegistry}
-            resourceRegistry={ResourcesRegistry}
-            routesRegistry={RoutesRegistry}
-            validationsRegistry={ValidationsRegistry}
-            customIcons={{ rxi: rxIconJson }}
-            appStyles={appStyles}
-        />
-    );
+  return (
+    <CoreApp
+      applicationConfig={applicationConfig}
+      appStyles={appStyles}
+      customIcons={{ rxi: rxIconJson }}
+      applicationRegistry={ApplicationRegistry}
+      themesRegistry={ThemesRegistry}
+      routesRegistry={RoutesRegistry}
+      menusRegistry={MenusRegistry}
+      componentsRegistry={ComponentsRegistry}
+      reducersRegistry={ReducersRegistry}
+      resourcesRegistry={ResourcesRegistry}
+      functionsRegistry={FunctionsRegistry}
+      validationsRegistry={ValidationsRegistry}
+    />
+  );
 }
 
 export default App;

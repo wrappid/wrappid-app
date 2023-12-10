@@ -1,9 +1,9 @@
-import { mediumUtilityStyles } from "@wrappid/styles";
+import { MediumUtilityStyles } from "@wrappid/styles";
 
 export const mediumAppStyles = {
  
   /**************************************************
    * Using mediumUtilityStyles example
    *************************************************/
-  usingMediumUtilityStyles: { ...mediumUtilityStyles.anyUtilityStyle },
+  usingMediumUtilityStyles: { ...new MediumUtilityStyles().style.anyUtilityStyle },
 };

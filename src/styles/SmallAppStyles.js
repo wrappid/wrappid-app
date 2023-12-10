@@ -1,8 +1,8 @@
-import { smallUtilityStyles } from "@wrappid/styles";
+import { SmallUtilityStyles } from "@wrappid/styles";
 
 export const smallAppStyles = {
   /**************************************************
    * Using smallUtilityStyles example
    *************************************************/
-  usingSmallUtilityStyles: { ...smallUtilityStyles.anyUtilityStyle },
+  usingSmallUtilityStyles: { ...new SmallUtilityStyles().style.anyUtilityStyle },
 };
