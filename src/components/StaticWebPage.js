@@ -5,8 +5,8 @@ import {
 function StaticWebPage() {
   return (
     <CoreStack styleClasses={[
-      CoreClasses.WIDTH.VW_100,
-      CoreClasses.HEIGHT.VH_100,
+      CoreClasses.WIDTH.W_100,
+      CoreClasses.HEIGHT.H_100,
       CoreClasses.COLOR.TEXT_WHITE,
       CoreClasses.BG.BG_INFO_LIGHT,
       CoreClasses.GAP.GAP_3,
