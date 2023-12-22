@@ -15,7 +15,7 @@ function StaticWebPage() {
     ]}>
 
       <CoreImage
-        src={"../resources/images/logo.png"}
+        src={"/images/logo.png"}
         alt="logo"
         styleClasses={[CoreClasses.HEIGHT.H_25]}
       />
