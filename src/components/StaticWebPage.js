@@ -1,6 +1,4 @@
-import {
-  CoreClasses, CoreContainedButton, CoreH3, CoreH5, CoreImage, CoreStack 
-} from "@wrappid/core";
+import { CoreClasses, CoreContainedButton, CoreH3, CoreH5, CoreStack } from "@wrappid/core";
 
 function StaticWebPage() {
   return (
@@ -14,11 +12,11 @@ function StaticWebPage() {
       CoreClasses.ALIGNMENT.ALIGN_ITEMS_CENTER
     ]}>
 
-      <CoreImage
+      {/* <CoreImage
         src={"/images/logo.png"}
         alt="logo"
         styleClasses={[CoreClasses.HEIGHT.H_25]}
-      />
+      /> */}
 
       <CoreH3>Wrappid Framework</CoreH3>
 
