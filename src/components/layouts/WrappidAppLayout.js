@@ -1,16 +1,24 @@
 import { CoreBox, CoreClasses, CoreTypographyBody1 } from "@wrappid/core";
 
+import data from "../../../package.json";
+
 export default function WrappidAppLayout(props) {    
   return (
     <>
-      <CoreBox styleClasses={[CoreClasses.PADDING.P2, CoreClasses.BG.BG_PRIMARY]}>
-        <CoreTypographyBody1>{"Wrappid App Header"}</CoreTypographyBody1>
-      </CoreBox>
-
       {props.children}
 
-      <CoreBox styleClasses={[CoreClasses.PADDING.P2, CoreClasses.BG.BG_SECONDARY]}>
-        <CoreTypographyBody1>{"Wrappid App Footer"}</CoreTypographyBody1>
+      <CoreBox styleClasses={[
+        CoreClasses.DISPLAY.FLEX,
+        CoreClasses.FLEX.DIRECTION_ROW,
+        CoreClasses.PADDING.P2,
+        CoreClasses.BG.BG_PRIMARY,
+        CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_SPACE_BETWEEN
+      ]}>
+        <CoreTypographyBody1>{data.name}</CoreTypographyBody1>
+
+        <CoreTypographyBody1>Wrappid ©{new Date().getFullYear()}</CoreTypographyBody1>
+
+        <CoreTypographyBody1>Version: {data.version}</CoreTypographyBody1>
       </CoreBox>
     </>
   );
