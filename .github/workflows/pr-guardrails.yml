@@ -15,7 +15,7 @@ jobs:
         id: branch_name_validation
         with:
           text: ${{ github.event.pull_request.head.ref }}
-          regex: '^WRPD-(feature|bugfix|release|ci|enhancement|hotfix|refactor|deps|docs|experimental|security)?-[0-9]+$|^main$'
+          regex: '^WRPD-(feature|bugfix|release|ci|enhancement|hotfix|refactor|deps|docs|experimental|security)?-[0-9]+$|^main$|^development$'
 
       - name: Print invalid branch name message
         if: ${{ steps.branch_name_validation.outputs.match == '' }}
@@ -41,6 +41,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           cache: 'npm'
+          
+      - name: Setup Wrappid npm registry
+        run: |
+          npm config set @wrappid:registry https://npm.pkg.github.com/wrappid
+          npm config set //npm.pkg.github.com/:_authToken ${{ secrets.WRAPPID_REGISTRY_TOKEN }}
 
       - name: Install commitlint
         run: |
@@ -77,6 +82,11 @@ jobs:
           cache: 'npm'
           registry-url: https://npm.pkg.github.com/wrappid
           token: ${{secrets.WRAPPID_REGISTRY_TOKEN}}
+
+      - name: Setup Wrappid npm registry
+        run: |
+          npm config set @wrappid:registry https://npm.pkg.github.com/wrappid
+          npm config set //npm.pkg.github.com/:_authToken ${{ secrets.WRAPPID_REGISTRY_TOKEN }}
 
       - name: Install ESLint
         run: |
@@ -129,6 +139,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           cache: 'npm'
+
+      - name: Setup Wrappid npm registry
+        run: |
+          npm config set @wrappid:registry https://npm.pkg.github.com/wrappid
+          npm config set //npm.pkg.github.com/:_authToken ${{ secrets.WRAPPID_REGISTRY_TOKEN }}
 
       - name: Install node_modules
         run: npm ci
