@@ -75,10 +75,14 @@ jobs:
         uses: actions/setup-node@v3
         with:
           cache: 'npm'
+          registry-url: https://npm.pkg.github.com/wrappid
+          token: ${{secrets.WRAPPID_REGISTRY_TOKEN}}
 
       - name: Install ESLint
         run: |
           npm install --force eslint
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.WRAPPID_REGISTRY_TOKEN}}
 
       - name: Print versions
         run: |
