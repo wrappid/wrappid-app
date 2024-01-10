@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "This is a boilerplate application using wrappid for both web and mobile application.",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
     "code:lint": "eslint --ignore-path .gitignore .",
     "code:format": "npm run code:lint -- --fix .",
     "prepare": "husky install",
@@ -34,13 +35,13 @@
     "@commitlint/prompt-cli": "^17.5.0",
     "@wrappid/core": "latest",
     "@wrappid/styles": "latest",
-    "eslint": "^8.37.0",
+    "eslint": "^8.56.0",
     "eslint-plugin-etc": "^2.0.2",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
     "eslint-plugin-unused-imports": "^2.0.0",
-    "husky": "^8.0.0",
+    "husky": "^8.0.3",
     "standard-version": "^9.5.0"
   }
 }
