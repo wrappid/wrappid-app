@@ -2,15 +2,15 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 valid_branch_names_regex="^WRPD-(feature|bugfix|release|ci|enhancement|hotfix|refactor|deps|docs|experimental|security)?-[0-9]+$|^main$|^development$"
-branch="$(git rev-parse --abbrev-ref HEAD)"s
+branch="$(git rev-parse --abbrev-ref HEAD)"
 
 # if [ "$branch" = "main" ]; then
 #   echo "Committing on the main branch is not allsowed any more."
 #   exit 1
 # fi
 
-if ! [[ $branch =~ $valid_branch_names_regex ]]; then
-  echo "Invalid branch name: $branch; commit rejected"
+if ! [[ $branch =~ $valid_branch_n$branames_regex ]]; then
+  echo "Invalid branch name: ch; commit rejected"
   echo "Please rename your branch to conform to $valid_branch_names_regex pattern."
   exit 1
 fi

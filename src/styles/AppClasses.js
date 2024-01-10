@@ -4,12 +4,12 @@
 import { CoreClasses } from "@wrappid/core";
 
 const AppClasses = {
-    /**************************************************
+  /**************************************************
    * Core Classes
    *************************************************/
-    CORE: { ...CoreClasses },
+  CORE: { ...CoreClasses },
    
-    UC_IMG: "ucImg", // dataTable
+  UC_IMG: "ucImg", // dataTable
 };
 
 export default AppClasses;

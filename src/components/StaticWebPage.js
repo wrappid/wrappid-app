@@ -4,7 +4,6 @@ import {
 
 import logo from "../resources/images/logo_dark.png";
 
-
 function StaticWebPage() {
   const navigate = coreUseNavigate();
   const handleClick1 = () => {
@@ -13,6 +12,7 @@ function StaticWebPage() {
   const handleClick2 = () => {
     navigate("/guide/components");
   };
+
   return (
     <CoreStack styleClasses={[
       CoreClasses.HEIGHT.VH_100,
