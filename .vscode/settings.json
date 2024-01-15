@@ -2,6 +2,7 @@
   "[javascript]": {
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
+  "files.eol": "\n",
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "file",
   "editor.guides.indentation": true,

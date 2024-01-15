@@ -2,12 +2,9 @@
 
 Clearly describe the changes you've made in this pull request. Explain the purpose and reasoning behind the changes. Reference any relevant issues or discussions using keywords like "Fixes #<issue_number>" or "Resolves #<issue_number>".
 
-## Screenshots (if applicable)
-<!-- Include screenshots or animated GIFs to visually demonstrate the changes, if applicable -->
-
 ## Related Issues
 
-List any related issues that this pull request addresses.
+<!--List any related issues that this pull request addresses. -->
 
 ## Testing
 <!-- Describe the testing steps you have taken to ensure that your changes work as expected -->
@@ -21,15 +18,19 @@ List any related issues that this pull request addresses.
 - [ ] I have added or updated relevant comments in my code.
 - [ ] I have resolved any merge conflicts of my branch.
 
+
+## Screenshots (if applicable)
+<!-- Include screenshots or animated GIFs to visually demonstrate the changes, if applicable -->
+
 ## Additional Notes
 
-Feel free to add any other relevant information that might be helpful to reviewers.
+<!--Feel free to add any other relevant information that might be helpful to reviewers.-->
 
 ## Reviewers
 
-Tag any specific individuals or teams you'd like to review this pull request.
+<!--Tag any specific individuals or teams you'd like to review this pull request.
 
-Thank you for your contribution!
+Thank you for your contribution!-->
 
 ---
 
