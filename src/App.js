@@ -12,11 +12,12 @@ import { RoutesRegistry } from "./registry/RoutesRegistry";
 import { ThemesRegistry } from "./registry/ThemesRegistry";
 import { ValidationsRegistry } from "./registry/ValidationsRegistry";
 import appStyles from "./styles";
+import packageJson from "../package.json";
 
 function App() {
   return (
     <CoreApp
-      applicationConfig={applicationConfig}
+      applicationConfig={{ ...applicationConfig, ...applicationConfig?.wrappid, packageInfo: { ...packageJson } }}
       appStyles={appStyles}
       customIcons={{ rxi: rxIconJson }}
       applicationRegistry={ApplicationRegistry}

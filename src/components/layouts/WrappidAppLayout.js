@@ -1,4 +1,4 @@
-import { CoreBox, CoreClasses, CoreTypographyBody1 } from "@wrappid/core";
+import { CoreBox, CoreClasses, CoreStack, CoreTypographyBody1, ThemeSelector } from "@wrappid/core";
 
 import data from "../../../package.json";
 
@@ -18,7 +18,11 @@ export default function WrappidAppLayout(props) {
 
         <CoreTypographyBody1>Wrappid ©{new Date().getFullYear()}</CoreTypographyBody1>
 
-        <CoreTypographyBody1>Version: {data.version}</CoreTypographyBody1>
+        <CoreStack direction="row">
+          <ThemeSelector />
+
+          <CoreTypographyBody1>Version: {data.version}</CoreTypographyBody1>
+        </CoreStack>
       </CoreBox>
     </>
   );

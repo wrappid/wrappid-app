@@ -2,6 +2,7 @@
     "dev": {
         "environment": "development",
         "platform": "web",
+        "defaultTheme": "theme1",
         "defaultRoute": "defaultAppRoute",
         "backendUrl": "",
         "webUrl": "http://localhost:3000",
@@ -13,6 +14,7 @@
     "stage": {
         "environment": "stage",
         "platform": "web",
+        "defaultTheme": "theme1",
         "defaultRoute": "defaultAppRoute",
         "backendUrl": "",
         "webUrl": "http://localhost:3000",
@@ -24,6 +26,7 @@
     "prod": {
         "environment": "production",
         "platform": "web",
+        "defaultTheme": "theme1",
         "defaultRoute": "defaultAppRoute",
         "backendUrl": "",
         "webUrl": "http://localhost:3000",
