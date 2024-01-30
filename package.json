@@ -23,12 +23,16 @@
     "hybrid",
     "javascript"
   ],
-  "author": "wrappid",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/wrappid/wrappid-app/issues"
   },
-  "homepage": "https://github.com/wrappid/wrappid-app#readme",
+  "author": {
+		"name": "Wrappid",
+		"email": "wrappid.framework@gmail.com",
+		"url": "https://www.github.com/wrappid"
+	},
+  "license": "MIT",
+  "homepage": "https://github.com/wrappid/wrappid-app",
   "devDependencies": {
     "@commitlint/cli": "^17.5.0",
     "@commitlint/config-conventional": "^17.4.4",
