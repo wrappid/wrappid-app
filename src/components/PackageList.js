@@ -1,4 +1,5 @@
 
+import corePackage from "@babel/core/package.json";
 import {
   CoreStack, CoreClasses, CoreBox, CorePaper, CoreTypographyBody1, CoreLink, CoreAvatar, CoreH5, CoreAccordion, CoreAccordionSummary, CoreAccordionDetail
 } from "@wrappid/core";
@@ -8,6 +9,9 @@ import packageJson from "../../package.json";
 import applicationLogo from "../resources/images/logo_dark.png";
 import webRuntimePackage from "../scripts/web-runtime-core-package.json"; 
 import wrappidPackagesData from "../scripts/wrappid-packages.json";
+
+// eslint-disable-next-line no-console
+console.log("corePackage", corePackage);
 
 const PackageList = () => {
   const { readme, author, description, version, name } = packageJson; 
@@ -28,33 +32,33 @@ const PackageList = () => {
     } = packageDetails;
 
     return (
-      <CoreAccordion key={packageName}>
-        <CoreAccordionSummary>
+      <CoreAccordion key={packageName} styleClasses={[CoreClasses.PADDING.P1]}>
+        <CoreAccordionSummary styleClasses={[CoreClasses.PADDING.P1]}>
           <CoreTypographyBody1>{`${packageName.replace("@", "")}`}</CoreTypographyBody1>
         </CoreAccordionSummary>
   
-        <CoreAccordionDetail>
-          <CoreTypographyBody1>{name}</CoreTypographyBody1>
+        <CoreAccordionDetail styleClasses={[CoreClasses.PADDING.P1]}>
+          <CoreTypographyBody1>{`Name: ${name}`}</CoreTypographyBody1>
 
-          <CoreTypographyBody1>{author}</CoreTypographyBody1>
+          <CoreTypographyBody1>{`Author: ${author}`}</CoreTypographyBody1>
 
-          <CoreTypographyBody1>{description}</CoreTypographyBody1>
+          <CoreTypographyBody1>{`Description: ${description}`}</CoreTypographyBody1>
 
           <CoreLink href={homepage}>
-            <CoreTypographyBody1>{homepage}</CoreTypographyBody1>
+            <CoreTypographyBody1>{`Homepage: ${homepage}`}</CoreTypographyBody1>
           </CoreLink>
 
           <CoreLink href={repository?.url}>
-            <CoreTypographyBody1>{repository?.url}</CoreTypographyBody1>
+            <CoreTypographyBody1>{`Repository: ${repository?.url}`}</CoreTypographyBody1>
           </CoreLink>
 
           <CoreLink href={bugs?.url}>
-            <CoreTypographyBody1>{bugs?.url}</CoreTypographyBody1>
+            <CoreTypographyBody1>{`Bug report: ${bugs?.url}`}</CoreTypographyBody1>
           </CoreLink>
 
-          <CoreTypographyBody1>{version}</CoreTypographyBody1>
+          <CoreTypographyBody1>{`Version: ${version}`}</CoreTypographyBody1>
 
-          <CoreTypographyBody1>{license}</CoreTypographyBody1>
+          <CoreTypographyBody1>{`License: ${license}`}</CoreTypographyBody1>
         </CoreAccordionDetail>
       </CoreAccordion>
     );
@@ -103,11 +107,11 @@ const PackageList = () => {
       </CoreBox>
 
       <CoreAccordion styleClasses={[CoreClasses.WIDTH.VW_75, CoreClasses.SHADOW.SMALL]}>
-        <CoreAccordionSummary>
+        <CoreAccordionSummary styleClasses={[CoreClasses.PADDING.P1]}>
           <CoreTypographyBody1>Wrappid Packages</CoreTypographyBody1>
         </CoreAccordionSummary>
 
-        <CoreAccordionDetail>
+        <CoreAccordionDetail styleClasses={[CoreClasses.PADDING.P1]}>
           {renderPackageDetails("core", wrappidPackagesData.core)}
 
           {renderPackageDetails("native", wrappidPackagesData.native)}
@@ -117,21 +121,21 @@ const PackageList = () => {
       </CoreAccordion>
 
       <CoreAccordion styleClasses={[CoreClasses.WIDTH.VW_75, CoreClasses.SHADOW.SMALL]}>
-        <CoreAccordionSummary>
+        <CoreAccordionSummary styleClasses={[CoreClasses.PADDING.P1]}>
           <CoreTypographyBody1>Third party Packages</CoreTypographyBody1>
         </CoreAccordionSummary>
 
-        <CoreAccordionDetail>
+        <CoreAccordionDetail styleClasses={[CoreClasses.PADDING.P1]}>
           {Object.entries(otherPackages).map(([name, version]) => (
-            <CoreAccordion key={name}>
+            <CoreAccordion key={name} styleClasses={[CoreClasses.PADDING.P1]}>
               <CoreAccordionSummary>
                 {`${name.replace("@", "")} ${version.version}`}           
               </CoreAccordionSummary>
 
-              <CoreAccordionDetail>
-                <CoreTypographyBody1>{`${version.version}`}</CoreTypographyBody1>
+              <CoreAccordionDetail styleClasses={[CoreClasses.PADDING.P1]}>
+                <CoreTypographyBody1>{`Version: ${version.version}`}</CoreTypographyBody1>
 
-                <CoreTypographyBody1>{`${version.resolved}`}</CoreTypographyBody1>
+                <CoreTypographyBody1>{`Registry: ${version.resolved}`}</CoreTypographyBody1>
               </CoreAccordionDetail>
             </CoreAccordion>
           ))}
