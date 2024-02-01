@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "description": "This is a boilerplate application using wrappid for both web and mobile application.",
   "scripts": {
+    "getRuntimeWebPackage": "npm ls --json --prefix .wrappid/runtime/web > src/scripts/web-runtime-core-package.json ",
+    "getAllWrappidPackages": "node src/scripts/combine-wrappid-packages.js",
     "test": "echo \"Error: no test specified\" && exit 0",
     "code:lint": "eslint --ignore-path .gitignore .",
     "code:format": "npm run code:lint -- --fix .",

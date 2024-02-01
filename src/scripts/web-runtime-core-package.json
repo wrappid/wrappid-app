@@ -1,0 +1,63 @@
+{
+  "version": "0.0.1",
+  "name": "wrappid-app",
+  "problems": [
+    "invalid: @wrappid/core@0.0.404 C:\\Users\\KGN\\Documents\\Faisal\\wrappid\\git\\wrappid-app\\.wrappid\\runtime\\web\\node_modules\\@wrappid\\core",
+    "invalid: @wrappid/native@npm:@wrappid/native-web@0.0.270 C:\\Users\\KGN\\Documents\\Faisal\\wrappid\\git\\wrappid-app\\.wrappid\\runtime\\web\\node_modules\\@wrappid\\native",
+    "invalid: @wrappid/styles@0.0.121 C:\\Users\\KGN\\Documents\\Faisal\\wrappid\\git\\wrappid-app\\.wrappid\\runtime\\web\\node_modules\\@wrappid\\styles"
+  ],
+  "dependencies": {
+    "@wrappid/core": {
+      "version": "0.0.404",
+      "resolved": "file:../../dist-core",
+      "overridden": false,
+      "invalid": "\"^0.0.400\" from the root project",
+      "problems": [
+        "invalid: @wrappid/core@0.0.404 C:\\Users\\KGN\\Documents\\Faisal\\wrappid\\git\\wrappid-app\\.wrappid\\runtime\\web\\node_modules\\@wrappid\\core"
+      ]
+    },
+    "@wrappid/native": {
+      "version": "0.0.270",
+      "resolved": "file:../../dist-native-web",
+      "overridden": false,
+      "invalid": "\"npm:@wrappid/native-web@^0.0.266\" from the root project",
+      "problems": [
+        "invalid: @wrappid/native@npm:@wrappid/native-web@0.0.270 C:\\Users\\KGN\\Documents\\Faisal\\wrappid\\git\\wrappid-app\\.wrappid\\runtime\\web\\node_modules\\@wrappid\\native"
+      ]
+    },
+    "@wrappid/styles": {
+      "version": "0.0.121",
+      "resolved": "file:../../dist-styles",
+      "overridden": false,
+      "invalid": "\"^0.0.116\" from the root project",
+      "problems": [
+        "invalid: @wrappid/styles@0.0.121 C:\\Users\\KGN\\Documents\\Faisal\\wrappid\\git\\wrappid-app\\.wrappid\\runtime\\web\\node_modules\\@wrappid\\styles"
+      ]
+    },
+    "react-dom": {
+      "version": "18.2.0",
+      "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz",
+      "overridden": false
+    },
+    "react-scripts": {
+      "version": "5.0.1",
+      "resolved": "https://registry.npmjs.org/react-scripts/-/react-scripts-5.0.1.tgz",
+      "overridden": false
+    },
+    "react": {
+      "version": "18.2.0",
+      "resolved": "https://registry.npmjs.org/react/-/react-18.2.0.tgz",
+      "overridden": false
+    },
+    "run-script-os": {
+      "version": "1.1.6",
+      "resolved": "https://registry.npmjs.org/run-script-os/-/run-script-os-1.1.6.tgz",
+      "overridden": false
+    },
+    "web-vitals": {
+      "version": "2.1.4",
+      "resolved": "https://registry.npmjs.org/web-vitals/-/web-vitals-2.1.4.tgz",
+      "overridden": false
+    }
+  }
+}
