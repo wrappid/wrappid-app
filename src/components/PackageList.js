@@ -1,31 +1,21 @@
 
-import corePackage from "@babel/core/package.json";
 import {
   CoreStack, CoreClasses, CoreBox, CorePaper, CoreTypographyBody1, CoreLink, CoreAvatar, CoreH5, CoreAccordion, CoreAccordionSummary, CoreAccordionDetail
 } from "@wrappid/core";
+import corePackage from "@wrappid/core/package.json";
+// eslint-disable-next-line import/no-unresolved
+import nativePackage from "@wrappid/native/package.json";
+import stylesPackage from "@wrappid/styles/package.json";
 
 // most root package.json file
 import packageJson from "../../package.json";
 import applicationLogo from "../resources/images/logo_dark.png";
-import webRuntimePackage from "../scripts/web-runtime-core-package.json"; 
-import wrappidPackagesData from "../scripts/wrappid-packages.json";
 
 // eslint-disable-next-line no-console
-console.log("corePackage", corePackage);
+console.log("corePackage, nativePackage", corePackage, nativePackage, stylesPackage);
 
 const PackageList = () => {
   const { readme, author, description, version, name } = packageJson; 
-  const wrappidPackages = {};
-  const otherPackages = {};
-
-  Object.entries(webRuntimePackage.dependencies).map(([packageName, packageVersion]) => {
-    if (packageName.startsWith("@wrappid")) {
-      wrappidPackages[packageName] = packageVersion;
-    } else {
-      otherPackages[packageName] = packageVersion;
-    }
-  });
-
   const renderPackageDetails = (packageName, packageDetails) => {
     const {
       author, bugs, homepage, repository, version, description, license
@@ -44,17 +34,13 @@ const PackageList = () => {
 
           <CoreTypographyBody1>{`Description: ${description}`}</CoreTypographyBody1>
 
-          <CoreLink href={homepage}>
-            <CoreTypographyBody1>{`Homepage: ${homepage}`}</CoreTypographyBody1>
-          </CoreLink>
+          <CoreTypographyBody1>                    
+            <CoreLink href={homepage}>{`Homepage: ${homepage}`} </CoreLink>
+          </CoreTypographyBody1>
+          
+          <CoreTypographyBody1><CoreLink href={repository?.url}>{repository?.url}</CoreLink></CoreTypographyBody1>
 
-          <CoreLink href={repository?.url}>
-            <CoreTypographyBody1>{`Repository: ${repository?.url}`}</CoreTypographyBody1>
-          </CoreLink>
-
-          <CoreLink href={bugs?.url}>
-            <CoreTypographyBody1>{`Bug report: ${bugs?.url}`}</CoreTypographyBody1>
-          </CoreLink>
+          <CoreTypographyBody1><CoreLink href={bugs?.url}>{bugs?.url}</CoreLink></CoreTypographyBody1>
 
           <CoreTypographyBody1>{`Version: ${version}`}</CoreTypographyBody1>
 
@@ -112,33 +98,12 @@ const PackageList = () => {
         </CoreAccordionSummary>
 
         <CoreAccordionDetail styleClasses={[CoreClasses.PADDING.P1]}>
-          {renderPackageDetails("core", wrappidPackagesData.core)}
 
-          {renderPackageDetails("native", wrappidPackagesData.native)}
+          {renderPackageDetails("core", corePackage)}
 
-          {renderPackageDetails("styles", wrappidPackagesData.styles)}
-        </CoreAccordionDetail>
-      </CoreAccordion>
+          {renderPackageDetails("native", nativePackage)}
 
-      <CoreAccordion styleClasses={[CoreClasses.WIDTH.VW_75, CoreClasses.SHADOW.SMALL]}>
-        <CoreAccordionSummary styleClasses={[CoreClasses.PADDING.P1]}>
-          <CoreTypographyBody1>Third party Packages</CoreTypographyBody1>
-        </CoreAccordionSummary>
-
-        <CoreAccordionDetail styleClasses={[CoreClasses.PADDING.P1]}>
-          {Object.entries(otherPackages).map(([name, version]) => (
-            <CoreAccordion key={name} styleClasses={[CoreClasses.PADDING.P1]}>
-              <CoreAccordionSummary>
-                {`${name.replace("@", "")} ${version.version}`}           
-              </CoreAccordionSummary>
-
-              <CoreAccordionDetail styleClasses={[CoreClasses.PADDING.P1]}>
-                <CoreTypographyBody1>{`Version: ${version.version}`}</CoreTypographyBody1>
-
-                <CoreTypographyBody1>{`Registry: ${version.resolved}`}</CoreTypographyBody1>
-              </CoreAccordionDetail>
-            </CoreAccordion>
-          ))}
+          {renderPackageDetails("styles", stylesPackage)}
         </CoreAccordionDetail>
       </CoreAccordion>
     </CoreStack>
