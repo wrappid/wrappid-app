@@ -1,1 +1,2 @@
-export const xXLargeModulesStyles = {};
+// eslint-disable-next-line no-undef
+export default XXLargeModulesStyles = {};

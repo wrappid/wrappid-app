@@ -1,8 +1,13 @@
-import { XLargeUtilityStyles } from "@wrappid/styles";
+import { XLargeCoreStyles } from "@wrappid/core";
 
-export const xLargeAppStyles = {
-  /**************************************************
-   * Using xLargeUtilityStyles example
-   *************************************************/
-  usingXLargeUtilityStyles: { ...new XLargeUtilityStyles().style.anyUtilityStyle },
-};
+export default class XLargeAppStyles extends XLargeCoreStyles {
+  constructor() {
+    super();
+    this.style = {
+      /**************************************************
+       * Using XLargeUtilityStyles example
+       *************************************************/
+      usingXLargeUtilityStyles: { ...this.xLargeUtilityStyles.anyUtilityStyle },
+    };
+  }
+}

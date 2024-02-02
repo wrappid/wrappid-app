@@ -1,1 +1,2 @@
-export const smallModulesStyles = {};
+// eslint-disable-next-line no-undef
+export default SmallModulesStyles = {};
