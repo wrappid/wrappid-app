@@ -1,1 +1,2 @@
-export const mediumModulesStyles = {};
+// eslint-disable-next-line no-undef
+export default MediumModulesStyles = {};
