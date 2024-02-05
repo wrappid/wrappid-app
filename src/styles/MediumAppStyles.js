@@ -3,11 +3,6 @@ import { MediumCoreStyles } from "@wrappid/core";
 export default class MediumAppStyles extends MediumCoreStyles {
   constructor() {
     super();
-    this.style = {
-      /**************************************************
-       * Using mediumUtilityStyles example
-       *************************************************/
-      usingMediumUtilityStyles: { ...this.mediumUtilityStyles.anyUtilityStyle },
-    };
+    this.style = {};
   }
 }
