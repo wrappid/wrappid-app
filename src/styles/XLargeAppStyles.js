@@ -3,11 +3,6 @@ import { XLargeCoreStyles } from "@wrappid/core";
 export default class XLargeAppStyles extends XLargeCoreStyles {
   constructor() {
     super();
-    this.style = {
-      /**************************************************
-       * Using XLargeUtilityStyles example
-       *************************************************/
-      usingXLargeUtilityStyles: { ...this.xLargeUtilityStyles.anyUtilityStyle },
-    };
+    this.style = {/**************************************************       * Using XXLargeUtilityStyles example   *************************************************/};
   }
 }
