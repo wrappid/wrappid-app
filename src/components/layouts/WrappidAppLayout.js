@@ -1,4 +1,6 @@
-import { CoreBox, CoreClasses, CoreStack, CoreTypographyBody1, ThemeSelector } from "@wrappid/core";
+import {
+  CoreBox, CoreClasses, CoreLink, CoreStack, CoreTypographyBody1, ThemeSelector 
+} from "@wrappid/core";
 
 import data from "../../../package.json";
 
@@ -21,7 +23,9 @@ export default function WrappidAppLayout(props) {
         <CoreStack direction="row">
           <ThemeSelector />
 
-          <CoreTypographyBody1>Version: {data.version}</CoreTypographyBody1>
+          <CoreLink href={"/about"}>
+            <CoreTypographyBody1>Version: {data.version}</CoreTypographyBody1>
+          </CoreLink>
         </CoreStack>
       </CoreBox>
     </>
