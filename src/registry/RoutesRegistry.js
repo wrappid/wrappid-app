@@ -1,8 +1,8 @@
 import modulesRoutesRegistry from "../modules/modules.routes.registry";
 
 export const RoutesRegistry = {
-  PackageList: {
-    Page        : { appComponent: "PackageList" },
+  About: {
+    Page        : { appComponent: "About" },
     authRequired: false,
     entityRef   : "about",
     url         : "about"

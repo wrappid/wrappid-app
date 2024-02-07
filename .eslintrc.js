@@ -78,12 +78,12 @@ module.exports = {
       {
         blankLine: "always",
         next     : "*",
-        prev     : ["const", "let", "var"],
+        prev     : ["const", "let"],
       },
       {
         blankLine: "any",
-        next     : ["const", "let", "var"],
-        prev     : ["const", "let", "var"],
+        next     : ["const", "let"],
+        prev     : ["const", "let"],
       },
       {
         blankLine: "always",

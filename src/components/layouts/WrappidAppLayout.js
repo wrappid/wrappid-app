@@ -1,5 +1,5 @@
 import {
-  CoreBox, CoreClasses, CoreLink, CoreStack, CoreTypographyBody1, ThemeSelector 
+  CoreBox, CoreClasses, CoreLink, CoreStack, CoreTypographyBody1, ThemeSelector
 } from "@wrappid/core";
 
 import data from "../../../package.json";
