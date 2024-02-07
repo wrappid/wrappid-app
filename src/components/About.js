@@ -1,6 +1,16 @@
 
 import {
-  CoreStack, CoreClasses, CoreBox, CorePaper, CoreTypographyBody1, CoreLink, CoreAvatar, CoreH5, CoreAccordion, CoreAccordionSummary, CoreAccordionDetail
+  CoreAccordion,
+  CoreAccordionDetail,
+  CoreAccordionSummary,
+  CoreAvatar,
+  CoreBox,
+  CoreClasses,
+  CoreH5,
+  CoreLink,
+  CorePaper,
+  CoreStack,
+  CoreTypographyBody1
 } from "@wrappid/core";
 import corePackage from "@wrappid/core/package.json";
 // eslint-disable-next-line import/no-unresolved
@@ -14,7 +24,7 @@ import applicationLogo from "../resources/images/logo_dark.png";
 // eslint-disable-next-line no-console
 console.log("corePackage, nativePackage", corePackage, nativePackage, stylesPackage);
 
-const PackageList = () => {
+const About = () => {
   const { readme, author, description, version, name } = packageJson; 
   const renderPackageDetails = (packageName, packageDetails) => {
     const {
@@ -111,4 +121,4 @@ const PackageList = () => {
   );
 };
 
-export default PackageList;
+export default About;
