@@ -1,4 +1,3 @@
-
 import {
   CoreAccordion,
   CoreAccordionDetail,
@@ -26,35 +25,36 @@ console.log("corePackage, nativePackage", corePackage, nativePackage, stylesPack
 
 const About = () => {
   const { readme, author, description, version, name } = packageJson; 
+
   const renderPackageDetails = (packageName, packageDetails) => {
     const {
-      author, bugs, homepage, repository, version, description, license
+      author, bugs, homepage, repository, version, description, license, name
     } = packageDetails;
 
     return (
       <CoreAccordion key={packageName} styleClasses={[CoreClasses.PADDING.P1]}>
         <CoreAccordionSummary styleClasses={[CoreClasses.PADDING.P1]}>
-          <CoreTypographyBody1>{`${packageName.replace("@", "")}`}</CoreTypographyBody1>
+          <CoreTypographyBody1>{`${name.replace("@", "")} ${version ? version : "version not available"}`}</CoreTypographyBody1>
         </CoreAccordionSummary>
   
         <CoreAccordionDetail styleClasses={[CoreClasses.PADDING.P1]}>
-          <CoreTypographyBody1>{`Name: ${name}`}</CoreTypographyBody1>
+          <CoreTypographyBody1>{`Name: ${name ? name.replace("@", "") : "No data available"}`}</CoreTypographyBody1>
 
-          <CoreTypographyBody1>{`Author: ${author}`}</CoreTypographyBody1>
+          <CoreTypographyBody1>{`Author: ${author?.name ? author?.name : "No data available"}`}</CoreTypographyBody1>
 
-          <CoreTypographyBody1>{`Description: ${description}`}</CoreTypographyBody1>
+          <CoreTypographyBody1>{`Description: ${description ? description : "No data available"}`}</CoreTypographyBody1>
 
-          <CoreTypographyBody1>                    
-            <CoreLink href={homepage}>{`Homepage: ${homepage}`} </CoreLink>
+          <CoreTypographyBody1>Homepage:                 
+            <CoreLink href={homepage ? homepage : ""}>{`${homepage ? homepage : "No data available"}`} </CoreLink>
           </CoreTypographyBody1>
           
-          <CoreTypographyBody1><CoreLink href={repository?.url}>{repository?.url}</CoreLink></CoreTypographyBody1>
+          <CoreTypographyBody1>Repository:<CoreLink href={repository?.url ? repository?.url.replace("git+", "") : ""}>{` ${repository?.url ? repository?.url.replace("git+", "") : "No data available"}`}</CoreLink></CoreTypographyBody1>
 
-          <CoreTypographyBody1><CoreLink href={bugs?.url}>{bugs?.url}</CoreLink></CoreTypographyBody1>
+          <CoreTypographyBody1>Bug report:<CoreLink href={bugs?.url ? bugs?.url : ""}>{` ${bugs?.url ? bugs?.url : "No data available"}`}</CoreLink></CoreTypographyBody1>
 
-          <CoreTypographyBody1>{`Version: ${version}`}</CoreTypographyBody1>
+          <CoreTypographyBody1>{`Version: ${version ? version : "No data available"}`}</CoreTypographyBody1>
 
-          <CoreTypographyBody1>{`License: ${license}`}</CoreTypographyBody1>
+          <CoreTypographyBody1>{`License: ${license ? license : "No data available"}`}</CoreTypographyBody1>
         </CoreAccordionDetail>
       </CoreAccordion>
     );
@@ -75,18 +75,18 @@ const About = () => {
           <CoreAvatar src={applicationLogo} />
 
           <CoreStack styleClasses={[CoreClasses.DISPLAY.TABLE_ROW]}>
-            <CoreTypographyBody1>{`${name}`}</CoreTypographyBody1>
+            <CoreTypographyBody1 gutterBottom={false}>{`${name ? name : "No data avilable"}`}</CoreTypographyBody1>
 
-            <CoreTypographyBody1>{`version ${version}`}</CoreTypographyBody1>
+            <CoreTypographyBody1 gutterBottom={false}>{`version: ${version ? version : "No data available"}`}</CoreTypographyBody1>
           </CoreStack>
         </CoreStack>
 
-        <CoreTypographyBody1>{`${description}`}</CoreTypographyBody1>
+        <CoreTypographyBody1>{`Description: ${description ? description : "No data available"}`}</CoreTypographyBody1>
 
-        <CoreTypographyBody1>{`${author}`}</CoreTypographyBody1>
+        <CoreTypographyBody1>{`Author: ${author?.email ? author?.email : "No data available"}`}</CoreTypographyBody1>
 
-        <CoreTypographyBody1>
-          <CoreLink href={readme}>{`${readme}`}</CoreLink>
+        <CoreTypographyBody1>Readmi: 
+          <CoreLink href={readme ? readme : ""}>{`${readme ? readme : "No data available"}`}</CoreLink>
         </CoreTypographyBody1>
 
       </CoreBox>
@@ -97,12 +97,12 @@ const About = () => {
         <CoreTypographyBody1>Copyright Wrappid ©2024. All rights reserved.</CoreTypographyBody1>
 
         <CoreTypographyBody1>
-          {`${packageJson.name}`} is made possible by the 
+          {`${packageJson.name ? packageJson.name : "No name available"}`} is made possible by the 
 
           <CoreLink href={"https://github.com/wrappid"}> wrappid</CoreLink> open source project and other open source software.</CoreTypographyBody1>
       </CoreBox>
 
-      <CoreAccordion styleClasses={[CoreClasses.WIDTH.VW_75, CoreClasses.SHADOW.SMALL]}>
+      <CoreAccordion styleClasses={[CoreClasses.WIDTH.VW_75, CoreClasses.PADDING.P1, CoreClasses.SHADOW.SMALL]}>
         <CoreAccordionSummary styleClasses={[CoreClasses.PADDING.P1]}>
           <CoreTypographyBody1>Wrappid Packages</CoreTypographyBody1>
         </CoreAccordionSummary>
