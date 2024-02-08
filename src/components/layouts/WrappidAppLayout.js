@@ -2,23 +2,23 @@ import {
   CoreBox,
   CoreClasses,
   CoreLink,
-  CoreAvatar,
+  CoreImage,
   CoreStack,
   CoreTypographyBody1,
   ThemeSelector
 } from "@wrappid/core";
 
 import data from "../../../package.json";
-import logo from "../../resources/images/logo_dark.png";
+import logo from "../../resources/images/logo.png";
 
 export default function WrappidAppLayout(props) {
   return (
     <>
       <CoreBox
-        styleClasses={[CoreClasses.DISPLAY.FLEX, CoreClasses.FLEX.DIRECTION_ROW, CoreClasses.PADDING.P1, CoreClasses.BG.BG_INFO_LIGHT]}
+        styleClasses={[CoreClasses.DISPLAY.FLEX, CoreClasses.FLEX.DIRECTION_ROW, CoreClasses.SHADOW.NORMAL]}
       >
-        <CoreAvatar
-          styleClasses={[CoreClasses.HEIGHT.VH_25]}
+        <CoreImage
+          height={50}
           src={logo}
           alt="logo"
         />
@@ -35,7 +35,7 @@ export default function WrappidAppLayout(props) {
           CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_SPACE_BETWEEN,
         ]}
       >
-        <CoreTypographyBody1>{data.name}</CoreTypographyBody1>
+        <CoreTypographyBody1 >{data.name}</CoreTypographyBody1>
 
         <CoreTypographyBody1>
           Wrappid ©{new Date().getFullYear()}
