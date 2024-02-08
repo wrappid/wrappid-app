@@ -40,7 +40,7 @@ const About = () => {
         <CoreAccordionDetail styleClasses={[CoreClasses.PADDING.P1]}>
           <CoreTypographyBody1>{`Name: ${name ? name.replace("@", "") : "No data available"}`}</CoreTypographyBody1>
 
-          <CoreTypographyBody1>{`Author: ${author ? author : "No data available"}`}</CoreTypographyBody1>
+          <CoreTypographyBody1>{`Author: ${author?.name ? author?.name : "No data available"}`}</CoreTypographyBody1>
 
           <CoreTypographyBody1>{`Description: ${description ? description : "No data available"}`}</CoreTypographyBody1>
 
