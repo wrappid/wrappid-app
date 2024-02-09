@@ -2,9 +2,7 @@ import {
   CoreClasses,
   CoreContainedButton,
   CoreH3,
-  CoreH4,
   CoreH5,
-  CoreH6,
   CoreImage,
   CoreDivider,
   CoreStack,
@@ -48,9 +46,9 @@ function StaticWebPage() {
 
       <CoreH3>{capitalizedWords.join(" ")}</CoreH3>
 
-      <CoreH6>
-        {data.description ? data.description : "Description not provided."}
-      </CoreH6>
+      <CoreH5>
+        {data.description ? data.description : "Description not provided"}
+      </CoreH5>
 
       <CoreDivider
         styleClasses={[CoreClasses.WIDTH.W_75, CoreClasses.MARGIN.M5]}
@@ -70,36 +68,32 @@ function StaticWebPage() {
         <CoreLink> Issue Board </CoreLink>
       </CoreTypographyBody1>
 
-      <CoreStack direction={"row"} styleClasses={[CoreClasses.PADDING.PB5]}>
-        <CoreContainedButton size="large" OnClick={handleClick1}>
-          How to Customize
+      <CoreBox styleClasses={[CoreClasses.DISPLAY.FLEX, CoreClasses.FLEX.FLEX_WRAP_WRAP, CoreClasses.GAP.ROW_GAP_1]}>
+        <CoreContainedButton styleClasses={[CoreClasses.FLEX.FLEX_GROW_1, CoreClasses.TEXT.TEXT_TRANSFORM_LOWERCASE]} OnClick={handleClick1}>How to Customize</CoreContainedButton>
+
+        <CoreContainedButton styleClasses={[CoreClasses.FLEX.FLEX_GROW_1]} OnClick={handleClick2}>
+            Learn more...
         </CoreContainedButton>
 
-        <CoreContainedButton size="large" OnClick={handleClick2}>
-          Learn more...
+        <CoreContainedButton styleClasses={[CoreClasses.FLEX.FLEX_GROW_1]} href={"https://github.com/wrappid"}>
+          Source 
         </CoreContainedButton>
+      </CoreBox>
+      
+      <CoreDivider styleClasses={[CoreClasses.WIDTH.W_100, CoreClasses.MARGIN.MT5]}/>
 
-        <CoreContainedButton size="large" href={"https://github.com/wrappid"}>
-          <CoreIconText icon="mail" text="Source"></CoreIconText>
-        </CoreContainedButton>
-      </CoreStack>
+      <CoreBox styleClasses={[CoreClasses.WIDTH.W_100, CoreClasses.PADDING.PB5, CoreClasses.HEIGHT.MIN_VH_50]}>
+        <CoreH3 styleClasses={[CoreClasses.TEXT.TEXT_JUSTIFY]}>Styles Library</CoreH3>
 
-      <CoreDivider styleClasses={[CoreClasses.WIDTH.W_100]} />
-
-      <CoreBox
-        styleClasses={[CoreClasses.WIDTH.W_100, CoreClasses.PADDING.PB5, CoreClasses.HEIGHT.VH_50]}
-      >
-        <CoreH4>Styles Library</CoreH4>
-
-        <CoreTypographyBody1>
+        <CoreH5 styleClasses={[CoreClasses.MARGIN.MB4, CoreClasses.TEXT.TEXT_JUSTIFY]}>
           It integrates seamlessly with popular styling libraries, using MIUI
           for web styling and React Native Paper for mobile styling, ensuring a
           consistent look and feel across platforms.
-        </CoreTypographyBody1>
+        </CoreH5>
 
-        <CoreTypographyBody1>@wrappid/styles package</CoreTypographyBody1>
+        <CoreH5>@wrappid/styles package</CoreH5>
 
-        <CoreTypographyBody2 gutter>
+        <CoreTypographyBody2>
           Version: {data.version}&nbsp;
 
           <CoreLink>Release Notes</CoreLink>&nbsp;|&nbsp;
@@ -111,97 +105,103 @@ function StaticWebPage() {
           <CoreLink>Issue Board</CoreLink>
         </CoreTypographyBody2>
 
-        <CoreStack direction={"row"}>
-          <CoreButton OnClick={handleClick1}>How to Customize</CoreButton>
+        <CoreBox styleClasses={[CoreClasses.DISPLAY.FLEX, CoreClasses.FLEX.FLEX_WRAP_WRAP, CoreClasses.GAP.ROW_GAP_1, CoreClasses.WIDTH.W_50]}>
+          <CoreButton styleClasses={[CoreClasses.FLEX.FLEX_GROW_1]} OnClick={handleClick1}>How to Customize</CoreButton>
 
-          <CoreContainedButton OnClick={handleClick2}>
+          <CoreContainedButton styleClasses={[CoreClasses.FLEX.FLEX_GROW_1]} OnClick={handleClick2}>
             Learn more...
           </CoreContainedButton>
 
-          <CoreContainedButton href={"https://github.com/wrappid"}>
+          <CoreContainedButton styleClasses={[CoreClasses.FLEX.FLEX_GROW_1]} href={"https://github.com/wrappid"}>
             <CoreIconText icon="mail" text="Source"></CoreIconText>
           </CoreContainedButton>
-        </CoreStack>
+        </CoreBox>
+
+        <CoreTypographyBody2 styleClasses={[CoreClasses.MARGIN.MT5]}>
+        Courtesy: MUI & React Native Paper
+        </CoreTypographyBody2>
       </CoreBox>
 
-      <CoreDivider styleClasses={[CoreClasses.WIDTH.W_100]} />
+      <CoreDivider styleClasses={[CoreClasses.WIDTH.W_100]}/>
 
-      <CoreBox
-        styleClasses={[CoreClasses.WIDTH.W_100, CoreClasses.PADDING.PB5, CoreClasses.HEIGHT.VH_50]}
-      >
-        <CoreH4>Custom Component Flexibility</CoreH4>
+      <CoreBox styleClasses={[CoreClasses.WIDTH.W_100, CoreClasses.PADDING.PB5, CoreClasses.HEIGHT.MIN_VH_50]}>
+        <CoreH3 styleClasses={[CoreClasses.TEXT.TEXT_JUSTIFY]}>Custom Component Flexibility</CoreH3>
 
-        <CoreTypographyBody2>
-          While you can leverage the CoreComponents, Wrappid also gives you the
-          flexibility to create your own custom components as needed to tailor
-          your applications to specific requirements.
-        </CoreTypographyBody2>
+        <CoreH5 styleClasses={[CoreClasses.MARGIN.MB4]}>
+        While you can leverage the CoreComponents, Wrappid also gives you the flexibility to create your own custom components as needed to tailor your applications to specific requirements.
+
+        </CoreH5>
 
         <CoreH5>@wrappid/guide module</CoreH5>
 
-        <CoreTypographyBody2 gutter>
-          Version: {data.version}&nbsp;
+        <CoreTypographyBody2>
+          Version: {data.version}
 
-          <CoreLink>Release Notes</CoreLink>&nbsp;|&nbsp;
+          <CoreLink> Release Notes |</CoreLink>
 
-          <CoreLink>Attributions</CoreLink>&nbsp;|&nbsp;
+          <CoreLink> Attributions |</CoreLink>
 
-          <CoreLink>Contributors</CoreLink>&nbsp;|&nbsp;
+          <CoreLink> Contributors |</CoreLink>
 
-          <CoreLink>Issue Board</CoreLink>
+          <CoreLink> Issue Board </CoreLink>
         </CoreTypographyBody2>
 
-        <CoreStack direction={"row"}>
-          <CoreButton OnClick={handleClick1}>How to Customize</CoreButton>
+        <CoreBox styleClasses={[CoreClasses.DISPLAY.FLEX, CoreClasses.FLEX.FLEX_WRAP_WRAP, CoreClasses.GAP.ROW_GAP_1, CoreClasses.WIDTH.W_50]}>
+          <CoreButton styleClasses={[CoreClasses.FLEX.FLEX_GROW_1]} OnClick={handleClick1}>How to Customize</CoreButton>
 
-          <CoreContainedButton OnClick={handleClick2}>
+          <CoreContainedButton styleClasses={[CoreClasses.FLEX.FLEX_GROW_1]} OnClick={handleClick2}>
             Learn more...
           </CoreContainedButton>
 
-          <CoreContainedButton href={"https://github.com/wrappid"}>
+          <CoreContainedButton styleClasses={[CoreClasses.FLEX.FLEX_GROW_1]} href={"https://github.com/wrappid"}>
             <CoreIconText icon="mail" text="Source"></CoreIconText>
           </CoreContainedButton>
-        </CoreStack>
+        </CoreBox>
+
+        <CoreTypographyBody2 styleClasses={[CoreClasses.MARGIN.MT5]}>
+        Courtesy: MUI & React Native Paper
+        </CoreTypographyBody2>
       </CoreBox>
 
-      <CoreDivider styleClasses={[CoreClasses.WIDTH.W_100]} />
+      <CoreDivider styleClasses={[CoreClasses.WIDTH.W_100]}/>
 
-      <CoreBox
-        styleClasses={[CoreClasses.WIDTH.W_100, CoreClasses.PADDING.PB5, CoreClasses.HEIGHT.VH_50]}
-      >
-        <CoreH4>Full-Stack Development Support</CoreH4>
+      <CoreBox styleClasses={[CoreClasses.WIDTH.W_100, CoreClasses.PADDING.PB5, CoreClasses.HEIGHT.MIN_VH_50]}>
+        <CoreH3>Full-Stack Development Support</CoreH3>
 
-        <CoreTypographyBody2>
-          Wrappid supports building both frontend and backend components of
-          applications, including API middleware, database handling, and
-          business-specific modules.
-        </CoreTypographyBody2>
+        <CoreH5 styleClasses={[CoreClasses.MARGIN.MB4]}>
+        Wrappid supports building both frontend and backend components of applications, including API middleware, database handling, and business-specific modules.
+
+        </CoreH5>
 
         <CoreH5>@wrappid/guide module</CoreH5>
 
-        <CoreTypographyBody2 gutter>
-          Version: {data.version}&nbsp;
+        <CoreTypographyBody2>
+          Version: {data.version}
 
-          <CoreLink>Release Notes</CoreLink>&nbsp;|&nbsp;
+          <CoreLink> Release Notes |</CoreLink>
 
-          <CoreLink>Attributions</CoreLink>&nbsp;|&nbsp;
+          <CoreLink> Attributions |</CoreLink>
 
-          <CoreLink>Contributors</CoreLink>&nbsp;|&nbsp;
+          <CoreLink> Contributors |</CoreLink>
 
-          <CoreLink>Issue Board</CoreLink>
+          <CoreLink> Issue Board </CoreLink>
         </CoreTypographyBody2>
 
-        <CoreStack direction={"row"}>
-          <CoreButton OnClick={handleClick1}>How to Customize</CoreButton>
+        <CoreBox styleClasses={[CoreClasses.DISPLAY.FLEX, CoreClasses.FLEX.FLEX_WRAP_WRAP, CoreClasses.GAP.ROW_GAP_1, CoreClasses.WIDTH.W_50]}>
+          <CoreButton styleClasses={[CoreClasses.FLEX.FLEX_GROW_1]} OnClick={handleClick1}>How to Customize</CoreButton>
 
-          <CoreContainedButton OnClick={handleClick2}>
+          <CoreContainedButton styleClasses={[CoreClasses.FLEX.FLEX_GROW_1]} OnClick={handleClick2}>
             Learn more...
           </CoreContainedButton>
 
-          <CoreContainedButton href={"https://github.com/wrappid"}>
+          <CoreContainedButton styleClasses={[CoreClasses.FLEX.FLEX_GROW_1]} href={"https://github.com/wrappid"}>
             <CoreIconText icon="mail" text="Source"></CoreIconText>
           </CoreContainedButton>
-        </CoreStack>
+        </CoreBox>
+
+        <CoreTypographyBody2 styleClasses={[CoreClasses.MARGIN.MT5]}>
+        Courtesy: MUI & React Native Paper
+        </CoreTypographyBody2>
       </CoreBox>
     </CoreStack>
   );
