@@ -24,7 +24,9 @@ import applicationLogo from "../resources/images/logo_dark.png";
 console.log("corePackage, nativePackage", corePackage, nativePackage, stylesPackage);
 
 const About = () => {
-  const { readme, author, description, version, name } = packageJson; 
+  const {
+    name, version, description, repository, homepage, author, license, bugs, readme 
+  } = packageJson; 
 
   const renderPackageDetails = (packageName, packageDetails) => {
     const {
@@ -34,27 +36,27 @@ const About = () => {
     return (
       <CoreAccordion key={packageName} styleClasses={[CoreClasses.PADDING.P1]}>
         <CoreAccordionSummary styleClasses={[CoreClasses.PADDING.P1]}>
-          <CoreTypographyBody1>{`${name.replace("@", "")} ${version ? version : "version not available"}`}</CoreTypographyBody1>
+          <CoreTypographyBody1>{`${name ? name.replace("@", "") : "Name not found"} ${version ? version : "version not available"}`}</CoreTypographyBody1>
         </CoreAccordionSummary>
   
         <CoreAccordionDetail styleClasses={[CoreClasses.PADDING.P1]}>
-          <CoreTypographyBody1>{`Name: ${name ? name.replace("@", "") : "No data available"}`}</CoreTypographyBody1>
+          <CoreTypographyBody1>{`Name: ${name ? name.replace("@", "") : "Name not found"}`}</CoreTypographyBody1>
 
-          <CoreTypographyBody1>{`Author: ${author?.name ? author?.name : "No data available"}`}</CoreTypographyBody1>
+          <CoreTypographyBody1>{`Version: ${version ? version : "Version not found"}`}</CoreTypographyBody1>
 
-          <CoreTypographyBody1>{`Description: ${description ? description : "No data available"}`}</CoreTypographyBody1>
+          <CoreTypographyBody1>{`Author: ${author?.name ? author?.name : "Author not found"}`}</CoreTypographyBody1>
+
+          <CoreTypographyBody1>{`Description: ${description ? description : "Description not found"}`}</CoreTypographyBody1>
 
           <CoreTypographyBody1>Homepage:                 
-            <CoreLink href={homepage ? homepage : ""}>{`${homepage ? homepage : "No data available"}`} </CoreLink>
+            <CoreLink href={homepage ? homepage : ""}>{`${homepage ? homepage : "Homepage not found"}`} </CoreLink>
           </CoreTypographyBody1>
           
-          <CoreTypographyBody1>Repository:<CoreLink href={repository?.url ? repository?.url.replace("git+", "") : ""}>{` ${repository?.url ? repository?.url.replace("git+", "") : "No data available"}`}</CoreLink></CoreTypographyBody1>
+          <CoreTypographyBody1>Repository:<CoreLink href={repository?.url ? repository?.url.replace("git+", "") : ""}>{` ${repository?.url ? repository?.url.replace("git+", "") : "Repository not found"}`}</CoreLink></CoreTypographyBody1>
 
-          <CoreTypographyBody1>Bug report:<CoreLink href={bugs?.url ? bugs?.url : ""}>{` ${bugs?.url ? bugs?.url : "No data available"}`}</CoreLink></CoreTypographyBody1>
+          <CoreTypographyBody1>Bug report:<CoreLink href={bugs?.url ? bugs?.url : ""}>{` ${bugs?.url ? bugs?.url : "Bug report not found"}`}</CoreLink></CoreTypographyBody1>
 
-          <CoreTypographyBody1>{`Version: ${version ? version : "No data available"}`}</CoreTypographyBody1>
-
-          <CoreTypographyBody1>{`License: ${license ? license : "No data available"}`}</CoreTypographyBody1>
+          <CoreTypographyBody1>{`License: ${license ? license : "License not found"}`}</CoreTypographyBody1>
         </CoreAccordionDetail>
       </CoreAccordion>
     );
@@ -71,22 +73,32 @@ const About = () => {
 
         <CoreH5 styleClasses={[CoreClasses.PADDING.PB1]}>About</CoreH5>
 
-        <CoreStack direction={"row"} spacing={2} styleClasses={[CoreClasses.ALIGNMENT.ALIGN_ITEMS_CENTER]}>
+        <CoreStack direction={"row"} styleClasses={[CoreClasses.ALIGNMENT.ALIGN_ITEMS_CENTER, CoreClasses.GAP.GAP_1]}>
           <CoreAvatar src={applicationLogo} />
 
           <CoreStack styleClasses={[CoreClasses.DISPLAY.TABLE_ROW]}>
-            <CoreTypographyBody1 gutterBottom={false}>{`${name ? name : "No data avilable"}`}</CoreTypographyBody1>
+            <CoreTypographyBody1 gutterBottom={false}>{`${name ? name : "Name not found"}`}</CoreTypographyBody1>
 
-            <CoreTypographyBody1 gutterBottom={false}>{`version: ${version ? version : "No data available"}`}</CoreTypographyBody1>
+            <CoreTypographyBody1 gutterBottom={false}>{`Version: ${version ? version : "Version not found"}`}</CoreTypographyBody1>
           </CoreStack>
         </CoreStack>
 
-        <CoreTypographyBody1>{`Description: ${description ? description : "No data available"}`}</CoreTypographyBody1>
+        <CoreTypographyBody1>{`Description: ${description ? description : "Description not found"}`}</CoreTypographyBody1>
 
-        <CoreTypographyBody1>{`Author: ${author?.email ? author?.email : "No data available"}`}</CoreTypographyBody1>
+        <CoreTypographyBody1>{`Author: ${author?.email ? author?.email : "Author not found"}`}</CoreTypographyBody1>
+
+        <CoreTypographyBody1>Homepage:                 
+          <CoreLink href={homepage ? homepage : ""}>{`${homepage ? homepage : "Homepage not found"}`} </CoreLink>
+        </CoreTypographyBody1>
+
+        <CoreTypographyBody1>Repository:<CoreLink href={repository?.url ? repository?.url.replace("git+", "") : ""}>{` ${repository?.url ? repository?.url.replace("git+", "") : "Repository not found"}`}</CoreLink></CoreTypographyBody1>
+
+        <CoreTypographyBody1>Bug report:<CoreLink href={bugs?.url ? bugs?.url : ""}>{` ${bugs?.url ? bugs?.url : "Bug report not found"}`}</CoreLink></CoreTypographyBody1>
+
+        <CoreTypographyBody1>{`License: ${license ? license : "License not found"}`}</CoreTypographyBody1>
 
         <CoreTypographyBody1>Readmi: 
-          <CoreLink href={readme ? readme : ""}>{`${readme ? readme : "No data available"}`}</CoreLink>
+          <CoreLink href={readme ? readme : ""}>{`${readme ? readme : "Readmi not found"}`}</CoreLink>
         </CoreTypographyBody1>
 
       </CoreBox>
@@ -97,7 +109,7 @@ const About = () => {
         <CoreTypographyBody1>Copyright Wrappid ©2024. All rights reserved.</CoreTypographyBody1>
 
         <CoreTypographyBody1>
-          {`${packageJson.name ? packageJson.name : "No name available"}`} is made possible by the 
+          {`${packageJson.name ? packageJson.name : "Name not found"}`} is made possible by the 
 
           <CoreLink href={"https://github.com/wrappid"}> wrappid</CoreLink> open source project and other open source software.</CoreTypographyBody1>
       </CoreBox>
