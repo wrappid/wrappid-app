@@ -2,7 +2,7 @@ import modulesRoutesRegistry from "../modules/modules.routes.registry";
 
 export const RoutesRegistry = {
   About: {
-    Page        : { appComponent: "About" },
+    Page        : { appComponent: "About", layout: "WrappidAppLayout" },
     authRequired: false,
     entityRef   : "about",
     url         : "about"
