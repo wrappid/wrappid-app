@@ -24,7 +24,9 @@ export default function WrappidAppLayout(props) {
         />
       </CoreBox>
 
-      {props.children}
+      <CoreBox styleClasses={[CoreClasses.PADDING.P1]}>
+        {props.children}
+      </CoreBox>
 
       <CoreBox
         styleClasses={[
