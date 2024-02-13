@@ -6,6 +6,6 @@ import modulesComponentsRegistry from "../modules/modules.components.registry";
 export const ComponentsRegistry = {
   ...modulesComponentsRegistry,
   About           : { comp: About },
-  AppComponent    : { comp: StaticWebPage, layout: true },
+  AppComponent    : { comp: StaticWebPage },
   WrappidAppLayout: { comp: WrappidAppLayout, layout: true }
 };
