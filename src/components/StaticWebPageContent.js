@@ -32,7 +32,7 @@ function StaticWebPageContent() {
   );
 
   return (
-    <CoreGrid>
+    <CoreGrid styleClasses={[CoreClasses.PADDING.P2, CoreClasses.PADDING.MD.P0]}>
       <CoreGrid
         rowSpacing="32"
         styleClasses={[CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER]}
@@ -40,11 +40,7 @@ function StaticWebPageContent() {
         <CoreBox
           gridProps={{ styleClasses: [CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER] }}
         >
-          <CoreImage
-            width={100}
-            styleClasses={[CoreClasses.PADDING.PT2]}
-            src={logo} 
-            alt="logo" />
+          <CoreImage width={100} src={logo} alt="logo" />
         </CoreBox>
 
         <CoreBox
@@ -85,7 +81,7 @@ function StaticWebPageContent() {
 
         <CoreGrid
           rowSpacing="8"
-          gridProps={{ gridSize: { md: 8, sm: 6, xs: 10 } }}
+          gridProps={{ gridSize: { md: 4, sm: 6, xs: 10 } }}
           styleClasses={[CoreClasses.ALIGNMENT.ALIGN_ITEMS_CENTER]}
         >
           <CoreContainedButton
@@ -115,7 +111,7 @@ function StaticWebPageContent() {
       </CoreGrid>
 
       {/* -----------------Styles Library------------------- */}
-      <CoreGrid rowSpacing="32" styleClasses={[CoreClasses.PADDING.MD.PL5, CoreClasses.HEIGHT.MIN_VH_75, CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER, CoreClasses.ALIGNMENT.MD.JUSTIFY_CONTENT_FLEX_START]}>
+      <CoreGrid rowSpacing="32" styleClasses={[CoreClasses.PADDING.MD.PX5, CoreClasses.HEIGHT.MIN_VH_75, CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER, CoreClasses.ALIGNMENT.MD.JUSTIFY_CONTENT_FLEX_START]}>
         <CoreDivider
           styleClasses={[CoreClasses.MARGIN.MT5]}
         />
@@ -188,7 +184,7 @@ function StaticWebPageContent() {
       </CoreGrid>
 
       {/* -----------------Custom Component Flexibility------------------- */}
-      <CoreGrid rowSpacing="32" styleClasses={[CoreClasses.PADDING.MD.PL5, CoreClasses.HEIGHT.MIN_VH_75, CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER, CoreClasses.ALIGNMENT.MD.JUSTIFY_CONTENT_FLEX_START]}>
+      <CoreGrid rowSpacing="32" styleClasses={[CoreClasses.PADDING.MD.PX5, CoreClasses.HEIGHT.MIN_VH_75, CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER, CoreClasses.ALIGNMENT.MD.JUSTIFY_CONTENT_FLEX_START]}>
         <CoreDivider
           styleClasses={[CoreClasses.MARGIN.MT5]}
         />
@@ -260,7 +256,7 @@ function StaticWebPageContent() {
       </CoreGrid>
 
       {/* -----------------Full-Stack Development Support------------------- */}
-      <CoreGrid rowSpacing="32" styleClasses={[CoreClasses.PADDING.MD.PL5, CoreClasses.HEIGHT.MIN_VH_75, CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER, CoreClasses.ALIGNMENT.MD.JUSTIFY_CONTENT_FLEX_START]}>
+      <CoreGrid rowSpacing="32" styleClasses={[CoreClasses.PADDING.MD.PX5, CoreClasses.HEIGHT.MIN_VH_75, CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER, CoreClasses.ALIGNMENT.MD.JUSTIFY_CONTENT_FLEX_START]}>
         <CoreDivider
           styleClasses={[CoreClasses.MARGIN.MT5]}
         />
