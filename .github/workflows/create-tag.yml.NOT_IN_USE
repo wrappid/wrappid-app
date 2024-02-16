@@ -1,0 +1,45 @@
+name: Create Tag - CI
+
+on:
+  workflow_dispatch:
+    inputs:
+      version_type:
+        type: choice
+        description: Choose version bump type
+        options: 
+        - -r major
+        - -r minor
+        - -r patch
+        - -p alpha
+        - -p beta
+        - -p build
+        - -p hotfix
+        - -p dev
+        required: true
+        default: "-r patch"
+  pull_request:
+    types:
+      - closed
+    branches:
+      - 'development'
+
+jobs:
+## RESUABLE WORKFLOW REQUIRED INPUTS WITH SAMPLE VALUE:
+inputs.version_type : < -r patch> (OPTIONAL)
+#### RESUABLE WORKFLOW REQUIRED SECRETS WITH SAMPLE VALUE:
+#### VERSION_TYPE_REPOSITORY_DEFAULT : < -r patch>
+#### PAT : <personal access token>
+#### GHUSER_EMAIL : <email id for git commits>
+#### GHUSER_NAME : <user name for git commits>
+#### WRAPPID_REGISTRY_TOKEN : <token received in email after filling wrappid early access form>
+#### SENDER_NAME : <name of sender in email> (OPTIONAL)
+#### IDS : <email ids to send email to>
+#### MAINTAINER_ID : <email id to keep in cc> (OPTIONAL)
+#### MAIL_USERNAME: <email id to send email from>
+#### MAIL_PASSWORD: <password of provided MAIL_USERNAME to authenticate with mail provider>
+
+  call-create-tag:
+    permissions: write-all
+    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'development')
+    uses: wrappid/workflows/.github/workflows/util-create-tag.yml@main
+    secrets: inherit
