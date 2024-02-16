@@ -12,9 +12,21 @@ on:
       - 'development'
   repository_dispatch:
 
-jobs:        
+jobs:
+
+## RESUABLE WORKFLOW REQUIRED REPOSITORY SECRETS WITH SAMPLE VALUE:
+#### PAT : <personal access token>
+#### GHUSER_EMAIL : <email id for git commits>
+#### GHUSER_NAME : <user name for git commits>
+#### WRAPPID_REGISTRY_TOKEN : <token received in email after filling wrappid early access form>
+#### TOOLKIT_VERSION : <version number of npm package wrappid toolkit>
+#### SENDER_NAME : <name of sender in email> (OPTIONAL)
+#### IDS : <email ids to send email to>
+#### MAINTAINER_ID : <email id to keep in cc> (OPTIONAL)
+#### MAIL_USERNAME: <email id to send email from>
+#### MAIL_PASSWORD: <password of provided MAIL_USERNAME to authenticate with mail provider>
+
   call-create-app-release:
-  # runs-on: ubuntu-latest
     permissions: write-all
     # if: github.event_name == 'workflow_dispatch' || (github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'development')
     uses: wrappid/workflows/.github/workflows/util-create-app-release.yml@main
