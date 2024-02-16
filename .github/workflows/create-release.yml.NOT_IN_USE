@@ -1,0 +1,21 @@
+name: Release - CI
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag-name:
+        type: string
+        description: Enter tag
+    schedule:
+      - cron: "30 16 * * *"
+    branches:
+      - 'development'
+  repository_dispatch:
+
+jobs:        
+  call-create-app-release:
+  # runs-on: ubuntu-latest
+    permissions: write-all
+    # if: github.event_name == 'workflow_dispatch' || (github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'development')
+    uses: wrappid/workflows/.github/workflows/util-create-app-release.yml@main
+    secrets: inherit
