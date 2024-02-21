@@ -1,8 +1,8 @@
 import {
   CoreBox,
   CoreClasses,
-  CoreLink,
   CoreImage,
+  CoreLink,
   CoreStack,
   CoreTypographyBody1,
   ThemeSelector
