@@ -1,18 +1,32 @@
 import {
   CoreBox,
   CoreClasses,
-  CoreImage,
   CoreLink,
+  CoreImage,
   CoreStack,
   CoreTypographyBody1,
-  ThemeSelector
+  ThemeSelector,
+  CoreRightDrawer,
+  toggleRightMenuState
 } from "@wrappid/core";
+import { toggleLeftMenuState } from "@wrappid/core/store/action/menuAction";
+import { useDispatch, useSelector } from "react-redux";
 
 import data from "../../../package.json";
 import logo from "../../resources/images/logo.png";
 
-export default function WrappidAppLayout(props) {
-  const { children } = props || { children: null };
+export default function AppDrawerLayout(props) {
+  const dispatch = useDispatch();
+  const rightMenuOpen = useSelector((state) => state?.menu?.rightMenuOpen);
+  const leftMenuOpen = useSelector((state) => state?.menu?.leftMenuOpen);
+
+  const toggleLeftDrawer = () => {
+    dispatch(toggleLeftMenuState());
+  };
+
+  const toggleRightDrawer = () => {
+    dispatch(toggleRightMenuState());
+  };
 
   return (
     <>
@@ -26,10 +40,28 @@ export default function WrappidAppLayout(props) {
         />
       </CoreBox>
 
+      { leftMenuOpen === true &&
+          <CoreRightDrawer
+            anchor="right"
+            onOpen={toggleLeftDrawer}
+            onClose={toggleLeftDrawer}
+            open={leftMenuOpen}
+          >{"AppDrawerLayout left"}</CoreRightDrawer>
+      }
+      
       <CoreBox styleClasses={[CoreClasses.PADDING.P1]}>
-        {children}
+        {props.children}
       </CoreBox>
 
+      { rightMenuOpen === true &&
+          <CoreRightDrawer
+            anchor="right"
+            onOpen={toggleRightDrawer}
+            onClose={toggleRightDrawer}
+            open={rightMenuOpen}
+          >{"AppDrawerLayout Right"}</CoreRightDrawer>
+      }
+      
       <CoreBox
         styleClasses={[
           CoreClasses.DISPLAY.FLEX,
