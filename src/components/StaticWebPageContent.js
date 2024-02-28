@@ -56,7 +56,7 @@ function StaticWebPageContent() {
             styleClasses={[CoreClasses.WIDTH.W_75, CoreClasses.MARGIN.M5]}
           />
 
-          <CoreH5>Built with Wrappid. One code, Endless possibilities</CoreH5>
+          <CoreH5>Built with Wrappid. One code, Endless possibilities.</CoreH5>
 
           <CoreBox>
             <CoreTypographyBody1>
