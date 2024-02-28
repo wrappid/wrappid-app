@@ -1,16 +1,16 @@
 import {
-  coreUseNavigate,
-  CoreGrid,
-  CoreImage,
-  CoreH3,
-  CoreClasses,
   CoreBox,
-  CoreH5,
-  CoreDivider,
-  CoreTypographyBody1,
-  CoreLink,
+  CoreClasses,
   CoreContainedButton,
-  CoreTypographyBody2
+  CoreDivider,
+  CoreGrid,
+  CoreH3,
+  CoreH5,
+  CoreImage,
+  CoreLink,
+  CoreTypographyBody1,
+  CoreTypographyBody2,
+  coreUseNavigate
 } from "@wrappid/core";
 
 import data from "../../package.json";
@@ -65,15 +65,15 @@ function StaticWebPageContent() {
 
             <CoreLink>Release Notes</CoreLink>
 
-            {" | "}
+            <CoreTypographyBody1>{" | "}</CoreTypographyBody1>
 
             <CoreLink>Attributions</CoreLink>
 
-            {" | "}
+            <CoreTypographyBody1>{" | "}</CoreTypographyBody1>
 
             <CoreLink>Contributors</CoreLink>
 
-            {" | "}
+            <CoreTypographyBody1>{" | "}</CoreTypographyBody1>
 
             <CoreLink>Issue Board</CoreLink>
           </CoreBox>
@@ -136,15 +136,15 @@ function StaticWebPageContent() {
 
           <CoreLink>Release Notes</CoreLink>
 
-          {" | "}
+          <CoreTypographyBody1>{" | "}</CoreTypographyBody1>
 
           <CoreLink>Attributions</CoreLink>
 
-          {" | "}
+          <CoreTypographyBody1>{" | "}</CoreTypographyBody1>
 
           <CoreLink>Contributors</CoreLink>
 
-          {" | "}
+          <CoreTypographyBody1>{" | "}</CoreTypographyBody1>
 
           <CoreLink>Issue Board</CoreLink>
         </CoreBox>
@@ -207,15 +207,15 @@ function StaticWebPageContent() {
 
           <CoreLink>Release Notes</CoreLink>
 
-          {" | "}
+          <CoreTypographyBody1>{" | "}</CoreTypographyBody1>
 
           <CoreLink>Attributions</CoreLink>
 
-          {" | "}
+          <CoreTypographyBody1>{" | "}</CoreTypographyBody1>
 
           <CoreLink>Contributors</CoreLink>
 
-          {" | "}
+          <CoreTypographyBody1>{" | "}</CoreTypographyBody1>
 
           <CoreLink>Issue Board</CoreLink>
         </CoreBox>
@@ -279,15 +279,15 @@ function StaticWebPageContent() {
 
           <CoreLink>Release Notes</CoreLink>
 
-          {" | "}
+          <CoreTypographyBody1>{" | "}</CoreTypographyBody1>
 
           <CoreLink>Attributions</CoreLink>
 
-          {" | "}
+          <CoreTypographyBody1>{" | "}</CoreTypographyBody1>
 
           <CoreLink>Contributors</CoreLink>
 
-          {" | "}
+          <CoreTypographyBody1>{" | "}</CoreTypographyBody1>
 
           <CoreLink>Issue Board</CoreLink>
         </CoreBox>
