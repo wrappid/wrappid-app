@@ -1,4 +1,4 @@
-name: Test Wrappid App Deploy - CD
+name: Deploy - CD
 
 on:
   workflow_dispatch:
@@ -11,7 +11,7 @@ jobs:
       # runs-on: ubuntu-latest
         permissions: write-all
         if: github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch'
-        uses: wrappid/workflows/.github/workflows/utils-app-deploy-script.yml@main
+        uses: wrappid/workflows/.github/workflows/util-app-deploy.yml@main
         with:
           EMAIL_NOTIFY: ${{ vars.EMAIL_NOTIFY }}
           EMAIL_SENDER_NAME: ${{ vars.EMAIL_SENDER_NAME }}
@@ -21,6 +21,7 @@ jobs:
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_SSH_KEY: ${{ secrets.REMOTE_SSH_KEY }}
           REMOTE_SSH_USER: ${{ secrets.REMOTE_SSH_USER }}
+          REMOTE_PATH_OF_PROJECT_DEPLOYMENT_PATH: ${{ secrets.REMOTE_PATH_OF_PROJECT_DEPLOYMENT_PATH }}
           EMAIL_SERVER_ADDRESS: ${{ secrets.EMAIL_SERVER_ADDRESS }}
           EMAIL_SERVER_PORT: ${{ secrets.EMAIL_SERVER_PORT }}
           EMAIL_USER_ID: ${{ secrets.EMAIL_USER_ID }}
@@ -28,5 +29,3 @@ jobs:
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           EMAIL_CC: ${{ secrets.EMAIL_CC }}       ## Optional
           EMAIL_BCC: ${{ secrets.EMAIL_BCC }}     ## Optional
-          
-  
