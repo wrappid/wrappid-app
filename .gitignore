@@ -1,6 +1,7 @@
 # Wrappid
 .wrappid/runtime
 .wrappid/wrappid.env
+build/
 
 # Logs
 logs
