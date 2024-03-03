@@ -21,6 +21,9 @@ export const RoutesRegistry = {
   },  
   defaultRoute: {
     Page        : { appComponent: "AppComponent", layout: "WrappidGuestLayout" },
+    // eslint-disable-next-line etc/no-commented-out-code
+    // Page        : { appComponent: LMTestPage.name, layout: LMLayout.name },
+    // Page        : { appComponent: LayoutManagerTester.name },
     authRequired: false,
     entityRef   : "defaultAppRoute",
     url         : "defaultAppRoute"
