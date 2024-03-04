@@ -7,23 +7,14 @@ export const RoutesRegistry = {
     entityRef   : "about",
     url         : "about"
   }, 
-  Layouts: {
-    Page        : { appComponent: "Layouts", layout: "WrappidAppLayout" },
-    authRequired: false,
-    entityRef   : "layouts",
-    url         : "layouts"
-  }, 
   defaultAuthRoute: {
-    Page        : { appComponent: "AppComponent", layout: "WrappidUserLayout" },
+    Page        : { appComponent: "AppComponent" },
     authRequired: true,
     entityRef   : "defaultAuthRoute",
     url         : "defaultAuthRoute"
   },  
   defaultRoute: {
-    Page        : { appComponent: "AppComponent", layout: "WrappidGuestLayout" },
-    // eslint-disable-next-line etc/no-commented-out-code
-    // Page        : { appComponent: LMTestPage.name, layout: LMLayout.name },
-    // Page        : { appComponent: LayoutManagerTester.name },
+    Page        : { appComponent: "AppComponent" },
     authRequired: false,
     entityRef   : "defaultAppRoute",
     url         : "defaultAppRoute"

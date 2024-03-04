@@ -1,13 +1,15 @@
 import {
+  BlankLayout,
   CoreAccordion,
   CoreAccordionDetail,
   CoreAccordionSummary,
   CoreBox,
   CoreClasses,
   CoreDivider,
-  CoreImage,
   CoreGrid,
   CoreH3,
+  CoreImage,
+  CoreLayoutItem,
   CoreLink,
   CoreTypographyBody1,
   CoreTypographyBody2
@@ -31,31 +33,35 @@ const renderPackageDetails = (packageName, packageDetails) => {
   } = packageDetails;
 
   return (
-    <CoreAccordion key={packageName} styleClasses={[CoreClasses.PADDING.P1]}>
-      <CoreAccordionSummary styleClasses={[CoreClasses.PADDING.P1]}>
-        <CoreTypographyBody1>{`${name ? name : "Name not found"} ${version ? version : "version not available"}`}</CoreTypographyBody1>
-      </CoreAccordionSummary>
+    <>
+      <CoreLayoutItem id={BlankLayout.PLACEHOLDER.NAME}>
+        <CoreAccordion key={packageName} styleClasses={[CoreClasses.PADDING.P1]}>
+          <CoreAccordionSummary styleClasses={[CoreClasses.PADDING.P1]}>
+            <CoreTypographyBody1>{`${name ? name : "Name not found"} ${version ? version : "version not available"}`}</CoreTypographyBody1>
+          </CoreAccordionSummary>
 
-      <CoreAccordionDetail styleClasses={[CoreClasses.PADDING.P1]}>
-        <CoreTypographyBody1>{`Name: ${name ? name.replace("@", "") : "Name not found"}`}</CoreTypographyBody1>
+          <CoreAccordionDetail styleClasses={[CoreClasses.PADDING.P1]}>
+            <CoreTypographyBody1>{`Name: ${name ? name.replace("@", "") : "Name not found"}`}</CoreTypographyBody1>
 
-        <CoreTypographyBody1>{`Version: ${version ? version : "Version not found"}`}</CoreTypographyBody1>
+            <CoreTypographyBody1>{`Version: ${version ? version : "Version not found"}`}</CoreTypographyBody1>
 
-        <CoreTypographyBody1>{`Author: ${author?.name ? author?.name : "Author not found"}`}</CoreTypographyBody1>
+            <CoreTypographyBody1>{`Author: ${author?.name ? author?.name : "Author not found"}`}</CoreTypographyBody1>
 
-        <CoreTypographyBody1>{`Description: ${description ? description : "Description not found"}`}</CoreTypographyBody1>
+            <CoreTypographyBody1>{`Description: ${description ? description : "Description not found"}`}</CoreTypographyBody1>
 
-        <CoreTypographyBody1>Homepage:
-          <CoreLink href={homepage ? homepage : ""}>{`${homepage ? homepage : "Homepage not found"}`} </CoreLink>
-        </CoreTypographyBody1>
+            <CoreTypographyBody1>Homepage:
+              <CoreLink href={homepage ? homepage : ""}>{`${homepage ? homepage : "Homepage not found"}`} </CoreLink>
+            </CoreTypographyBody1>
 
-        <CoreTypographyBody1>Repository:<CoreLink href={repository?.url ? repository?.url.replace("git+", "") : ""}>{` ${repository?.url ? repository?.url.replace("git+", "") : "Repository not found"}`}</CoreLink></CoreTypographyBody1>
+            <CoreTypographyBody1>Repository:<CoreLink href={repository?.url ? repository?.url.replace("git+", "") : ""}>{` ${repository?.url ? repository?.url.replace("git+", "") : "Repository not found"}`}</CoreLink></CoreTypographyBody1>
 
-        <CoreTypographyBody1>Bug report:<CoreLink href={bugs?.url ? bugs?.url : ""}>{` ${bugs?.url ? bugs?.url : "Bug report not found"}`}</CoreLink></CoreTypographyBody1>
+            <CoreTypographyBody1>Bug report:<CoreLink href={bugs?.url ? bugs?.url : ""}>{` ${bugs?.url ? bugs?.url : "Bug report not found"}`}</CoreLink></CoreTypographyBody1>
 
-        <CoreTypographyBody1>{`License: ${license ? license : "License not found"}`}</CoreTypographyBody1>
-      </CoreAccordionDetail>
-    </CoreAccordion>
+            <CoreTypographyBody1>{`License: ${license ? license : "License not found"}`}</CoreTypographyBody1>
+          </CoreAccordionDetail>
+        </CoreAccordion>
+      </CoreLayoutItem>
+    </>
   );
 };
 
