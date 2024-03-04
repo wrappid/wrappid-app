@@ -6,7 +6,7 @@ function AppComponent() {
 
   return (
     <>
-      <CoreLayoutItem id={BlankLayout.PLACEHOLDER.NAME}>
+      <CoreLayoutItem id={BlankLayout.PLACEHOLDER.CONTENT}>
         <AppComponentContent />
       </CoreLayoutItem>
     </>
