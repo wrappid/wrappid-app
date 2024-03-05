@@ -1,5 +1,4 @@
 import {
-  BlankLayout,
   CoreAccordion,
   CoreAccordionDetail,
   CoreAccordionSummary,
@@ -14,18 +13,15 @@ import {
   CoreTypographyBody1,
   CoreTypographyBody2
 } from "@wrappid/core";
-// eslint-disable-next-line import/no-unresolved
 import corePackage from "@wrappid/core/package.json";
 // eslint-disable-next-line import/no-unresolved
 import nativePackage from "@wrappid/native/package.json";
 import stylesPackage from "@wrappid/styles/package.json";
 
-// most root package.json file
 import packageJson from "../../package.json";
 import applicationLogo from "../resources/images/logo_dark.png";
-
-// eslint-disable-next-line no-console
-// console.log("corePackage, nativePackage", corePackage, nativePackage, stylesPackage);
+// eslint-disable-next-line import/order
+import WrappidAppLayout from "./layouts/WrappidAppLayout";
 
 const renderPackageDetails = (packageName, packageDetails) => {
   const {
@@ -34,7 +30,7 @@ const renderPackageDetails = (packageName, packageDetails) => {
 
   return (
     <>
-      <CoreLayoutItem id={BlankLayout.PLACEHOLDER.NAME}>
+      <CoreLayoutItem id={WrappidAppLayout.PLACEHOLDER.CONTENT}>
         <CoreAccordion key={packageName} styleClasses={[CoreClasses.PADDING.P1]}>
           <CoreAccordionSummary styleClasses={[CoreClasses.PADDING.P1]}>
             <CoreTypographyBody1>{`${name ? name : "Name not found"} ${version ? version : "version not available"}`}</CoreTypographyBody1>

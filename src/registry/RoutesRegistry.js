@@ -8,13 +8,13 @@ export const RoutesRegistry = {
     url         : "about"
   }, 
   defaultAuthRoute: {
-    Page        : { appComponent: "AppComponent" },
+    Page        : { appComponent: "AppComponent", layout: "WrappidAppLayout" },
     authRequired: true,
     entityRef   : "defaultAuthRoute",
     url         : "defaultAuthRoute"
   },  
   defaultRoute: {
-    Page        : { appComponent: "AppComponent" },
+    Page        : { appComponent: "AppComponent", layout: "WrappidAppLayout" },
     authRequired: false,
     entityRef   : "defaultAppRoute",
     url         : "defaultAppRoute"
