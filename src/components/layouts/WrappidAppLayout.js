@@ -4,13 +4,18 @@ import React from "react";
 import {
   CoreBox, CoreClasses, CoreImage,
   CoreLayoutPlaceholder, CoreLink, CoreStack,
-  CoreTypographyBody1, ThemeSelector
+  CoreTypographyBody1
 } from "@wrappid/core";
 
-import data from "../../../package.json";
+import packageData from "../../../package.json";
 import logo from "../../resources/images/logo.png";
 
 export default function WrappidAppLayout() {
+  React.useEffect(() => {
+    // eslint-disable-next-line no-console
+    console.log("WrappidAppLayout::useEffect");
+  }, []);
+
   return (
     <>
       <CoreBox
@@ -34,17 +39,15 @@ export default function WrappidAppLayout() {
           CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_SPACE_BETWEEN,
         ]}
       >
-        <CoreTypographyBody1>{data.name}</CoreTypographyBody1>
+        <CoreTypographyBody1>{packageData.name}</CoreTypographyBody1>
 
         <CoreTypographyBody1>
           Wrappid ©{new Date().getFullYear()}
         </CoreTypographyBody1>
 
         <CoreStack direction="row">
-          <ThemeSelector />
-
           <CoreLink href={"/about"}>
-            <CoreTypographyBody1>Version: {data.version}</CoreTypographyBody1>
+            <CoreTypographyBody1>Version: {packageData.version}</CoreTypographyBody1>
           </CoreLink>
         </CoreStack>
       </CoreBox>
