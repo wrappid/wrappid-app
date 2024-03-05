@@ -7,20 +7,14 @@ export const RoutesRegistry = {
     entityRef   : "about",
     url         : "about"
   }, 
-  Layouts: {
-    Page        : { appComponent: "Layouts", layout: "WrappidAppLayout" },
-    authRequired: false,
-    entityRef   : "layouts",
-    url         : "layouts"
-  }, 
   defaultAuthRoute: {
-    Page        : { appComponent: "AppComponent", layout: "WrappidUserLayout" },
+    Page        : { appComponent: "AppComponent", layout: "WrappidAppLayout" },
     authRequired: true,
     entityRef   : "defaultAuthRoute",
     url         : "defaultAuthRoute"
   },  
   defaultRoute: {
-    Page        : { appComponent: "AppComponent", layout: "WrappidGuestLayout" },
+    Page        : { appComponent: "AppComponent", layout: "WrappidAppLayout" },
     authRequired: false,
     entityRef   : "defaultAppRoute",
     url         : "defaultAppRoute"
