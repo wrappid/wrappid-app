@@ -55,7 +55,7 @@ function AppComponentContent() {
           </CoreH5>
 
           <CoreDivider
-            styleClasses={[CoreClasses.WIDTH.W_75, CoreClasses.MARGIN.M5]}
+            styleClasses={[CoreClasses.WIDTH.W_75, CoreClasses.MARGIN.M5, CoreClasses.DISPLAY.INLINE_FLEX]}
           />
 
           <CoreH5>Built with Wrappid. One code, Endless possibilities.</CoreH5>
@@ -121,26 +121,14 @@ function AppComponentContent() {
         sourcePath="https://github.com/wrappid"        
       />
 
-      {/* -----------------Styles Library------------------- */}
-      <Section
-        title="Styles Library"
-        about="It integrates seamlessly with popular styling libraries, using MIUI
-        for web styling and React Native Paper for mobile styling, ensuring
-        a consistent look and feel across platforms."
-        mainPath="/guide/styles"
-        learnMorePath="/guide/components"
-        sourcePath="https://github.com/wrappid" 
-      />
+      {/* -----------------Themes Section------------------- */}
+      <Section title="Themes" about="This is a theme viewer" mainPath="/createTheme"/>
 
-      {/* -----------------Custom Component Flexibility------------------- */}
-      <Section
-        title="Custom Component Flexibility"
-        about="While you can leverage the CoreComponents, Wrappid also gives you the flexibility to create your own custom components as needed to tailor your applications to specific requirements.
-        "
-        mainPath="/guide/styles"
-        learnMorePath="/guide/components"
-        sourcePath="https://github.com/wrappid" 
-      />
+      {/* -----------------Styles Library Section------------------- */}
+      <Section title="Styles Library" about="It integrates seamlessly with popular styling libraries, using MIUI for web styling and React Native Paper for mobile styling, ensuring a consistent look and feel across platforms." mainPath="/guide/styles" />
+
+      {/* -----------------Custom Component Flexibility Section------------------- */}
+      <Section title="Custom Component Flexibility" about="While you can leverage the CoreComponents, Wrappid also gives you the flexibility to create your own custom components as needed to tailor your applications to specific requirements." mainPath="/guide/components" />
 
       {/* -----------------Full-Stack Development Support------------------- */}
       <Section
