@@ -14,7 +14,7 @@ import {
 
 import data from "../../package.json";
 
-export default function Section(props) {
+export default function AppComponentSection(props) {
   const navigate = coreUseNavigate();
   const handleClickMain = () => {
     navigate(props.mainPath);

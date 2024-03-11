@@ -12,7 +12,7 @@ import {
   coreUseNavigate
 } from "@wrappid/core";
 
-import Section from "./Section";
+import AppComponentSection from "./AppComponentSection";
 import data from "../../package.json";
 import logo from "../resources/images/logo_dark.png";
 
@@ -113,7 +113,7 @@ function AppComponentContent() {
       </CoreGrid>
 
       {/* -----------------Themes------------------- */}
-      <Section
+      <AppComponentSection
         title="Themes"
         about="Themes related page for demo"
         mainPath="/createTheme"
@@ -122,16 +122,16 @@ function AppComponentContent() {
       />
 
       {/* -----------------Themes Section------------------- */}
-      <Section title="Themes" about="This is a theme viewer" mainPath="/createTheme"/>
+      <AppComponentSection title="Themes" about="This is a theme viewer" mainPath="/createTheme"/>
 
       {/* -----------------Styles Library Section------------------- */}
-      <Section title="Styles Library" about="It integrates seamlessly with popular styling libraries, using MIUI for web styling and React Native Paper for mobile styling, ensuring a consistent look and feel across platforms." mainPath="/guide/styles" />
+      <AppComponentSection title="Styles Library" about="It integrates seamlessly with popular styling libraries, using MIUI for web styling and React Native Paper for mobile styling, ensuring a consistent look and feel across platforms." mainPath="/guide/styles" />
 
       {/* -----------------Custom Component Flexibility Section------------------- */}
-      <Section title="Custom Component Flexibility" about="While you can leverage the CoreComponents, Wrappid also gives you the flexibility to create your own custom components as needed to tailor your applications to specific requirements." mainPath="/guide/components" />
+      <AppComponentSection title="Custom Component Flexibility" about="While you can leverage the CoreComponents, Wrappid also gives you the flexibility to create your own custom components as needed to tailor your applications to specific requirements." mainPath="/guide/components" />
 
       {/* -----------------Full-Stack Development Support------------------- */}
-      <Section
+      <AppComponentSection
         title="Full-Stack Development Support"
         about="Wrappid supports building both frontend and backend components of applications, including API middleware, database handling, and business-specific modules."
         mainPath="/guide/styles"
