@@ -18,6 +18,12 @@ export const RoutesRegistry = {
     authRequired: false,
     entityRef   : "defaultAppRoute",
     url         : "defaultAppRoute"
-  }, 
+  },  
+  testLayout: {
+    Page        : { appComponent: "LMTest" },
+    authRequired: false,
+    entityRef   : "testLayout",
+    url         : "test/layout"
+  },  
   ...modulesRoutesRegistry
 };
