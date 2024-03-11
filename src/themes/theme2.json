@@ -42,7 +42,7 @@
         },
         "secondary": {
             "light": "#ff4081",
-            "main": "#f50057",
+            "main": "#ff4081",
             "dark": "#c51162",
             "contrastText": "#fff"
         },

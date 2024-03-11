@@ -9,10 +9,10 @@ import {
   CoreImage,
   CoreLink,
   CoreTypographyBody1,
-  CoreTypographyBody2,
   coreUseNavigate
 } from "@wrappid/core";
 
+import AppComponentSection from "./AppComponentSection";
 import data from "../../package.json";
 import logo from "../resources/images/logo_dark.png";
 
@@ -32,7 +32,9 @@ function AppComponentContent() {
   );
 
   return (
-    <CoreGrid styleClasses={[CoreClasses.PADDING.P2, CoreClasses.PADDING.MD.P0]}>
+    <CoreGrid
+      styleClasses={[CoreClasses.PADDING.P2, CoreClasses.PADDING.MD.P0]}
+    >
       <CoreGrid
         rowSpacing="32"
         styleClasses={[CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER]}
@@ -53,7 +55,7 @@ function AppComponentContent() {
           </CoreH5>
 
           <CoreDivider
-            styleClasses={[CoreClasses.WIDTH.W_75, CoreClasses.MARGIN.M5]}
+            styleClasses={[CoreClasses.WIDTH.W_75, CoreClasses.MARGIN.M5, CoreClasses.DISPLAY.INLINE_FLEX]}
           />
 
           <CoreH5>Built with Wrappid. One code, Endless possibilities.</CoreH5>
@@ -110,226 +112,34 @@ function AppComponentContent() {
         </CoreGrid>
       </CoreGrid>
 
-      {/* -----------------Styles Library------------------- */}
-      <CoreGrid rowSpacing="32" styleClasses={[CoreClasses.PADDING.MD.PX5, CoreClasses.HEIGHT.MIN_VH_75, CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER, CoreClasses.ALIGNMENT.MD.JUSTIFY_CONTENT_FLEX_START]}>
-        <CoreDivider
-          styleClasses={[CoreClasses.MARGIN.MT5]}
-        />
+      {/* -----------------Themes------------------- */}
+      <AppComponentSection
+        title="Themes"
+        about="Themes related page for demo"
+        mainPath="/createTheme"
+        learnMorePath="/guide/components"
+        sourcePath="https://github.com/wrappid"        
+      />
 
-        <CoreBox styleClasses={[CoreClasses.FLEX.DIRECTION_COLUMN]}>
-          <CoreH3>Styles Library</CoreH3>
+      {/* -----------------Themes Section------------------- */}
+      <AppComponentSection title="Themes" about="This is a theme viewer" mainPath="/createTheme"/>
 
-          <CoreH5>
-            It integrates seamlessly with popular styling libraries, using MIUI
-            for web styling and React Native Paper for mobile styling, ensuring
-            a consistent look and feel across platforms.
-          </CoreH5>
+      {/* -----------------Styles Library Section------------------- */}
+      <AppComponentSection title="Styles Library" about="It integrates seamlessly with popular styling libraries, using MIUI for web styling and React Native Paper for mobile styling, ensuring a consistent look and feel across platforms." mainPath="/guide/styles" />
 
-        </CoreBox>
-
-        <CoreBox>
-          <CoreH5>@wrappid/styles package</CoreH5>
-
-          <CoreTypographyBody1>
-            {`Version: ${data.version}`}
-          </CoreTypographyBody1>
-
-          <CoreLink>Release Notes</CoreLink>
-
-          {" | "}
-
-          <CoreLink>Attributions</CoreLink>
-
-          {" | "}
-
-          <CoreLink>Contributors</CoreLink>
-
-          {" | "}
-
-          <CoreLink>Issue Board</CoreLink>
-        </CoreBox>
-
-        <CoreGrid
-          gridProps={{ gridSize: { md: 8, sm: 6, xs: 10 }, styleClasses: [CoreClasses.PADDING.PL0] }}
-          
-        >
-          <CoreContainedButton
-            gridProps={{ gridSize: { md: 4 } }}
-            styleClasses={[CoreClasses.WIDTH.W_100, CoreClasses.TEXT.TEXT_TRANSFORM_CAPITALIZE]}
-            OnClick={handleClick1}
-          >
-            How to Customize
-          </CoreContainedButton>
-
-          <CoreContainedButton
-            gridProps={{ gridSize: { md: 4 } }}
-            styleClasses={[CoreClasses.WIDTH.W_100, CoreClasses.TEXT.TEXT_TRANSFORM_CAPITALIZE]}
-            OnClick={handleClick2}
-          >
-            Learn more
-          </CoreContainedButton>
-
-          <CoreContainedButton
-            gridProps={{ gridSize: { md: 4 } }}
-            styleClasses={[CoreClasses.WIDTH.W_100, CoreClasses.TEXT.TEXT_TRANSFORM_CAPITALIZE]}
-            href={"https://github.com/wrappid"}
-          >
-            Source
-          </CoreContainedButton>
-        </CoreGrid>
-
-        <CoreTypographyBody2 styleClasses={[CoreClasses.MARGIN.MT5]}>
-        Courtesy: MUI & React Native Paper
-        </CoreTypographyBody2>
-      </CoreGrid>
-
-      {/* -----------------Custom Component Flexibility------------------- */}
-      <CoreGrid rowSpacing="32" styleClasses={[CoreClasses.PADDING.MD.PX5, CoreClasses.HEIGHT.MIN_VH_75, CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER, CoreClasses.ALIGNMENT.MD.JUSTIFY_CONTENT_FLEX_START]}>
-        <CoreDivider
-          styleClasses={[CoreClasses.MARGIN.MT5]}
-        />
-
-        <CoreBox styleClasses={[CoreClasses.FLEX.DIRECTION_COLUMN]}>
-          <CoreH3>Custom Component Flexibility</CoreH3>
-
-          <CoreH5>
-          While you can leverage the CoreComponents, Wrappid also gives you the flexibility to create your own custom components as needed to tailor your applications to specific requirements.
-          </CoreH5>
-
-        </CoreBox>
-
-        <CoreBox>
-          <CoreH5>@wrappid/styles package</CoreH5>
-
-          <CoreTypographyBody1>
-            {`Version: ${data.version}`}
-          </CoreTypographyBody1>
-
-          <CoreLink>Release Notes</CoreLink>
-
-          {" | "}
-
-          <CoreLink>Attributions</CoreLink>
-
-          {" | "}
-
-          <CoreLink>Contributors</CoreLink>
-
-          {" | "}
-
-          <CoreLink>Issue Board</CoreLink>
-        </CoreBox>
-
-        <CoreGrid
-          rowSpacing="8"
-          gridProps={{ gridSize: { md: 8, sm: 6, xs: 10 }, styleClasses: [CoreClasses.PADDING.PL0] }}
-          
-        >
-          <CoreContainedButton
-            gridProps={{ gridSize: { md: 4 } }}
-            styleClasses={[CoreClasses.WIDTH.W_100, CoreClasses.TEXT.TEXT_TRANSFORM_CAPITALIZE]}
-            OnClick={handleClick1}
-          >
-            How to Customize
-          </CoreContainedButton>
-
-          <CoreContainedButton
-            gridProps={{ gridSize: { md: 4 } }}
-            styleClasses={[CoreClasses.WIDTH.W_100, CoreClasses.TEXT.TEXT_TRANSFORM_CAPITALIZE]}
-            OnClick={handleClick2}
-          >
-            Learn more
-          </CoreContainedButton>
-
-          <CoreContainedButton
-            gridProps={{ gridSize: { md: 4 } }}
-            styleClasses={[CoreClasses.WIDTH.W_100, CoreClasses.TEXT.TEXT_TRANSFORM_CAPITALIZE]}
-            href={"https://github.com/wrappid"}
-          >
-            Source
-          </CoreContainedButton>
-        </CoreGrid>
-
-        <CoreTypographyBody2 styleClasses={[CoreClasses.MARGIN.MT5]}>
-        Courtesy: MUI & React Native Paper
-        </CoreTypographyBody2>
-      </CoreGrid>
+      {/* -----------------Custom Component Flexibility Section------------------- */}
+      <AppComponentSection title="Custom Component Flexibility" about="While you can leverage the CoreComponents, Wrappid also gives you the flexibility to create your own custom components as needed to tailor your applications to specific requirements." mainPath="/guide/components" />
 
       {/* -----------------Full-Stack Development Support------------------- */}
-      <CoreGrid rowSpacing="32" styleClasses={[CoreClasses.PADDING.MD.PX5, CoreClasses.HEIGHT.MIN_VH_75, CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER, CoreClasses.ALIGNMENT.MD.JUSTIFY_CONTENT_FLEX_START]}>
-        <CoreDivider
-          styleClasses={[CoreClasses.MARGIN.MT5]}
-        />
-
-        <CoreBox styleClasses={[CoreClasses.FLEX.DIRECTION_COLUMN]}>
-          <CoreH3>Full-Stack Development Support</CoreH3>
-
-          <CoreH5>
-          Wrappid supports building both frontend and backend components of applications, including API middleware, database handling, and business-specific modules.
-          </CoreH5>
-
-        </CoreBox>
-
-        <CoreBox>
-          <CoreH5>@wrappid/styles package</CoreH5>
-
-          <CoreTypographyBody1>
-            {`Version: ${data.version}`}
-          </CoreTypographyBody1>
-
-          <CoreLink>Release Notes</CoreLink>
-
-          {" | "}
-
-          <CoreLink>Attributions</CoreLink>
-
-          {" | "}
-
-          <CoreLink>Contributors</CoreLink>
-
-          {" | "}
-
-          <CoreLink>Issue Board</CoreLink>
-        </CoreBox>
-
-        <CoreGrid
-          rowSpacing="8"
-          gridProps={{ gridSize: { md: 8, sm: 6, xs: 10 }, styleClasses: [CoreClasses.PADDING.PL0] }}
-          
-        >
-          <CoreContainedButton
-            gridProps={{ gridSize: { md: 4 } }}
-            styleClasses={[CoreClasses.WIDTH.W_100, CoreClasses.TEXT.TEXT_TRANSFORM_CAPITALIZE]}
-            OnClick={handleClick1}
-          >
-            How to Customize
-          </CoreContainedButton>
-
-          <CoreContainedButton
-            gridProps={{ gridSize: { md: 4 } }}
-            styleClasses={[CoreClasses.WIDTH.W_100, CoreClasses.TEXT.TEXT_TRANSFORM_CAPITALIZE]}
-            OnClick={handleClick2}
-          >
-            Learn more
-          </CoreContainedButton>
-
-          <CoreContainedButton
-            gridProps={{ gridSize: { md: 4 } }}
-            styleClasses={[CoreClasses.WIDTH.W_100, CoreClasses.TEXT.TEXT_TRANSFORM_CAPITALIZE]}
-            href={"https://github.com/wrappid"}
-          >
-            Source
-          </CoreContainedButton>
-        </CoreGrid>
-
-        <CoreTypographyBody2 styleClasses={[CoreClasses.MARGIN.MT5]}>
-        Courtesy: MUI & React Native Paper
-        </CoreTypographyBody2>
-      </CoreGrid>
-
-      <CoreDivider
-        styleClasses={[CoreClasses.MARGIN.MT5]}
+      <AppComponentSection
+        title="Full-Stack Development Support"
+        about="Wrappid supports building both frontend and backend components of applications, including API middleware, database handling, and business-specific modules."
+        mainPath="/guide/styles"
+        learnMorePath="/guide/components"
+        sourcePath="https://github.com/wrappid" 
       />
+
+      <CoreDivider styleClasses={[CoreClasses.MARGIN.MT5]} />
     </CoreGrid>
   );
 }
