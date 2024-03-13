@@ -12,8 +12,6 @@ import {
   coreUseNavigate
 } from "@wrappid/core";
 
-import data from "../../package.json";
-
 export default function AppComponentSection(props) {
   const navigate = coreUseNavigate();
   const handleClickMain = () => {
@@ -37,9 +35,9 @@ export default function AppComponentSection(props) {
       </CoreBox>
 
       <CoreBox>
-        <CoreH5>@wrappid/{props.title}</CoreH5>
+        <CoreH5>{props.name}</CoreH5>
 
-        <CoreTypographyBody1>{`Version: ${data.version}`}</CoreTypographyBody1>
+        <CoreTypographyBody1>{props.version ? `Version: ${props.version}` : null}</CoreTypographyBody1>
 
         <CoreLink>Release Notes</CoreLink>
 
