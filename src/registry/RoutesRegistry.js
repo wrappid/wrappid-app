@@ -22,11 +22,5 @@ export const RoutesRegistry = {
     entityRef   : "defaultAppRoute",
     url         : "defaultAppRoute"
   },
-  testLayout: {
-    Page        : { appComponent: "LMTest", layout: WrappidAppLayout.name },
-    authRequired: false,
-    entityRef   : "testLayout",
-    url         : "test/layout"
-  },  
   ...modulesRoutesRegistry
 };
