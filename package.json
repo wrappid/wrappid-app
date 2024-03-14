@@ -1,6 +1,6 @@
 {
   "name": "wrappid-app",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This is a boilerplate application using wrappid for both web and mobile application.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
