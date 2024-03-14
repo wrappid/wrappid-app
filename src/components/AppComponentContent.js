@@ -70,21 +70,27 @@ function AppComponentContent() {
           <CoreBox>
             <CoreTypographyBody1>
               {`Version: ${packageJson.version}`}
+
+              <CoreLink>Release Notes</CoreLink>
+
+              <CoreTypographyBody1>
+                {" | "}
+              </CoreTypographyBody1>
+
+              <CoreLink>Attributions</CoreLink>
+
+              <CoreTypographyBody1>
+                {" | "}
+              </CoreTypographyBody1>
+
+              <CoreLink>Contributors</CoreLink>
+
+              <CoreTypographyBody1>
+                {" | "}
+              </CoreTypographyBody1>
+
+              <CoreLink>Issue Board</CoreLink>
             </CoreTypographyBody1>
-
-            <CoreLink>Release Notes</CoreLink>
-
-            {" | "}
-
-            <CoreLink>Attributions</CoreLink>
-
-            {" | "}
-
-            <CoreLink>Contributors</CoreLink>
-
-            {" | "}
-
-            <CoreLink>Issue Board</CoreLink>
           </CoreBox>
         </CoreBox>
 

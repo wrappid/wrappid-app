@@ -37,21 +37,29 @@ export default function AppComponentSection(props) {
       <CoreBox>
         <CoreH5>{props.name}</CoreH5>
 
-        <CoreTypographyBody1>{props.version ? `Version: ${props.version}` : null}</CoreTypographyBody1>
+        <CoreTypographyBody1>
+          {props.version ? `Version: ${props.version}` : null}
 
-        <CoreLink>Release Notes</CoreLink>
+          <CoreLink>Release Notes</CoreLink>
 
-        {" | "}
+          <CoreTypographyBody1>
+            {" | "}
+          </CoreTypographyBody1>
 
-        <CoreLink>Attributions</CoreLink>
+          <CoreLink>Attributions</CoreLink>
 
-        {" | "}
+          <CoreTypographyBody1>
+            {" | "}
+          </CoreTypographyBody1>
 
-        <CoreLink>Contributors</CoreLink>
+          <CoreLink>Contributors</CoreLink>
 
-        {" | "}
+          <CoreTypographyBody1>
+            {" | "}
+          </CoreTypographyBody1>
 
-        <CoreLink>Issue Board</CoreLink>
+          <CoreLink>Issue Board</CoreLink>
+        </CoreTypographyBody1>
       </CoreBox>
 
       <CoreGrid
