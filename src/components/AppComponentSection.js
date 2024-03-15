@@ -7,7 +7,7 @@ import {
   CoreH3,
   CoreH5,
   CoreLink,
-  CoreTypographyBody1,
+  CoreSpan,
   CoreTypographyBody2,
   coreUseNavigate
 } from "@wrappid/core";
@@ -37,29 +37,29 @@ export default function AppComponentSection(props) {
       <CoreBox>
         <CoreH5>{props.name}</CoreH5>
 
-        <CoreTypographyBody1>
+        <CoreSpan>
           {props.version ? `Version: ${props.version}` : null}
 
           <CoreLink>Release Notes</CoreLink>
 
-          <CoreTypographyBody1>
+          <CoreSpan>
             {" | "}
-          </CoreTypographyBody1>
+          </CoreSpan>
 
           <CoreLink>Attributions</CoreLink>
 
-          <CoreTypographyBody1>
+          <CoreSpan>
             {" | "}
-          </CoreTypographyBody1>
+          </CoreSpan>
 
           <CoreLink>Contributors</CoreLink>
 
-          <CoreTypographyBody1>
+          <CoreSpan>
             {" | "}
-          </CoreTypographyBody1>
+          </CoreSpan>
 
           <CoreLink>Issue Board</CoreLink>
-        </CoreTypographyBody1>
+        </CoreSpan>
       </CoreBox>
 
       <CoreGrid
