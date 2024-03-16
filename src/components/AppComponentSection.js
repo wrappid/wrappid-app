@@ -7,7 +7,7 @@ import {
   CoreH3,
   CoreH5,
   CoreLink,
-  CoreTypographyBody1,
+  CoreSpan,
   CoreTypographyBody2,
   coreUseNavigate
 } from "@wrappid/core";
@@ -37,29 +37,34 @@ export default function AppComponentSection(props) {
       <CoreBox>
         <CoreH5>{props.name}</CoreH5>
 
-        <CoreTypographyBody1>
-          {props.version ? `Version: ${props.version}` : null}
+        <CoreBox>
+          <CoreSpan>
+            {props.version ? `Version: ${props.version}` : null}
+          </CoreSpan>
+        </CoreBox>
+
+        <CoreBox styleClasses={[CoreClasses.DISPLAY.FLEX, CoreClasses.FLEX.DIRECTION_ROW]}>
 
           <CoreLink>Release Notes</CoreLink>
 
-          <CoreTypographyBody1>
+          <CoreSpan>
             {" | "}
-          </CoreTypographyBody1>
+          </CoreSpan>
 
           <CoreLink>Attributions</CoreLink>
 
-          <CoreTypographyBody1>
+          <CoreSpan>
             {" | "}
-          </CoreTypographyBody1>
+          </CoreSpan>
 
           <CoreLink>Contributors</CoreLink>
 
-          <CoreTypographyBody1>
+          <CoreSpan>
             {" | "}
-          </CoreTypographyBody1>
+          </CoreSpan>
 
           <CoreLink>Issue Board</CoreLink>
-        </CoreTypographyBody1>
+        </CoreBox>
       </CoreBox>
 
       <CoreGrid

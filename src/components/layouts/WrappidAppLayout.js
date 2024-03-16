@@ -11,10 +11,6 @@ import packageData from "../../../package.json";
 import logo from "../../resources/images/logo.png";
 
 export default function WrappidAppLayout() {
-  React.useEffect(() => {
-    // eslint-disable-next-line no-console
-    console.log("WrappidAppLayout::useEffect");
-  }, []);
 
   return (
     <>
@@ -22,7 +18,8 @@ export default function WrappidAppLayout() {
         styleClasses={[CoreClasses.DISPLAY.FLEX, CoreClasses.FLEX.DIRECTION_ROW, CoreClasses.SHADOW.NORMAL]}
       >
         <CoreImage
-          height={50}
+          height={40}
+          width={120}
           src={logo}
           alt="logo"
         />

@@ -8,7 +8,7 @@ import {
   CoreH5,
   CoreImage,
   CoreLink,
-  CoreTypographyBody1,
+  CoreSpan,
   coreUseNavigate
 } from "@wrappid/core";
 import corePackage from "@wrappid/core/package.json";
@@ -49,7 +49,11 @@ function AppComponentContent() {
         <CoreBox
           gridProps={{ styleClasses: [CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER] }}
         >
-          <CoreImage width={100} src={logo} alt="logo" />
+          <CoreImage
+            width={96}
+            height={96}
+            src={logo}
+            alt="logo" />
         </CoreBox>
 
         <CoreBox
@@ -68,29 +72,32 @@ function AppComponentContent() {
           <CoreH5>Built with Wrappid. One code, Endless possibilities.</CoreH5>
 
           <CoreBox>
-            <CoreTypographyBody1>
+            <CoreSpan>
               {`Version: ${packageJson.version}`}
+            </CoreSpan>
+          </CoreBox>
 
-              <CoreLink>Release Notes</CoreLink>
+          <CoreBox styleClasses={[CoreClasses.DISPLAY.FLEX, CoreClasses.FLEX.DIRECTION_ROW, CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER, CoreClasses.ALIGNMENT.ALIGN_CONTENT_CENTER]}>
+              
+            <CoreLink>Release Notes</CoreLink>
 
-              <CoreTypographyBody1>
-                {" | "}
-              </CoreTypographyBody1>
+            <CoreSpan>
+              {" | "}
+            </CoreSpan>
 
-              <CoreLink>Attributions</CoreLink>
+            <CoreLink>Attributions</CoreLink>
 
-              <CoreTypographyBody1>
-                {" | "}
-              </CoreTypographyBody1>
+            <CoreSpan>
+              {" | "}
+            </CoreSpan>
 
-              <CoreLink>Contributors</CoreLink>
+            <CoreLink>Contributors</CoreLink>
 
-              <CoreTypographyBody1>
-                {" | "}
-              </CoreTypographyBody1>
+            <CoreSpan>
+              {" | "}
+            </CoreSpan>
 
-              <CoreLink>Issue Board</CoreLink>
-            </CoreTypographyBody1>
+            <CoreLink>Issue Board</CoreLink>
           </CoreBox>
         </CoreBox>
 
