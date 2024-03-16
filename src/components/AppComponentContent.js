@@ -74,27 +74,30 @@ function AppComponentContent() {
           <CoreBox>
             <CoreSpan>
               {`Version: ${packageJson.version}`}
-
-              <CoreLink>Release Notes</CoreLink>
-
-              <CoreSpan>
-                {" | "}
-              </CoreSpan>
-
-              <CoreLink>Attributions</CoreLink>
-
-              <CoreSpan>
-                {" | "}
-              </CoreSpan>
-
-              <CoreLink>Contributors</CoreLink>
-
-              <CoreSpan>
-                {" | "}
-              </CoreSpan>
-
-              <CoreLink>Issue Board</CoreLink>
             </CoreSpan>
+          </CoreBox>
+
+          <CoreBox styleClasses={[CoreClasses.DISPLAY.FLEX, CoreClasses.FLEX.DIRECTION_ROW, CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER, CoreClasses.ALIGNMENT.ALIGN_CONTENT_CENTER]}>
+              
+            <CoreLink>Release Notes</CoreLink>
+
+            <CoreSpan>
+              {" | "}
+            </CoreSpan>
+
+            <CoreLink>Attributions</CoreLink>
+
+            <CoreSpan>
+              {" | "}
+            </CoreSpan>
+
+            <CoreLink>Contributors</CoreLink>
+
+            <CoreSpan>
+              {" | "}
+            </CoreSpan>
+
+            <CoreLink>Issue Board</CoreLink>
           </CoreBox>
         </CoreBox>
 

@@ -37,8 +37,13 @@ export default function AppComponentSection(props) {
       <CoreBox>
         <CoreH5>{props.name}</CoreH5>
 
-        <CoreSpan>
-          {props.version ? `Version: ${props.version}` : null}
+        <CoreBox>
+          <CoreSpan>
+            {props.version ? `Version: ${props.version}` : null}
+          </CoreSpan>
+        </CoreBox>
+
+        <CoreBox styleClasses={[CoreClasses.DISPLAY.FLEX, CoreClasses.FLEX.DIRECTION_ROW]}>
 
           <CoreLink>Release Notes</CoreLink>
 
@@ -59,7 +64,7 @@ export default function AppComponentSection(props) {
           </CoreSpan>
 
           <CoreLink>Issue Board</CoreLink>
-        </CoreSpan>
+        </CoreBox>
       </CoreBox>
 
       <CoreGrid
