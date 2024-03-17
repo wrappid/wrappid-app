@@ -1,6 +1,7 @@
 # Wrappid
 .wrappid/runtime
 .wrappid/wrappid.env
+build/
 
 # Logs
 logs
@@ -137,3 +138,9 @@ temp/*
 
 # mac
 .DS_Store
+
+# Dependency Files
+package.json
+package-lock.json
+./package/package.json
+./package/package-lock.json

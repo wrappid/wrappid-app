@@ -1,5 +1,7 @@
 import { CoreApp } from "@wrappid/core";
 
+// eslint-disable-next-line import/order
+import packageJson from "../package.json";
 import applicationConfig from "./config.json";
 import rxIconJson from "./customFonts/rxicon-config.json";
 import { ApplicationRegistry } from "./registry/ApplicationRegistry";
@@ -12,7 +14,6 @@ import { RoutesRegistry } from "./registry/RoutesRegistry";
 import { ThemesRegistry } from "./registry/ThemesRegistry";
 import { ValidationsRegistry } from "./registry/ValidationsRegistry";
 import appStyles from "./styles";
-import packageJson from "../package.json";
 
 function App() {
   return (

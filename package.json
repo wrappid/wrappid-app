@@ -1,6 +1,6 @@
 {
   "name": "wrappid-app",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "This is a boilerplate application using wrappid for both web and mobile application.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
@@ -30,18 +30,20 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@commitlint/cli": "^17.5.0",
-    "@commitlint/config-conventional": "^17.4.4",
-    "@commitlint/prompt-cli": "^17.5.0",
+    "@commitlint/cli": "~17.5.0",
+    "@commitlint/config-conventional": "~17.4.4",
+    "@commitlint/prompt-cli": "~17.5.0",
     "@wrappid/core": "latest",
+    "@wrappid/native-web": "latest",
+    "@wrappid/native-mobile": "latest",
     "@wrappid/styles": "latest",
-    "eslint": "^8.56.0",
-    "eslint-plugin-etc": "^2.0.3",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-sort-keys-fix": "^1.1.2",
-    "eslint-plugin-unused-imports": "^2.0.0",
-    "husky": "^8.0.3",
-    "standard-version": "^9.5.0"
+    "eslint": "~8.56.0",
+    "eslint-plugin-etc": "~2.0.3",
+    "eslint-plugin-import": "~2.27.5",
+    "eslint-plugin-react": "~7.32.2",
+    "eslint-plugin-sort-keys-fix": "~1.1.2",
+    "eslint-plugin-unused-imports": "~2.0.0",
+    "husky": "~8.0.3",
+    "standard-version": "~9.5.0"
   }
 }
