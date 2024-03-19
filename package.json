@@ -1,8 +1,9 @@
 {
   "name": "wrappid-app",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "description": "This is a boilerplate application using wrappid for both web and mobile application.",
   "scripts": {
+    "attributions:gen": "node ./scripts/attributions.gen.js",
     "test": "echo \"Error: no test specified\" && exit 0",
     "code:lint": "eslint --ignore-path .gitignore .",
     "code:format": "npm run code:lint -- --fix .",
@@ -33,10 +34,10 @@
     "@commitlint/cli": "~17.5.0",
     "@commitlint/config-conventional": "~17.4.4",
     "@commitlint/prompt-cli": "~17.5.0",
-    "@wrappid/core": "latest",
-    "@wrappid/native-web": "latest",
-    "@wrappid/native-mobile": "latest",
-    "@wrappid/styles": "latest",
+    "@wrappid/core": "0.0.439",
+    "@wrappid/native-mobile": "0.0.236",
+    "@wrappid/native-web": "0.0.280",
+    "@wrappid/styles": "0.0.130",
     "eslint": "~8.56.0",
     "eslint-plugin-etc": "~2.0.3",
     "eslint-plugin-import": "~2.27.5",
@@ -44,6 +45,7 @@
     "eslint-plugin-sort-keys-fix": "~1.1.2",
     "eslint-plugin-unused-imports": "~2.0.0",
     "husky": "~8.0.3",
-    "standard-version": "~9.5.0"
+    "standard-version": "~9.5.0",
+    "license-checker": "~25.0.1"
   }
 }

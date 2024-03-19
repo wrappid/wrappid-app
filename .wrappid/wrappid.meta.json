@@ -2,7 +2,7 @@
   "projectType": "app",
   "projectID": "",
   "projectName": "wrappid-app",
-  "wrTemplateVersion": "0.0.3",
+  "wrTemplateVersion": "0.0.6",
   "remote": true,
   "repoProvider": "github.com",
   "repoOwner": "wrappid",
