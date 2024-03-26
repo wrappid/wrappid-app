@@ -2,8 +2,14 @@
 import React from "react";
 
 import {
-  CoreBox, CoreClasses, CoreImage,
-  CoreLayoutPlaceholder, CoreLink, CoreStack,
+  CoreAppBar,
+  CoreBox,
+  CoreClasses,
+  CoreImage,
+  CoreLayoutPlaceholder,
+  CoreLink,
+  CoreStack,
+  CoreToolbar,
   CoreTypographyBody1
 } from "@wrappid/core";
 
@@ -11,20 +17,18 @@ import packageData from "../../../package.json";
 import logo from "../../resources/images/logo.png";
 
 export default function WrappidAppLayout() {
-
   return (
     <>
-      <CoreBox
-        styleClasses={[CoreClasses.DISPLAY.FLEX, CoreClasses.FLEX.DIRECTION_ROW, CoreClasses.SHADOW.NORMAL]}
-      >
-        <CoreImage
-          height={40}
-          width={120}
-          src={logo}
-          alt="logo"
-        />
-      </CoreBox>
-          
+      <CoreAppBar>
+        <CoreToolbar>
+          <CoreImage
+            height={40}
+            width={120}
+            src={logo}
+            alt="logo" />
+        </CoreToolbar>
+      </CoreAppBar>
+
       <CoreLayoutPlaceholder id={WrappidAppLayout.PLACEHOLDER.CONTENT} />
 
       <CoreBox
@@ -44,7 +48,9 @@ export default function WrappidAppLayout() {
 
         <CoreStack direction="row">
           <CoreLink href={"/about"}>
-            <CoreTypographyBody1>Version: {packageData.version}</CoreTypographyBody1>
+            <CoreTypographyBody1>
+              Version: {packageData.version}
+            </CoreTypographyBody1>
           </CoreLink>
         </CoreStack>
       </CoreBox>
