@@ -2,7 +2,6 @@ import {
   CoreBox,
   CoreClasses,
   CoreContainedButton,
-  CoreDivider,
   CoreGrid,
   CoreH3,
   CoreH5,
@@ -24,10 +23,8 @@ export default function AppComponentSection(props) {
   return (
     <CoreGrid
       rowSpacing="32"
-      styleClasses={[CoreClasses.PADDING.MD.PX5, CoreClasses.HEIGHT.MIN_VH_75, CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER, CoreClasses.ALIGNMENT.MD.JUSTIFY_CONTENT_FLEX_START]}
+      styleClasses={[CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER, CoreClasses.ALIGNMENT.MD.JUSTIFY_CONTENT_FLEX_START]}
     >
-      <CoreDivider styleClasses={[CoreClasses.MARGIN.MT5]} />
-
       <CoreBox styleClasses={[CoreClasses.FLEX.DIRECTION_COLUMN]}>
         <CoreH3>{props.title}</CoreH3>
 
