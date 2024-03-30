@@ -2,6 +2,8 @@ import {
   CoreBox,
   CoreClasses,
   CoreContainedButton,
+  CoreContainer,
+  CoreCssBaseline,
   CoreDivider,
   CoreGrid,
   CoreH3,
@@ -39,72 +41,87 @@ function AppComponentContent() {
   );
 
   return (
-    <CoreGrid
-      styleClasses={[CoreClasses.PADDING.P2, CoreClasses.PADDING.MD.P0]}
-    >
-      <CoreGrid
-        rowSpacing="32"
-        styleClasses={[CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER]}
-      >
+    <CoreContainer>
+      <CoreCssBaseline />
+
+      {/* Wrappid logo and other details */}
+      <CoreGrid styleClasses={[CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER, CoreClasses.HEIGHT.MIN_VH_75]}>
+        {/* Extra space for the navbar_overlapping_logo isssue */}
+        <CoreBox height={100}/>
+
+        {/* application Logo */}
         <CoreBox
-          gridProps={{ styleClasses: [CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER] }}
+          gridProps={{ gridSize: { md: 4 } }}
+          styleClasses={[CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER]}
         >
           <CoreImage
-            width={96}
-            height={96}
+            width={"50%"}
+            height={"50%"}
             src={logo}
             alt="logo" />
         </CoreBox>
 
         <CoreBox
-          styleClasses={[CoreClasses.FLEX.DIRECTION_COLUMN, CoreClasses.TEXT.TEXT_CENTER]}
+          gridProps={{
+            gridSize    : { md: 6 },
+            styleClasses: [CoreClasses.ALIGNMENT.ALIGN_SELF_CENTER],
+          }}
+          styleClasses={[CoreClasses.DISPLAY.FLEX, CoreClasses.FLEX.DIRECTION_COLUMN]}
         >
-          <CoreH3>{capitalizedWords.join(" ")}</CoreH3>
-
-          <CoreH5 styleClasses={[CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER]}>
-            {packageJson.description ? packageJson.description : "Description not provided"}
-          </CoreH5>
-
-          <CoreDivider
-            styleClasses={[CoreClasses.WIDTH.W_75, CoreClasses.MARGIN.M5, CoreClasses.DISPLAY.INLINE_FLEX]}
-          />
-
-          <CoreH5>Built with Wrappid. One code, Endless possibilities.</CoreH5>
-
-          <CoreBox>
-            <CoreSpan>
-              {`Version: ${packageJson.version}`}
-            </CoreSpan>
+          {/* application title */}
+          <CoreBox styleClasses={[CoreClasses.TEXT.SM.TEXT_CENTER, CoreClasses.TEXT.MD.TEXT_START]}>
+            <CoreH3>{capitalizedWords.join(" ")}</CoreH3>
           </CoreBox>
 
-          <CoreBox styleClasses={[CoreClasses.DISPLAY.FLEX, CoreClasses.FLEX.DIRECTION_ROW, CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER, CoreClasses.ALIGNMENT.ALIGN_CONTENT_CENTER]}>
-              
-            <CoreLink>Release Notes</CoreLink>
-
-            <CoreSpan>
-              {" | "}
-            </CoreSpan>
-
-            <CoreLink>Attributions</CoreLink>
-
-            <CoreSpan>
-              {" | "}
-            </CoreSpan>
-
-            <CoreLink>Contributors</CoreLink>
-
-            <CoreSpan>
-              {" | "}
-            </CoreSpan>
-
-            <CoreLink>Issue Board</CoreLink>
+          {/* application About */}
+          <CoreBox styleClasses={[CoreClasses.TEXT.MD.TEXT_CENTER, CoreClasses.TEXT.MD.TEXT_START]}>
+            <CoreH5>
+              {packageJson.description
+                ? packageJson.description
+                : "Description not provided"}
+            </CoreH5>
           </CoreBox>
         </CoreBox>
 
+        <CoreDivider />
+
+        {/* wrappid tagline, version and links */}
+        <CoreBox>
+          {/* wrappid tagline */}
+          <CoreBox styleClasses={[CoreClasses.TEXT.TEXT_CENTER]}>
+            <CoreH5>
+              Built with Wrappid. One code, Endless possibilities.
+            </CoreH5>
+          </CoreBox>
+
+          {/* wrappid Related links (Release Notes|Attributions|Contributors|Issue Board) */}
+          <CoreBox styleClasses={[CoreClasses.TEXT.TEXT_CENTER]}>
+            <CoreSpan>{`Version: ${packageJson.version}`}</CoreSpan>
+
+            <CoreBox
+              styleClasses={[CoreClasses.DISPLAY.FLEX, CoreClasses.FLEX.DIRECTION_ROW, CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER, CoreClasses.ALIGNMENT.ALIGN_CONTENT_CENTER]}
+            >
+              <CoreLink>Release Notes</CoreLink>
+
+              <CoreSpan>{" | "}</CoreSpan>
+
+              <CoreLink>Attributions</CoreLink>
+
+              <CoreSpan>{" | "}</CoreSpan>
+
+              <CoreLink>Contributors</CoreLink>
+
+              <CoreSpan>{" | "}</CoreSpan>
+
+              <CoreLink>Issue Board</CoreLink>
+            </CoreBox>
+          </CoreBox>
+        </CoreBox>
+
+        {/* buttons for related links */}
         <CoreGrid
           rowSpacing="8"
-          gridProps={{ gridSize: { md: 4, sm: 6, xs: 10 } }}
-          styleClasses={[CoreClasses.ALIGNMENT.ALIGN_ITEMS_CENTER]}
+          gridProps={{ gridSize: { md: 6, sm: 6, xs: 10 } }}
         >
           <CoreContainedButton
             gridProps={{ gridSize: { md: 4 } }}
@@ -132,38 +149,59 @@ function AppComponentContent() {
         </CoreGrid>
       </CoreGrid>
 
-      {/* -----------------Themes Section------------------- */}
-      <AppComponentSection title="Themes" about="This is a theme viewer" mainPath="/theme/createTheme"/>
+      <CoreDivider styleClasses={[CoreClasses.PADDING.PT5]} />
 
-      {/* -----------------Styles Library Section------------------- */}
-      <AppComponentSection
-        title="Styles Library"
-        about="It integrates seamlessly with popular styling libraries, using MIUI for web styling and React Native Paper for mobile styling, ensuring a consistent look and feel across platforms." 
-        name={stylesPackage.name}
-        version={stylesPackage.version}
-        mainPath="/guide/styles" />
+      {/* Wrappid features and other details segmented into sections */}
 
-      {/* -----------------Custom Component Flexibility Section------------------- */}
-      <AppComponentSection
-        title="Custom Component Flexibility"
-        about="While you can leverage the CoreComponents, Wrappid also gives you the flexibility to create your own custom components as needed to tailor your applications to specific requirements." 
-        name={corePackage.name}
-        version={corePackage.version}
-        mainPath="/guide/components" />
+      <CoreBox >
+        {/* Wrappid styles section */}
+        
+        <AppComponentSection
+          title="Styles Library"
+          about="It integrates seamlessly with popular styling libraries, using MUI for web styling and React Native Paper for mobile styling, ensuring a consistent look and feel across platforms."
+          name={stylesPackage.name}
+          version={stylesPackage.version}
+          mainPath="/guide/styles"
+        />
 
-      {/* -----------------Full-Stack Development Support------------------- */}
-      <AppComponentSection
-        title="Full-Stack Development Support"
-        about="Wrappid supports building both frontend and backend components of applications, including API middleware, database handling, and business-specific modules."
-        name={nativePackage.name}
-        version={nativePackage.version}
-        mainPath="/guide/styles"
-        learnMorePath="/guide/components"
-        sourcePath="https://github.com/wrappid" 
-      />
+        {/* Wrappid Custom Component Flexibility Section section */}
+        
+        <AppComponentSection
+          title="Custom Component Flexibility"
+          about="While you can leverage the CoreComponents, Wrappid also gives you the flexibility to create your own custom components as needed to tailor your applications to specific requirements."
+          name={corePackage.name}
+          version={corePackage.version}
+          mainPath="/guide/components"
+        />
 
-      <CoreDivider styleClasses={[CoreClasses.MARGIN.MT5]} />
-    </CoreGrid>
+        {/* Wrappid native section */}
+        
+        <AppComponentSection
+          title="Full-Stack Development Support"
+          about="Wrappid supports building both frontend and backend components of applications, including API middleware, database handling, and business-specific modules."
+          name={nativePackage.name}
+          version={nativePackage.version}
+          mainPath="/guide/styles"
+          learnMorePath="/guide/components"
+          sourcePath="https://github.com/wrappid"
+        />
+
+        {/* wrappid layout section */}
+        
+        <AppComponentSection
+          title="Create Layouts"
+          about="You can create layouts and use multiple layouts to style your page"
+        />
+
+        {/* wrappid themes section */}
+        
+        <AppComponentSection
+          title="Themes"
+          about="This is a theme viewer"
+          mainPath="/theme/createTheme"
+        />
+      </CoreBox>
+    </CoreContainer>
   );
 }
 
