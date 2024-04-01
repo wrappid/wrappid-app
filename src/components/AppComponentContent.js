@@ -51,30 +51,28 @@ function AppComponentContent() {
 
         {/* application Logo */}
         <CoreBox
-          gridProps={{ gridSize: { md: 4 } }}
-          styleClasses={[CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER]}
+          gridProps={{ gridSize: { md: 3 }, styleClasses: [CoreClasses.TEXT.TEXT_CENTER] }}
+          
         >
           <CoreImage
-            width={"50%"}
-            height={"50%"}
+            width={"200"}
+            height={"200"}
             src={logo}
             alt="logo" />
         </CoreBox>
 
         <CoreBox
           gridProps={{
-            gridSize    : { md: 6 },
+            gridSize    : { md: 5 },
             styleClasses: [CoreClasses.ALIGNMENT.ALIGN_SELF_CENTER],
           }}
-          styleClasses={[CoreClasses.DISPLAY.FLEX, CoreClasses.FLEX.DIRECTION_COLUMN]}
+          
         >
           {/* application title */}
-          <CoreBox styleClasses={[CoreClasses.TEXT.SM.TEXT_CENTER, CoreClasses.TEXT.MD.TEXT_START]}>
+          <CoreBox styleClasses={[CoreClasses.TEXT.TEXT_CENTER]}>
             <CoreH3>{capitalizedWords.join(" ")}</CoreH3>
-          </CoreBox>
 
-          {/* application About */}
-          <CoreBox styleClasses={[CoreClasses.TEXT.MD.TEXT_CENTER, CoreClasses.TEXT.MD.TEXT_START]}>
+            {/* application About */}
             <CoreH5>
               {packageJson.description
                 ? packageJson.description
@@ -153,7 +151,7 @@ function AppComponentContent() {
 
       {/* Wrappid features and other details segmented into sections */}
 
-      <CoreBox >
+      <CoreBox>
         {/* Wrappid styles section */}
         
         <AppComponentSection
