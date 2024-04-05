@@ -124,7 +124,7 @@ function AppComponentContent() {
           <CoreContainedButton
             gridProps={{ gridSize: { md: 4 } }}
             styleClasses={[CoreClasses.WIDTH.W_100, CoreClasses.TEXT.TEXT_TRANSFORM_CAPITALIZE]}
-            OnClick={handleClick1}
+            onClick={handleClick1}
           >
             How to Customize
           </CoreContainedButton>
@@ -132,7 +132,7 @@ function AppComponentContent() {
           <CoreContainedButton
             gridProps={{ gridSize: { md: 4 } }}
             styleClasses={[CoreClasses.WIDTH.W_100, CoreClasses.TEXT.TEXT_TRANSFORM_CAPITALIZE]}
-            OnClick={handleClick2}
+            onClick={handleClick2}
           >
             Learn more
           </CoreContainedButton>

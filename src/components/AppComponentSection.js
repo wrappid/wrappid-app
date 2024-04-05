@@ -75,7 +75,7 @@ export default function AppComponentSection(props) {
             <CoreContainedButton
               gridProps={{ gridSize: { md: 4 } }}
               styleClasses={[CoreClasses.WIDTH.W_100, CoreClasses.TEXT.TEXT_TRANSFORM_CAPITALIZE]}
-              OnClick={handleClickMain}
+              onClick={handleClickMain}
             >
           How to Customize
             </CoreContainedButton>
@@ -83,7 +83,7 @@ export default function AppComponentSection(props) {
             <CoreContainedButton
               gridProps={{ gridSize: { md: 4 } }}
               styleClasses={[CoreClasses.WIDTH.W_100, CoreClasses.TEXT.TEXT_TRANSFORM_CAPITALIZE]}
-              OnClick={handleClickLearn}
+              onClick={handleClickLearn}
             >
           Learn more
             </CoreContainedButton>
