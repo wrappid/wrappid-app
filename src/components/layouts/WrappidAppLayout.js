@@ -26,7 +26,7 @@ export default function WrappidAppLayout() {
       <CoreBox styleClasses={[CoreClasses.DISPLAY.FLEX]}>
         <CoreCssBaseline/>
 
-        <CoreAppBar logo={resources?.appLogo}/>
+        <CoreAppBar logo={resources?.appLogo} leftMenuEnabled={false} />
 
       </CoreBox>
 
