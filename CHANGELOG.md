@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.9](https://github.com/wrappid/wrappid-app/compare/v0.0.8...v0.0.9) (2024-04-08)
+
+
+### Bug Fixes
+
+* **core:** :art: left menu diabled for WrappidAppLayout ([b45d3d3](https://github.com/wrappid/wrappid-app/commit/b45d3d36e49ae7d087fc674486cc6a3fca4edf0a)), closes [#112](https://github.com/wrappid/wrappid-app/issues/112)
+
 ### [0.0.8](https://github.com/wrappid/wrappid-app/compare/v0.0.1...v0.0.8) (2024-04-01)
 
 
