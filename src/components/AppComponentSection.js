@@ -8,18 +8,10 @@ import {
   CoreLink,
   CoreSpan,
   CoreTypographyBody1,
-  CoreTypographyBody2,
-  coreUseNavigate
+  CoreTypographyBody2
 } from "@wrappid/core";
 
 export default function AppComponentSection(props) {
-  const navigate = coreUseNavigate();
-  const handleClickMain = () => {
-    navigate(props.mainPath);
-  };
-  const handleClickLearn = () => {
-    navigate(props.learnMorePath);
-  };
 
   return (
     <CoreGrid styleClasses={[CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER, CoreClasses.MARGIN.MB1, CoreClasses.FLEX.DIRECTION_COLUMN]}>
@@ -75,17 +67,9 @@ export default function AppComponentSection(props) {
             <CoreContainedButton
               gridProps={{ gridSize: { md: 4 } }}
               styleClasses={[CoreClasses.WIDTH.W_100, CoreClasses.TEXT.TEXT_TRANSFORM_CAPITALIZE]}
-              onClick={handleClickMain}
+              href={props.customizePath}
             >
           How to Customize
-            </CoreContainedButton>
-
-            <CoreContainedButton
-              gridProps={{ gridSize: { md: 4 } }}
-              styleClasses={[CoreClasses.WIDTH.W_100, CoreClasses.TEXT.TEXT_TRANSFORM_CAPITALIZE]}
-              onClick={handleClickLearn}
-            >
-          Learn more
             </CoreContainedButton>
 
             <CoreContainedButton

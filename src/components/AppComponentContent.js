@@ -10,8 +10,7 @@ import {
   CoreH5,
   CoreImage,
   CoreLink,
-  CoreSpan,
-  coreUseNavigate
+  CoreSpan
 } from "@wrappid/core";
 import corePackage from "@wrappid/core/package.json";
 // eslint-disable-next-line import/no-unresolved
@@ -26,13 +25,6 @@ nativePackage.author;
 stylesPackage.author;
 
 function AppComponentContent() {
-  const navigate = coreUseNavigate();
-  const handleClick1 = () => {
-    navigate("/guide/styles");
-  };
-  const handleClick2 = () => {
-    navigate("/guide/components");
-  };
   // Capitalize all first letters of words
   const words = packageJson.name.replaceAll("-", " ").split(" ");
   // Join the capitalized words back with spaces
@@ -124,15 +116,15 @@ function AppComponentContent() {
           <CoreContainedButton
             gridProps={{ gridSize: { md: 4 } }}
             styleClasses={[CoreClasses.WIDTH.W_100, CoreClasses.TEXT.TEXT_TRANSFORM_CAPITALIZE]}
-            onClick={handleClick1}
+            href={"https://github.com/wrappid?view_as=public"}            
           >
-            How to Customize
+            Get Started
           </CoreContainedButton>
 
           <CoreContainedButton
             gridProps={{ gridSize: { md: 4 } }}
             styleClasses={[CoreClasses.WIDTH.W_100, CoreClasses.TEXT.TEXT_TRANSFORM_CAPITALIZE]}
-            onClick={handleClick2}
+            href={"https://github.com/wrappid?view_as=public"}
           >
             Learn more
           </CoreContainedButton>
@@ -159,7 +151,8 @@ function AppComponentContent() {
           about="It integrates seamlessly with popular styling libraries, using MUI for web styling and React Native Paper for mobile styling, ensuring a consistent look and feel across platforms."
           name={stylesPackage.name}
           version={stylesPackage.version}
-          mainPath="/guide/styles"
+          customizePath="/guide/styles"
+          sourcePath="https://github.com/wrappid/styles"
         />
 
         {/* Wrappid Custom Component Flexibility Section section */}
@@ -169,7 +162,8 @@ function AppComponentContent() {
           about="While you can leverage the CoreComponents, Wrappid also gives you the flexibility to create your own custom components as needed to tailor your applications to specific requirements."
           name={corePackage.name}
           version={corePackage.version}
-          mainPath="/guide/components"
+          customizePath="/guide/components"
+          sourcePath="https://github.com/wrappid/core"
         />
 
         {/* Wrappid native section */}
@@ -179,9 +173,8 @@ function AppComponentContent() {
           about="Wrappid supports building both frontend and backend components of applications, including API middleware, database handling, and business-specific modules."
           name={nativePackage.name}
           version={nativePackage.version}
-          mainPath="/guide/styles"
-          learnMorePath="/guide/components"
-          sourcePath="https://github.com/wrappid"
+          customizePath="/guide/styles"
+          sourcePath="https://github.com/wrappid/native-web"
         />
 
         {/* wrappid layout section */}
@@ -189,6 +182,8 @@ function AppComponentContent() {
         <AppComponentSection
           title="Create Layouts"
           about="You can create layouts and use multiple layouts to style your page"
+          customizePath="/guide/layouts"
+          sourcePath="https://github.com/wrappid/guide"
         />
 
         {/* wrappid themes section */}
@@ -196,7 +191,7 @@ function AppComponentContent() {
         <AppComponentSection
           title="Themes"
           about="This is a theme viewer"
-          mainPath="/theme/createTheme"
+          customizePath="/theme/createTheme"
         />
       </CoreBox>
     </CoreContainer>
