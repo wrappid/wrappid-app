@@ -17,7 +17,7 @@ export default function AppComponentSection(props) {
     <CoreGrid styleClasses={[CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER, CoreClasses.MARGIN.MB1, CoreClasses.FLEX.DIRECTION_COLUMN]}>
       <CoreCard gridProps={{ gridSize: { md: 9 } }} styleClasses={[CoreClasses.PADDING.P1]}>
         <CoreGrid
-          styleClasses={[CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER, CoreClasses.HEIGHT.MIN_VH_50]}
+          styleClasses={[CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER, CoreClasses.ALIGNMENT.MD.JUSTIFY_CONTENT_FLEX_START, CoreClasses.HEIGHT.MIN_VH_50]}
         >
           <CoreBox styleClasses={[CoreClasses.FLEX.DIRECTION_COLUMN]}>
             <CoreH5>{props.title}</CoreH5>
@@ -36,32 +36,32 @@ export default function AppComponentSection(props) {
 
             <CoreBox styleClasses={[CoreClasses.DISPLAY.FLEX, CoreClasses.FLEX.DIRECTION_ROW]}>
 
-              <CoreLink>Release Notes</CoreLink>
+              <CoreLink href={props.sourcePath + "/releases"} >Release Notes</CoreLink>
 
               <CoreSpan>
                 {" | "}
               </CoreSpan>
 
-              <CoreLink>Attributions</CoreLink>
+              <CoreLink href={props.sourcePath + "/blob/main/ATTRIBUTIONS.md"}>Attributions</CoreLink>
 
               <CoreSpan>
                 {" | "}
               </CoreSpan>
 
-              <CoreLink>Contributors</CoreLink>
+              <CoreLink href={props.sourcePath + "/graphs/contributors"}>Contributors</CoreLink>
 
               <CoreSpan>
                 {" | "}
               </CoreSpan>
 
-              <CoreLink>Issue Board</CoreLink>
+              <CoreLink href={props.sourcePath + "/issues"}>Issue Board</CoreLink>
             </CoreBox>
           </CoreBox>
 
           <CoreGrid
             gridProps={{
-              gridSize    : { md: 8, sm: 10, xs: 10 },
-              styleClasses: [CoreClasses.PADDING.PL0],
+              gridSize    : { md: 8, sm: 6, xs: 12 },
+              styleClasses: [CoreClasses.MARGIN.MR2],
             }}
           >
             <CoreContainedButton

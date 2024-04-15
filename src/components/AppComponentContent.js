@@ -91,19 +91,19 @@ function AppComponentContent() {
             <CoreBox
               styleClasses={[CoreClasses.DISPLAY.FLEX, CoreClasses.FLEX.DIRECTION_ROW, CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER, CoreClasses.ALIGNMENT.ALIGN_CONTENT_CENTER]}
             >
-              <CoreLink>Release Notes</CoreLink>
+              <CoreLink href="https://github.com/wrappid/wrappid-app/releases">Release Notes</CoreLink>
 
               <CoreSpan>{" | "}</CoreSpan>
 
-              <CoreLink>Attributions</CoreLink>
+              <CoreLink href="https://github.com/wrappid/wrappid-app/blob/main/ATTRIBUTIONS.md">Attributions</CoreLink>
 
               <CoreSpan>{" | "}</CoreSpan>
 
-              <CoreLink>Contributors</CoreLink>
+              <CoreLink href="https://github.com/wrappid/wrappid-app/graphs/contributors">Contributors</CoreLink>
 
               <CoreSpan>{" | "}</CoreSpan>
 
-              <CoreLink>Issue Board</CoreLink>
+              <CoreLink href="https://github.com/wrappid/wrappid-app/issues">Issue Board</CoreLink>
             </CoreBox>
           </CoreBox>
         </CoreBox>
@@ -188,11 +188,12 @@ function AppComponentContent() {
 
         {/* wrappid themes section */}
         
-        <AppComponentSection
+        {/* eslint-disable-next-line etc/no-commented-out-code */}
+        {/* <AppComponentSection
           title="Themes"
           about="This is a theme viewer"
           customizePath="/theme/createTheme"
-        />
+        /> */}
       </CoreBox>
     </CoreContainer>
   );
