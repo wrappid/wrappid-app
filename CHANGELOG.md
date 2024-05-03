@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.12](https://github.com/wrappid/wrappid-app/compare/v0.0.11...v0.0.12) (2024-05-03)
+
+
+### Bug Fixes
+
+* **config:** :ambulance: force create package-lock.json ([bfa346c](https://github.com/wrappid/wrappid-app/commit/bfa346cdb131308bfb507addbe3ac697e5c3aba0))
+* **config:** :arrow_up: set wrappid packages to latest ([68e5854](https://github.com/wrappid/wrappid-app/commit/68e585437092557fa2d1c46e2fd4df9d37bca7b8))
+* **config:** :bug: add .versonrc file to configure CI commit message ([80e83ae](https://github.com/wrappid/wrappid-app/commit/80e83aed8fc875a98ec033a5d10684de0cd23aa4)), closes [#117](https://github.com/wrappid/wrappid-app/issues/117)
+
 ### [0.0.11](https://github.com/wrappid/wrappid-app/compare/v0.0.10...v0.0.11) (2024-04-15)
 
 ### [0.0.10](https://github.com/wrappid/wrappid-app/compare/v0.0.9...v0.0.10) (2024-04-15)
