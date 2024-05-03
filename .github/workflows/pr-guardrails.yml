@@ -49,8 +49,8 @@ jobs:
 
       - name: Install commitlint
         run: |
-          npm ci
-          npm i conventional-changelog-conventionalcommits@7.0.2
+          npm ci --force
+          npm i conventional-changelog-conventionalcommits@7.0.2 --force
 
       - name: Print versions
         run: |
@@ -90,7 +90,7 @@ jobs:
 
       - name: Install ESLint
         run: |
-          npm ci
+          npm ci --force
         env:
           NODE_AUTH_TOKEN: ${{secrets.WRAPPID_REGISTRY_TOKEN}}
 
@@ -146,10 +146,9 @@ jobs:
           npm config set //npm.pkg.github.com/:_authToken ${{ secrets.WRAPPID_REGISTRY_TOKEN }}
 
       - name: Install node_modules
-        run: npm ci
+        run: npm ci --force
 
       - name: Run test cases
         run: |
-         npm ci
          npm test
          echo "Ran test cases"

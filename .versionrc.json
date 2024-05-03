@@ -1,0 +1,41 @@
+{
+    "types": [
+        {
+            "type": "feat",
+            "section": "Features"
+        },
+        {
+            "type": "fix",
+            "section": "Bug Fixes"
+        },
+        {
+            "type": "ci",
+            "hidden": true
+        },
+        {
+            "type": "chore",
+            "hidden": true
+        },
+        {
+            "type": "docs",
+            "hidden": true
+        },
+        {
+            "type": "style",
+            "hidden": true
+        },
+        {
+            "type": "refactor",
+            "hidden": true
+        },
+        {
+            "type": "perf",
+            "hidden": true
+        },
+        {
+            "type": "test",
+            "section": "Test Cases"
+        }
+    ],
+    "releaseCommitMessageFormat": "chore(tag-release): {{currentTag}}\n\ncreate new tag \n\nref: #CICD "
+}
