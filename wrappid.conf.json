@@ -2,7 +2,7 @@
     "dev": {
         "environment": "development",
         "platform": "web",
-        "defaultRoute": "defaultRoute",
+        "defaultRoute": "defaultAppRoute",
         "defaultAuthenticatedRoute": "defaultAuthRoute",
         "defaultLayout": "WrappidAppLayout",
         "defaultAuthenticatedLayout": "AppContainerLayout",
@@ -16,7 +16,7 @@
     "stage": {
         "environment": "stage",
         "platform": "web",
-        "defaultRoute": "defaultRoute",
+        "defaultRoute": "defaultAppRoute",
         "defaultAuthenticatedRoute": "defaultAuthRoute",
         "defaultLayout": "WrappidAppLayout",
         "defaultAuthenticatedLayout": "AppContainerLayout",
@@ -30,7 +30,7 @@
     "prod": {
         "environment": "production",
         "platform": "web",
-        "defaultRoute": "defaultRoute",
+        "defaultRoute": "defaultAppRoute",
         "defaultAuthenticatedRoute": "defaultAuthRoute",
         "defaultLayout": "WrappidAppLayout",
         "defaultAuthenticatedLayout": "AppContainerLayout",

@@ -10,7 +10,7 @@ export const RoutesRegistry = {
     entityRef   : "about",
     url         : "about"
   },
-  defaultRoute: {
+  defaultAppRoute: {
     Page        : { appComponent: AppComponent.name, layout: WrappidAppLayout.name },
     authRequired: false,
     entityRef   : "defaultAppRoute",
