@@ -1,6 +1,6 @@
 {
   "name": "wrappid-app",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "This is a boilerplate application using wrappid for both web and mobile application.",
   "scripts": {
     "attributions:gen": "node ./scripts/attributions.gen.js",

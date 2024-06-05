@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.13](https://github.com/wrappid/wrappid-app/compare/v0.0.12...v0.0.13) (2024-06-05)
+
+
+### Bug Fixes
+
+* **config:** :bug: auth is undefined ([f98bd34](https://github.com/wrappid/wrappid-app/commit/f98bd34da19e2cc67615669e3f23cc5ef106af7b)), closes [wrappid/wrappid-app#120](https://github.com/wrappid/wrappid-app/issues/120)
+* **config:** :pushpin: pin wrappid packages to latest ([e187718](https://github.com/wrappid/wrappid-app/commit/e1877186f94802c6c891301661526130398dabe5)), closes [#122](https://github.com/wrappid/wrappid-app/issues/122)
+
 ### [0.0.12](https://github.com/wrappid/wrappid-app/compare/v0.0.11...v0.0.12) (2024-05-03)
 
 
