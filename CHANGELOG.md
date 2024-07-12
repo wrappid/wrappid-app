@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.15](https://github.com/wrappid/wrappid-app/compare/v0.0.14...v0.0.15) (2024-07-12)
+
+
+### Bug Fixes
+
+* **config:** :bug: added react-dom package to solve the installation error ([19912b5](https://github.com/wrappid/wrappid-app/commit/19912b5fc8e1f42d6cbafcfc45a4cc7666b30c41)), closes [#126](https://github.com/wrappid/wrappid-app/issues/126)
+
 ### [0.0.14](https://github.com/wrappid/wrappid-app/compare/v0.0.13...v0.0.14) (2024-07-11)
 
 ### [0.0.13](https://github.com/wrappid/wrappid-app/compare/v0.0.12...v0.0.13) (2024-06-05)
