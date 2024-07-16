@@ -21,38 +21,47 @@ export default function WrappidAppLayout() {
 
   return (
     <>
-      <CoreLayoutPlaceholder id={WrappidAppLayout.PLACEHOLDER.CONTENT} />
-      
       <CoreBox styleClasses={[CoreClasses.DISPLAY.FLEX]}>
-        <CoreCssBaseline/>
+
+        <CoreCssBaseline />
 
         <CoreAppBar logo={resources?.appLogo} leftMenuEnabled={false} />
 
-      </CoreBox>
+        <CoreBox
+          component="main"
+          styleClasses={[CoreClasses.LAYOUT.CONTENT_CONTAINER, CoreClasses.LAYOUT.APPBAR_HEIGHT]}
+        >
 
-      <CoreBox
-        styleClasses={[
-          CoreClasses.DISPLAY.FLEX,
-          CoreClasses.FLEX.DIRECTION_ROW,
-          CoreClasses.PADDING.P2,
-          CoreClasses.BG.BG_PRIMARY,
-          CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_SPACE_BETWEEN,
-        ]}
-      >
-        <CoreTypographyBody1>{packageData.name}</CoreTypographyBody1>
+          <CoreLayoutPlaceholder id={WrappidAppLayout.PLACEHOLDER.CONTENT} />
 
-        <CoreTypographyBody1>
-          Wrappid ©{new Date().getFullYear()}
-        </CoreTypographyBody1>
+          <CoreBox
+            styleClasses={[
+              CoreClasses.DISPLAY.FLEX,
+              CoreClasses.FLEX.DIRECTION_ROW,
+              CoreClasses.PADDING.P2,
+              CoreClasses.BG.BG_PRIMARY,
+              CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_SPACE_BETWEEN,
+            ]}
+          >
+            <CoreTypographyBody1>{packageData.name}</CoreTypographyBody1>
 
-        <CoreStack direction="row">
-          <CoreLink href={"/about"}>
             <CoreTypographyBody1>
-              Version: {packageData.version}
+              Wrappid ©{new Date().getFullYear()}
             </CoreTypographyBody1>
-          </CoreLink>
-        </CoreStack>
+
+            <CoreStack direction="row">
+              <CoreLink href={"/about"}>
+                <CoreTypographyBody1>
+                  Version: {packageData.version}
+                </CoreTypographyBody1>
+              </CoreLink>
+            </CoreStack>
+          </CoreBox>
+
+        </CoreBox>
+
       </CoreBox>
+
     </>
   );
 }
