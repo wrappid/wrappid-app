@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.16](https://github.com/wrappid/wrappid-app/compare/v0.0.15...v0.0.16) (2024-07-16)
+
+
+### Bug Fixes
+
+* **global:** :bug: the nav bar is overlapping with the body section has been fixed ([0ff2eea](https://github.com/wrappid/wrappid-app/commit/0ff2eea133bea757d36a6269b6104588a901d310)), closes [#129](https://github.com/wrappid/wrappid-app/issues/129)
+
 ### [0.0.15](https://github.com/wrappid/wrappid-app/compare/v0.0.14...v0.0.15) (2024-07-12)
 
 
