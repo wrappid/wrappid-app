@@ -1,19 +1,10 @@
-# `Wrappid` App Boilerplate
+# Wrappid App Template
 
-```text
-                                    _     _
-    __      ___ __ __ _ _ __  _ __ (_) __| |
-    \ \ /\ / / '__/ _` | '_ \| '_ \| |/ _` |
-     \ V  V /| | | (_| | |_) | |_) | | (_| |
-      \_/\_/ |_|  \__,_| .__/| .__/|_|\__,_|
-                       |_|   |_|
-```
-
-**This is a template documentation, @wrappid/toolkit uses this template to create frontend boilerplate.**
+**This is a template documentation, @wrappid/toolkit uses this template to create wrappid-app boilerplate.**
 
 
 **Table of Contents**
-- [`Wrappid` App Boilerplate](#wrappid-app-boilerplate)
+- [Wrappid App Template](#wrappid-app-template)
   - [1. Introduction](#1-introduction)
   - [2. Getting Started](#2-getting-started)
     - [2.1. What are my Pre-requisites?](#21-what-are-my-pre-requisites)
@@ -33,11 +24,6 @@
     - [5.6. Resources Registry](#56-resources-registry)
     - [5.7 Routes Registry](#57-routes-registry)
     - [5.8 Validation Registry](#58-validation-registry)
-  - [6. What are wrappid packages](#6-what-are-wrappid-packages)
-    - [6.1. Wrappid Core Package](#61-wrappid-core-package)
-    - [6.2. Wrappid Styles Package](#62-wrappid-styles-package)
-    - [6.3. Wrappid Native-Web Package](#63-wrappid-native-web-package)
-    - [6.4. Wrappid Native-Mobile Package](#64-wrappid-native-mobile-package)
 
 ## 1. Introduction   
 
@@ -54,33 +40,11 @@ This getting started section will help you setup a basic application built using
 [2.3. How to Setup?](#23-how-to-setup)
 [2.4. How to Start?](#24-how-to-start)
 
-<!-- ### Verify Pre-requisites
-
-First you need to verify that your system fulfills the pre-requisites. Listed below are the things required to be available in your system.
-
-- Node.js - version 16
-- npm - version 8
-- @wrappid/toolkit installed globally
-
-#### STEPS TO FOLLOW
-
-- Step 1: wrappid init app test-project
-- Step 2: cd test-project-app
-- Step 3: wrappid setup
-- Step 4: wrappid start web
-- Step 5: wrappid start mobile
-
-#### For Mobile development
-
-- JDK 11 or more
-- Android Studio
-  - Android Device Manager
-  - At least one device on the emulator -->
 
 ### 2.1. What are my Pre-requisites?
 
 - [Refer here](https://github.com/wrappid/#1-check-pre-requisites)
-- install [@wrappid/toolkit](https://github.com/wrappid/#2-install-wrappid-toolkit) globally
+- Install [@wrappid/toolkit](https://github.com/wrappid/#2-install-wrappid-toolkit) globally
 
 
 ### 2.2. How to Create?
@@ -253,20 +217,20 @@ SecondPage: {comp: secondPage}
 }
 ```
 
-And again to see what we wrote in the browser, we will put another entry for our new component
+And again to see what we wrote in the browser, we will put another entry for our new component.
 
 Go to the RoutesRegistry,
 
 ```js
 {
 defaultAppRoute:{
-Page: {AppComponent: "HelloWrappiders" },
+Page: {AppComponent: "HelloWrappiders", layout: "WrappidAppLayout" },
 entityRef: 'defaultAppRoute',
 URL:'defaultAppRoute'
 }, 
 
 secondPageRoute:{
-Page: {AppComponent: "SecondPage" },
+Page: {AppComponent: "SecondPage", layout: "WrappidAppLayout" },
 entityRef: 'uniqueSecondPage',
 URL:'secondPage'
 } 
@@ -308,48 +272,29 @@ wrappid build [web|android|ios]
 ## 5. What are Registries?
 
 ### 5.1. Application Registry
-Used for appilcations
+The application registry is a registry where all the metadata of your wrappid-app are stored and managed.
 
 ### 5.2. Components Registry
-Used to link components
+The component registry is a registry where all the user-created components of your wrappid-app are stored and managed.
 
 ### 5.3. Functions Registry
-Used for functions
-
+The functions registry is a registry where all the user-created functions of your wrappid-app are stored and managed.
 
 ### 5.4. Menus Registry
-Used for generation of menu
+The menus registry is a registry where all the user-created menus of your wrappid-app are stored and managed.
 
 ### 5.5. Reducers Registry
-Used for Reducers
+The reducers registry is a registry where all the user-created reducers of your wrappid-app are stored and managed.
 
 ### 5.6. Resources Registry
-Used for Resources
+The resources registry is a registry where all the user-created resources of your wrappid-app are stored and managed.
 
 ### 5.7 Routes Registry
-Used to route components
-
+The routes registry is a registry where all the user-created routes of your wrappid-app are stored and managed.
 
 ### 5.8 Validation Registry
-Used for validation
+The validation registry is a registry where all the user-created validation functions of your wrappid-app are stored and managed.
 
-
-
-## 6. What are wrappid packages
-
-There are 4 wrappid packages that are used by `wrappid-app`.
- 3.1. @wrappid/core   
- 3.2. @wrappid/styles   
- 3.3. @wrappid/native-web   
- 3.4. @wrappid/native-mobile   
-
-### 6.1. Wrappid Core Package
-
-### 6.2. Wrappid Styles Package
-
-### 6.3. Wrappid Native-Web Package
-
-### 6.4. Wrappid Native-Mobile Package
 
 
 
