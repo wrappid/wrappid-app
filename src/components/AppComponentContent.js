@@ -43,7 +43,7 @@ function AppComponentContent() {
         {/* application Logo */}
         
         <CoreImage
-          gridProps={{ gridSize: { md: 3 }, styleClasses: [CoreClasses?.FLEX?.DIRECTION_COLUMN, CoreClasses.ALIGNMENT.ALIGN_ITEMS_CENTER] }}
+          gridProps={{ gridSize: { md: 3 }, styleClasses: [CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER, CoreClasses?.FLEX?.DIRECTION_ROW, CoreClasses.ALIGNMENT.ALIGN_ITEMS_CENTER] }}
           width={200}
           height={200}
           src={logo}
@@ -52,15 +52,15 @@ function AppComponentContent() {
         <CoreBox
           gridProps={{
             gridSize    : { md: 5 },
-            styleClasses: [CoreClasses?.FLEX?.DIRECTION_COLUMN, CoreClasses.ALIGNMENT.ALIGN_ITEMS_CENTER, CoreClasses?.TEXT?.TEXT_CENTER],
+            styleClasses: [CoreClasses?.FLEX?.DIRECTION_ROW, CoreClasses.ALIGNMENT.ALIGN_ITEMS_CENTER],
           }}
           
         >
           {/* application title */}
-          <CoreH3>{capitalizedWords.join(" ")}</CoreH3>
+          <CoreH3 styleClasses={[CoreClasses?.TEXT?.TEXT_CENTER]}>{capitalizedWords.join(" ")}</CoreH3>
 
           {/* application About */}
-          <CoreH5>
+          <CoreH5 styleClasses={[CoreClasses?.TEXT?.TEXT_CENTER]}>
             {packageJson.description
               ? packageJson.description
               : "Description not provided"}
