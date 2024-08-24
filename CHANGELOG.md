@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.18](https://github.com/wrappid/wrappid-app/compare/v0.0.17...v0.0.18) (2024-08-24)
+
+
+### Features
+
+* **core:** :sparkles: add sample build.gradle file for android ([2e48c52](https://github.com/wrappid/wrappid-app/commit/2e48c52fe742c140b92093cfe509b2f0b3aec2cf)), closes [#135](https://github.com/wrappid/wrappid-app/issues/135)
+
 ### [0.0.17](https://github.com/wrappid/wrappid-app/compare/v0.0.16...v0.0.17) (2024-08-24)
 
 
