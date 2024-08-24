@@ -39,38 +39,32 @@ function AppComponentContent() {
       {/* Wrappid logo and other details */}
       <CoreGrid styleClasses={[CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER, CoreClasses.HEIGHT.MIN_VH_75]}>
         {/* Extra space for the navbar_overlapping_logo isssue */}
-        <CoreBox height={100}/>
 
         {/* application Logo */}
-        <CoreBox
-          gridProps={{ gridSize: { md: 3 }, styleClasses: [CoreClasses.TEXT.TEXT_CENTER] }}
-          
-        >
-          <CoreImage
-            width={"200"}
-            height={"200"}
-            src={logo}
-            alt="logo" />
-        </CoreBox>
+        
+        <CoreImage
+          gridProps={{ gridSize: { md: 3 }, styleClasses: [CoreClasses.ALIGNMENT.JUSTIFY_CONTENT_CENTER, CoreClasses?.FLEX?.DIRECTION_ROW, CoreClasses.ALIGNMENT.ALIGN_ITEMS_CENTER] }}
+          width={200}
+          height={200}
+          src={logo}
+          alt="logo" />
 
         <CoreBox
           gridProps={{
             gridSize    : { md: 5 },
-            styleClasses: [CoreClasses.ALIGNMENT.ALIGN_SELF_CENTER],
+            styleClasses: [CoreClasses?.FLEX?.DIRECTION_ROW, CoreClasses.ALIGNMENT.ALIGN_ITEMS_CENTER],
           }}
           
         >
           {/* application title */}
-          <CoreBox styleClasses={[CoreClasses.TEXT.TEXT_CENTER]}>
-            <CoreH3>{capitalizedWords.join(" ")}</CoreH3>
+          <CoreH3 styleClasses={[CoreClasses?.TEXT?.TEXT_CENTER]}>{capitalizedWords.join(" ")}</CoreH3>
 
-            {/* application About */}
-            <CoreH5>
-              {packageJson.description
-                ? packageJson.description
-                : "Description not provided"}
-            </CoreH5>
-          </CoreBox>
+          {/* application About */}
+          <CoreH5 styleClasses={[CoreClasses?.TEXT?.TEXT_CENTER]}>
+            {packageJson.description
+              ? packageJson.description
+              : "Description not provided"}
+          </CoreH5>
         </CoreBox>
 
         <CoreDivider />
@@ -143,58 +137,56 @@ function AppComponentContent() {
 
       {/* Wrappid features and other details segmented into sections */}
 
-      <CoreBox>
-        {/* Wrappid styles section */}
+      {/* Wrappid styles section */}
         
-        <AppComponentSection
-          title="Styles Library"
-          about="It integrates seamlessly with popular styling libraries, using MUI for web styling and React Native Paper for mobile styling, ensuring a consistent look and feel across platforms."
-          name={stylesPackage.name}
-          version={stylesPackage.version}
-          customizePath="/guide/styles"
-          sourcePath="https://github.com/wrappid/styles"
-        />
+      <AppComponentSection
+        title="Styles Library"
+        about="It integrates seamlessly with popular styling libraries, using MUI for web styling and React Native Paper for mobile styling, ensuring a consistent look and feel across platforms."
+        name={stylesPackage.name}
+        version={stylesPackage.version}
+        customizePath="/guide/styles"
+        sourcePath="https://github.com/wrappid/styles"
+      />
 
-        {/* Wrappid Custom Component Flexibility Section section */}
+      {/* Wrappid Custom Component Flexibility Section section */}
         
-        <AppComponentSection
-          title="Custom Component Flexibility"
-          about="While you can leverage the CoreComponents, Wrappid also gives you the flexibility to create your own custom components as needed to tailor your applications to specific requirements."
-          name={corePackage.name}
-          version={corePackage.version}
-          customizePath="/guide/components"
-          sourcePath="https://github.com/wrappid/core"
-        />
+      <AppComponentSection
+        title="Custom Component Flexibility"
+        about="While you can leverage the CoreComponents, Wrappid also gives you the flexibility to create your own custom components as needed to tailor your applications to specific requirements."
+        name={corePackage.name}
+        version={corePackage.version}
+        customizePath="/guide/components"
+        sourcePath="https://github.com/wrappid/core"
+      />
 
-        {/* Wrappid native section */}
+      {/* Wrappid native section */}
         
-        <AppComponentSection
-          title="Full-Stack Development Support"
-          about="Wrappid supports building both frontend and backend components of applications, including API middleware, database handling, and business-specific modules."
-          name={nativePackage.name}
-          version={nativePackage.version}
-          customizePath="/guide/styles"
-          sourcePath="https://github.com/wrappid/native-web"
-        />
+      <AppComponentSection
+        title="Full-Stack Development Support"
+        about="Wrappid supports building both frontend and backend components of applications, including API middleware, database handling, and business-specific modules."
+        name={nativePackage.name}
+        version={nativePackage.version}
+        customizePath="/guide/styles"
+        sourcePath="https://github.com/wrappid/native-web"
+      />
 
-        {/* wrappid layout section */}
+      {/* wrappid layout section */}
         
-        <AppComponentSection
-          title="Create Layouts"
-          about="You can create layouts and use multiple layouts to style your page"
-          customizePath="/guide/layouts"
-          sourcePath="https://github.com/wrappid/guide"
-        />
+      <AppComponentSection
+        title="Create Layouts"
+        about="You can create layouts and use multiple layouts to style your page"
+        customizePath="/guide/layouts"
+        sourcePath="https://github.com/wrappid/guide"
+      />
 
-        {/* wrappid themes section */}
+      {/* wrappid themes section */}
         
-        {/* eslint-disable-next-line etc/no-commented-out-code */}
-        {/* <AppComponentSection
+      {/* eslint-disable-next-line etc/no-commented-out-code */}
+      {/* <AppComponentSection
           title="Themes"
           about="This is a theme viewer"
           customizePath="/theme/createTheme"
         /> */}
-      </CoreBox>
     </CoreContainer>
   );
 }

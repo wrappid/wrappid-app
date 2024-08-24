@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.18](https://github.com/wrappid/wrappid-app/compare/v0.0.17...v0.0.18) (2024-08-24)
+
+
+### Features
+
+* **core:** :sparkles: add sample build.gradle file for android ([2e48c52](https://github.com/wrappid/wrappid-app/commit/2e48c52fe742c140b92093cfe509b2f0b3aec2cf)), closes [#135](https://github.com/wrappid/wrappid-app/issues/135)
+
+### [0.0.17](https://github.com/wrappid/wrappid-app/compare/v0.0.16...v0.0.17) (2024-08-24)
+
+
+### Bug Fixes
+
+* **core:** :bug: static page alignment related fix ([b567886](https://github.com/wrappid/wrappid-app/commit/b56788642f141940a37aa4749d74fd33f3ec2792)), closes [#113](https://github.com/wrappid/wrappid-app/issues/113)
+* **core:** :bug: static page design related change ([e1b882d](https://github.com/wrappid/wrappid-app/commit/e1b882db6b1c013bc97c2fae358bdf8afefa2361)), closes [#113](https://github.com/wrappid/wrappid-app/issues/113)
+
 ### [0.0.16](https://github.com/wrappid/wrappid-app/compare/v0.0.15...v0.0.16) (2024-07-16)
 
 
