@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.19](https://github.com/wrappid/wrappid-app/compare/v0.0.18...v0.0.19) (2024-10-03)
+
+
+### Features
+
+* **core:** :wrench: add social login configuration template to wrappid config file ([d36ea31](https://github.com/wrappid/wrappid-app/commit/d36ea31ab6bb1f39e93dc4682c014892ecd20f6d)), closes [#137](https://github.com/wrappid/wrappid-app/issues/137)
+
+
+### Bug Fixes
+
+* **global:** :bug: fix defaultAppRoute ([a95c3c2](https://github.com/wrappid/wrappid-app/commit/a95c3c26a979535cb3669036341d05daa9431770)), closes [#137](https://github.com/wrappid/wrappid-app/issues/137)
+
 ### [0.0.18](https://github.com/wrappid/wrappid-app/compare/v0.0.17...v0.0.18) (2024-08-24)
 
 
