@@ -2,7 +2,7 @@
     "dev": {
         "environment": "development",
         "platform": "web",
-        "defaultRoute": "defaultAppRoute",
+        "defaultRoute": "defaultRoute",
         "defaultAuthenticatedRoute": "defaultAuthRoute",
         "defaultLayout": "WrappidAppLayout",
         "defaultAuthenticatedLayout": "AppContainerLayout",
@@ -11,12 +11,33 @@
         "drawerWidth": 240,
         "miniDrawerWidth": 56,
         "snackMessage": false,
-        "otpLength": 6
+        "otpLength": 6,
+        "socialLogin": {
+            "enable": true,
+            "github": {
+                "enable": true,
+                "apiKey": "xxxxxxxxxxxxxxxxxxxxxxxx",
+                "apiKeySecret": "xxxxxxxxxxxxxxxxxxxxxxxx",
+                "callbackURL": "xxxxxxxxxxxxxxxxxxxxxxxx"
+            },
+            "facebook": {
+                "enable": true,
+                "apiKey": "xxxxxxxxxxxxxxxxxxxxxxxx",
+                "apiKeySecret": "xxxxxxxxxxxxxxxxxxxxxxxx",
+                "callbackURL": "xxxxxxxxxxxxxxxxxxxxxxxx"
+            },
+            "linkedin": {
+                "enable": true,
+                "apiKey": "xxxxxxxxxxxxxxxxxxxxxxxx",
+                "apiKeySecret": "xxxxxxxxxxxxxxxxxxxxxxxx",
+                "callbackURL": "xxxxxxxxxxxxxxxxxxxxxxxx"
+            }
+        }
     },
     "stage": {
         "environment": "stage",
         "platform": "web",
-        "defaultRoute": "defaultAppRoute",
+        "defaultRoute": "defaultRoute",
         "defaultAuthenticatedRoute": "defaultAuthRoute",
         "defaultLayout": "WrappidAppLayout",
         "defaultAuthenticatedLayout": "AppContainerLayout",
@@ -25,12 +46,33 @@
         "drawerWidth": 240,
         "miniDrawerWidth": 56,
         "snackMessage": false,
-        "otpLength": 6
+        "otpLength": 6,
+        "socialLogin": {
+            "enable": true,
+            "github": {
+                "enable": true,
+                "apiKey": "xxxxxxxxxxxxxxxxxxxxxxxx",
+                "apiKeySecret": "xxxxxxxxxxxxxxxxxxxxxxxx",
+                "callbackURL": "xxxxxxxxxxxxxxxxxxxxxxxx"
+            },
+            "facebook": {
+                "enable": true,
+                "apiKey": "xxxxxxxxxxxxxxxxxxxxxxxx",
+                "apiKeySecret": "xxxxxxxxxxxxxxxxxxxxxxxx",
+                "callbackURL": "xxxxxxxxxxxxxxxxxxxxxxxx"
+            },
+            "linkedin": {
+                "enable": true,
+                "apiKey": "xxxxxxxxxxxxxxxxxxxxxxxx",
+                "apiKeySecret": "xxxxxxxxxxxxxxxxxxxxxxxx",
+                "callbackURL": "xxxxxxxxxxxxxxxxxxxxxxxx"
+            }
+        }
     },
     "prod": {
         "environment": "production",
         "platform": "web",
-        "defaultRoute": "defaultAppRoute",
+        "defaultRoute": "defaultRoute",
         "defaultAuthenticatedRoute": "defaultAuthRoute",
         "defaultLayout": "WrappidAppLayout",
         "defaultAuthenticatedLayout": "AppContainerLayout",
@@ -39,6 +81,27 @@
         "drawerWidth": 240,
         "miniDrawerWidth": 56,
         "snackMessage": false,
-        "otpLength": 6
+        "otpLength": 6,
+        "socialLogin": {
+            "enable": true,
+            "github": {
+                "enable": true,
+                "apiKey": "xxxxxxxxxxxxxxxxxxxxxxxx",
+                "apiKeySecret": "xxxxxxxxxxxxxxxxxxxxxxxx",
+                "callbackURL": "xxxxxxxxxxxxxxxxxxxxxxxx"
+            },
+            "facebook": {
+                "enable": true,
+                "apiKey": "xxxxxxxxxxxxxxxxxxxxxxxx",
+                "apiKeySecret": "xxxxxxxxxxxxxxxxxxxxxxxx",
+                "callbackURL": "xxxxxxxxxxxxxxxxxxxxxxxx"
+            },
+            "linkedin": {
+                "enable": true,
+                "apiKey": "xxxxxxxxxxxxxxxxxxxxxxxx",
+                "apiKeySecret": "xxxxxxxxxxxxxxxxxxxxxxxx",
+                "callbackURL": "xxxxxxxxxxxxxxxxxxxxxxxx"
+            }
+        }
     }
 }
