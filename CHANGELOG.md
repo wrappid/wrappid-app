@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.20](https://github.com/wrappid/wrappid-app/compare/v0.0.19...v0.0.20) (2025-03-05)
+
+
+### Features
+
+* **config:** :wrench: support for application type identifier ([c93a4a8](https://github.com/wrappid/wrappid-app/commit/c93a4a806520ce4a18af7b51a767f59c61a8653a)), closes [#139](https://github.com/wrappid/wrappid-app/issues/139)
+
+
+### Bug Fixes
+
+* **config:** :wrench: enabled icons for mobile ([4648efd](https://github.com/wrappid/wrappid-app/commit/4648efd69964b24564b7eb870d9b317d47fc04e7)), closes [#139](https://github.com/wrappid/wrappid-app/issues/139)
+* **config:** 🔧 package.json and package-lock.json ([917b03a](https://github.com/wrappid/wrappid-app/commit/917b03a4a5cfce32ec4893cc9d8d88bf7f1feda2)), closes [#139](https://github.com/wrappid/wrappid-app/issues/139)
+
 ### [0.0.19](https://github.com/wrappid/wrappid-app/compare/v0.0.18...v0.0.19) (2024-10-03)
 
 
