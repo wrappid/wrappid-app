@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.22](https://github.com/wrappid/wrappid-app/compare/v0.0.20...v0.0.22) (2025-03-15)
+
+
+### Features
+
+* **config:** :pushpin: set wrappid packages to latest ([6203540](https://github.com/wrappid/wrappid-app/commit/6203540ddc1cc7c422294057669334bdc5fe40f9)), closes [#141](https://github.com/wrappid/wrappid-app/issues/141)
+
 ### [0.0.21](https://github.com/wrappid/wrappid-app/compare/v0.0.20...v0.0.21) (2025-03-15)
 
 
