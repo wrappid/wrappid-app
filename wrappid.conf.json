@@ -43,7 +43,7 @@
         "defaultLayout": "WrappidAppLayout",
         "defaultAuthenticatedLayout": "AppContainerLayout",
         "dynamic": false,
-        "backendUrl": "https://demoapi.wrappid.dev",
+        "backendUrl": "",
         "webUrl": "http://localhost:3000",
         "drawerWidth": 240,
         "miniDrawerWidth": 56,

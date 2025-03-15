@@ -1,6 +1,6 @@
 {
   "name": "wrappid-app",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "description": "This is a boilerplate application using wrappid for both web and mobile application.",
   "scripts": {
     "attributions:gen": "node ./scripts/attributions.gen.js",
@@ -34,10 +34,10 @@
     "@commitlint/cli": "17.5.0",
     "@commitlint/config-conventional": "17.4.4",
     "@commitlint/prompt-cli": "17.5.0",
-    "@wrappid/core": "0.0.602",
-    "@wrappid/native-web": "0.0.363",
-    "@wrappid/native-mobile": "0.0.262",
-    "@wrappid/styles": "0.0.182",
+    "@wrappid/core": "latest",
+    "@wrappid/native-web": "latest",
+    "@wrappid/native-mobile": "latest",
+    "@wrappid/styles": "latest",
     "eslint": "8.56.0",
     "eslint-plugin-etc": "2.0.3",
     "eslint-plugin-import": "2.27.5",
