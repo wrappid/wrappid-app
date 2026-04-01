@@ -33,7 +33,7 @@
   "devDependencies": {
     "@commitlint/cli": "17.5.0",
     "@commitlint/config-conventional": "17.4.4",
-    "@commitlint/prompt-cli": "17.5.0",
+    "@commitlint/prompt-cli": "20.5.0",
     "@wrappid/core": "latest",
     "@wrappid/native-web": "latest",
     "@wrappid/native-mobile": "latest",
